@@ -1,0 +1,34 @@
+########################################
+# Program: needle
+# Rundate: Mon  9 Mar 2020 17:40:08
+# Commandline: needle
+########################################
+
+#=======================================
+# Aligned_sequences: 2
+# 1: Thailand
+# 2: Philippines
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 119
+# Identity:      14/119 (11.8%)
+# Similarity:    18/119 (15.1%)
+# Gaps:          82/119 (68.9%)
+# Score: 28.0
+#=======================================
+
+#---------------------------------------
+Thailand           1 KHLIPLMYKGLPWNVVRIKIVQMLSDTLKNLSDRVVFVLWAHGFELTSMK     50
+                                                                       
+Philippines        1 --------------------------------------------------      0
+
+Thailand          51 YFVKIGPERTCC---LCD------------------RRATCFSTASDTYA     79
+                             ||..   :|.                  |.||.....|..|.
+Philippines        1 --------RTVAGVSICSTMTNRQFHQKLLKSIAATRGATVVIGTSKFYG     42
+
+Thailand          80 CWHHSIGFDY--VYNPFMI     96
+                     .||:.:...|  |.||.: 
+Philippines       43 GWHNMLKTVYSDVENPHL-     60
+#---------------------------------------

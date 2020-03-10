@@ -1,0 +1,1676 @@
+CLUSTAL O(1.2.4) multiple sequence alignment
+
+
+LR757995      tttcccaggtaacaaaccaaccaactttcgatctcttgtagatctgttctctaaacgaac	60
+LR757996      -----caggtaacaaaccaaccaactttcgatctcttgtagatctgttctctaaacgaac	55
+LR757998      ----------aacaaaccaaccaactttcgatctcttgtagatctgttctctaaacgaac	50
+                        **************************************************
+
+LR757995      tttaaaatctgtgtggctgtcactcggctgcatgcttagtgcactcacgcagtataatta	120
+LR757996      tttaaaatctgtgtggctgtcactcggctgcatgcttagtgcactcacgcagtataatta	115
+LR757998      tttaaaatctgtgtggctgtcactcggctgcatgcttagtgcactcacgcagtataatta	110
+              ************************************************************
+
+LR757995      ataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgctt	180
+LR757996      ataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgctt	175
+LR757998      ataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgctt	170
+              ************************************************************
+
+LR757995      acggtttcgtccgtgttgcagccgatcatcagcacatctaggtttcgtccgggtgtgacc	240
+LR757996      acggtttcgtccgtgttgcagccgatcatcagcacatctaggtttcgtccgggtgtgacc	235
+LR757998      acggtttcgtccgtgttgcagccgatcatcagcacatctaggtttcgtccgggtgtgacc	230
+              ************************************************************
+
+LR757995      gaaaggtaagatggagagccttgtccctggtttcaacgagaaaacacacgtccaactcag	300
+LR757996      gaaaggtaagatggagagccttgtccctggtttcaacgagaaaacacacgtccaactcag	295
+LR757998      gaaaggtaagatggagagccttgtccctggtttcaacgagaaaacacacgtccaactcag	290
+              ************************************************************
+
+LR757995      tttgcctgttttacaggttcgcgacgtgctcgtacgtggctttggagactccgtggagga	360
+LR757996      tttgcctgttttacaggttcgcgacgtgctcgtacgtggctttggagactccgtggagga	355
+LR757998      tttgcctgttttacaggttcgcgacgtgctcgtacgtggctttggagactccgtggagga	350
+              ************************************************************
+
+LR757995      ggtcttatcagaggcacgtcaacatcttaaagatggcacttgtggcttagtagaagttga	420
+LR757996      ggtcttatcagaggcacgtcaacatcttaaagatggcacttgtggcttagtagaagttga	415
+LR757998      ggtcttatcagaggcacgtcaacatcttaaagatggcacttgtggcttagtagaagttga	410
+              ************************************************************
+
+LR757995      aaaaggcgttttgcctcaacttgaacagccctatgtgttcatcaaacgttcggatgctcg	480
+LR757996      aaaaggcgttttgcctcaacttgaacagccctatgtgttcatcaaacgttcggatgctcg	475
+LR757998      aaaaggcgttttgcctcaacttgaacagccctatgtgttcatcaaacgttcggatgctcg	470
+              ************************************************************
+
+LR757995      aactgcacctcatggtcatgttatggttgagctggtagcagaactcgaaggcattcagta	540
+LR757996      aactgcacctcatggtcatgttatggttgagctggtagcagaactcgaaggcattcagta	535
+LR757998      aactgcacctcatggtcatgttatggttgagctggtagcagaactcgaaggcattcagta	530
+              ************************************************************
+
+LR757995      cggtcgtagtggtgagacacttggtgtccttgtccctcatgtgggcgaaataccagtggc	600
+LR757996      cggtcgtagtggtgagacacttggtgtccttgtccctcatgtgggcgaaataccagtggc	595
+LR757998      cggtcgtagtggtgagacacttggtgtccttgtccctcatgtgggcgaaataccagtggc	590
+              ************************************************************
+
+LR757995      ttaccgcaaggttcttcttcgtaagaacggtaataaaggagctggtggccatagttacgg	660
+LR757996      ttaccgcaaggttcttcttcgtaagaacggtaataaaggagctggtggccatagttacgg	655
+LR757998      ttaccgcaaggttcttcttcgtaagaacggtaataaaggagctggtggccatagttacgg	650
+              ************************************************************
+
+LR757995      cgccgatctaaagtcatttgacttaggcgacgagcttggcactgatccttatgaagattt	720
+LR757996      cgccgatctaaagtcatttgacttaggcgacgagcttggcactgatccttatgaagattt	715
+LR757998      cgccgatctaaagtcatttgacttaggcgacgagcttggcactgatccttatgaagattt	710
+              ************************************************************
+
+LR757995      tcaagaaaactggaacactaaacatagcagtggtgttacccgtgaactcatgcgtgagct	780
+LR757996      tcaagaaaactggaacactaaacatagcagtggtgttacccgtgaactcatgcgtgagct	775
+LR757998      tcaagaaaactggaacactaaacatagcagtggtgttacccgtgaactcatgcgtgagct	770
+              ************************************************************
+
+LR757995      taacggaggggcatacactcgctatgtcgataacaacttctgtggccctgatggctaccc	840
+LR757996      taacggaggggcatacactcgctatgtcgataacaacttctgtggccctgatggctaccc	835
+LR757998      taacggaggggcatacactcgctatgtcgataacaacttctgtggccctgatggctaccc	830
+              ************************************************************
+
+LR757995      tcttgagtgcattaaagaccttctagcacgtgctggtaaagcttcatgcactttgtccga	900
+LR757996      tcttgagtgcattaaagaccttctagcacgtgctggtaaagcttcatgcactttgtccga	895
+LR757998      tcttgagtgcattaaagaccttctagcacgtgctggtaaagcttcatgcactttgtccga	890
+              ************************************************************
+
+LR757995      acaactggactttattgacactaagaggggtgtatactgctgccgtgaacatgagcatga	960
+LR757996      acaactggactttattgacactaagaggggtgtatactgctgccgtgaacatgagcatga	955
+LR757998      acaactggactttattgacactaagaggggtgtatactgctgccgtgaacatgagcatga	950
+              ************************************************************
+
+LR757995      aattgcttggtacacggaacgttctgaaaagagctatgaattgcagacaccttttgaaat	1020
+LR757996      aattgcttggtacacggaacgttctgaaaagagctatgaattgcagacaccttttgaaat	1015
+LR757998      aattgcttggtacacggaacgttctgaaaagagctatgaattgcagacaccttttgaaat	1010
+              ************************************************************
+
+LR757995      taaattggcaaagaaatttgacaccttcaatggggaatgtccaaattttgtatttccctt	1080
+LR757996      taaattggcaaagaaatttgacaccttcaatggggaatgtccaaattttgtatttccctt	1075
+LR757998      taaattggcaaagaaatttgacaccttcaatggggaatgtccaaattttgtatttccctt	1070
+              ************************************************************
+
+LR757995      aaattccataatcaagactattcaaccaagggttgaaaagaaaaagcttgatggctttat	1140
+LR757996      aaattccataatcaagactattcaaccaagggttgaaaagaaaaagcttgatggctttat	1135
+LR757998      aaattccataatcaagactattcaaccaagggttgaaaagaaaaagcttgatggctttat	1130
+              ************************************************************
+
+LR757995      gggtagaattcgatctgtctatccagttgcgtcaccaaatgaatgcaaccaaatgtgcct	1200
+LR757996      gggtagaattcgatctgtctatccagttgcgtcaccaaatgaatgcaaccaaatgtgcct	1195
+LR757998      gggtagaattcgatctgtctatccagttgcgtcaccaaatgaatgcaaccaaatgtgcct	1190
+              ************************************************************
+
+LR757995      ttcaactctcatgaagtgtgatcattgtggtgaaacttcatggcagacgggcgattttgt	1260
+LR757996      ttcaactctcatgaagtgtgatcattgtggtgaaacttcatggcagacgggcgattttgt	1255
+LR757998      ttcaactctcatgaagtgtgatcattgtggtgaaacttcatggcagacgggcgattttgt	1250
+              ************************************************************
+
+LR757995      taaagccacttgcgaattttgtggcactgagaatttgactaaagaaggtgccactacttg	1320
+LR757996      taaagccacttgcgaattttgtggcactgagaatttgactaaagaaggtgccactacttg	1315
+LR757998      taaagccacttgcgaattttgtggcactgagaatttgactaaagaaggtgccactacttg	1310
+              ************************************************************
+
+LR757995      tggttacttaccccaaaatgctgttgttaaaatttattgtccagcatgtcacaattcaga	1380
+LR757996      tggttacttaccccaaaatgctgttgttaaaatttattgtccagcatgtcacaattcaga	1375
+LR757998      tggttacttaccccaaaatgctgttgttaaaatttattgtccagcatgtcacaattcaga	1370
+              ************************************************************
+
+LR757995      agtaggacctgagcatagtcttgccgaataccataatgaatctggcttgaaaaccattct	1440
+LR757996      agtaggacctgagcatagtcttgccgaataccataatgaatctggcttgaaaaccattct	1435
+LR757998      agtaggacctgagcatagtcttgccgaataccataatgaatctggcttgaaaaccattct	1430
+              ************************************************************
+
+LR757995      tcgtaagggtggtcgcactattgcctttggaggctgtgtgttctcttatgttggttgcca	1500
+LR757996      tcgtaagggtggtcgcactattgcctttggaggctgtgtgttctcttatgttggttgcca	1495
+LR757998      tcgtaagggtggtcgcactattgcctttggaggctgtgtgttctcttatgttggttgcca	1490
+              ************************************************************
+
+LR757995      taacaagtgtgcctattgggttccacgtgctagcgctaacataggttgtaaccatacagg	1560
+LR757996      taacaagtgtgcctattgggttccacgtgctagcgctaacataggttgtaaccatacagg	1555
+LR757998      taacaagtgtgcctattgggttccacgtgctagcgctaacataggttgtaaccatacagg	1550
+              ************************************************************
+
+LR757995      tgttgttggagaaggttccgaaggtcttaatgacaaccttcttgaaatactccaaaaaga	1620
+LR757996      tgttgttggagaaggttccgaaggtcttaatgacaaccttcttgaaatactccaaaaaga	1615
+LR757998      tgttgttggagaaggttccgaaggtcttaatgacaaccttcttgaaatactccaaaaaga	1610
+              ************************************************************
+
+LR757995      gaaagtcaacatcaatattgttggtgactttaaacttaatgaagagatcgccattatttt	1680
+LR757996      gaaagtcaacatcaatattgttggtgactttaaacttaatgaagagatcgccattatttt	1675
+LR757998      gaaagtcaacatcaatattgttggtgactttaaacttaatgaagagatcgccattatttt	1670
+              ************************************************************
+
+LR757995      ggcatctttttctgcttccacaagtgcttttgtggaaactgtgaaaggtttggattataa	1740
+LR757996      ggcatctttttctgcttccacaagtgcttttgtggaaactgtgaaaggtttggattataa	1735
+LR757998      ggcatctttttctgcttccacaagtgcttttgtggaaactgtgaaaggtttggattataa	1730
+              ************************************************************
+
+LR757995      agcattcaaacaaattgttgaatcctgtggtaattttaaagttacaaaaggaaaagctaa	1800
+LR757996      agcattcaaacaaattgttgaatcctgtggtaattttaaagttacaaaaggaaaagctaa	1795
+LR757998      agcattcaaacaaattgttgaatcctgtggtaattttaaagttacaaaaggaaaagctaa	1790
+              ************************************************************
+
+LR757995      aaaaggtgcctggaatattggtgaacagaaatcaatactgagtcctctttatgcatttgc	1860
+LR757996      aaaaggtgcctggaatattggtgaacagaaatcaatactgagtcctctttatgcatttgc	1855
+LR757998      aaaaggtgcctggaatattggtgaacagaaatcaatactgagtcctctttatgcatttgc	1850
+              ************************************************************
+
+LR757995      atcagaggctgctcgtgttgtacgatcaattttctcccgcactcttgaaactgctcaaaa	1920
+LR757996      atcagaggctgctcgtgttgtacgatcaattttctcccgcactcttgaaactgctcaaaa	1915
+LR757998      atcagaggctgctcgtgttgtacgatcaattttctcccgcactcttgaaactgctcaaaa	1910
+              ************************************************************
+
+LR757995      ttctgtgcgtgttttacagaaggccgctataacaatactagatggaatttcacagtattc	1980
+LR757996      ttctgtgcgtgttttacagaaggccgctataacaatactagatggaatttcacagtattc	1975
+LR757998      ttctgtgcgtgttttacagaaggccgctataacaatactagatggaatttcacagtattc	1970
+              ************************************************************
+
+LR757995      actgagactcattgatgctatgatgttcacatctgatttggctactaacaatctagttgt	2040
+LR757996      actgagactcattgatgctatgatgttcacatctgatttggctactaacaatctagttgt	2035
+LR757998      actgagactcattgatgctatgatgttcacatctgatttggctactaacaatctagttgt	2030
+              ************************************************************
+
+LR757995      aatggcctacattacaggtggtgttgttcagttgacttcgcagtggctaactaacatctt	2100
+LR757996      aatggcctacattacaggtggtgttgttcagttgacttcgcagtggctaactaacatctt	2095
+LR757998      aatggcctacattacaggtggtgttgttcagttgacttcgcagtggctaactaacatctt	2090
+              ************************************************************
+
+LR757995      tggcactgtttatgaaaaactcaaacccgtccttgattggcttgaagagaagtttaagga	2160
+LR757996      tggcactgtttatgaaaaactcaaacccgtccttgattggcttgaagagaagtttaagga	2155
+LR757998      tggcactgtttatgaaaaactcaaacccgtccttgattggcttgaagagaagtttaagga	2150
+              ************************************************************
+
+LR757995      aggtgtagagtttcttagagacggttgggaaattgttaaatttatctcaacctgtgcttg	2220
+LR757996      aggtgtagagtttcttagagacggttgggaaattgttaaatttatctcaacctgtgcttg	2215
+LR757998      aggtgtagagtttcttagagacggttgggaaattgttaaatttatctcaacctgtgcttg	2210
+              ************************************************************
+
+LR757995      tgaaattgtcggtggacaaattgtcacctgtgcaaaggaaattaaggagagtgttcagac	2280
+LR757996      tgaaattgtcggtggacaaattgtcacctgtgcaaaggaaattaaggagagtgttcagac	2275
+LR757998      tgaaattgtcggtggacaaattgtcacctgtgcaaaggaaattaaggagagtgttcagac	2270
+              ************************************************************
+
+LR757995      attctttaagcttgtaaataaatttttggctttgtgtgctgactctatcattattggtgg	2340
+LR757996      attctttaagcttgtaaataaatttttggctttgtgtgctgactctatcattattggtgg	2335
+LR757998      attctttaagcttgtaaataaatttttggctttgtgtgctgactctatcattattggtgg	2330
+              ************************************************************
+
+LR757995      agctaaacttaaagccttgaatttaggtgaaacatttgtcacgcactcaaagggattgta	2400
+LR757996      agctaaacttaaagccttgaatttaggtgaaacatttgtcacgcactcaaagggattgta	2395
+LR757998      agctaaacttaaagccttgaatttaggtgaaacatttgtcacgcactcaaagggattgta	2390
+              ************************************************************
+
+LR757995      cagaaagtgtgttaaatccagagaagaaactggcctactcatgcctctaaaagccccaaa	2460
+LR757996      cagaaagtgtgttaaatccagagaagaaactggcctactcatgcctctaaaagccccaaa	2455
+LR757998      cagaaagtgtgttaaatccagagaagaaactggcctactcatgcctctaaaagccccaaa	2450
+              ************************************************************
+
+LR757995      agaaattatcttcttagagggagaaacacttcccacagaagtgttaacagaggaagttgt	2520
+LR757996      agaaattatcttcttagagggagaaacacttcccacagaagtgttaacagaggaagttgt	2515
+LR757998      agaaattatcttcttagagggagaaacacttcccacagaagtgttaacagaggaagttgt	2510
+              ************************************************************
+
+LR757995      cttgaaaactggtgatttacaaccattagaacaacctactagtgaagctgttgaagctcc	2580
+LR757996      cttgaaaactggtgatttacaaccattagaacaacctactagtgaagctgttgaagctcc	2575
+LR757998      cttgaaaactggtgatttacaaccattagaacaacctactagtgaagctgttgaagctcc	2570
+              ************************************************************
+
+LR757995      attggttggtacaccagtttgtattaacgggcttatgttgctcgaaatcaaagacacaga	2640
+LR757996      attggttggtacaccagtttgtattaacgggcttatgttgctcgaaatcaaagacacaga	2635
+LR757998      attggttggtacaccagtttgtattaacgggcttatgttgctcgaaatcaaagacacaga	2630
+              ************************************************************
+
+LR757995      aaagtactgtgcccttgcacctaatatgatggtaacaaacaataccttcacactcaaagg	2700
+LR757996      aaagtactgtgcccttgcacctaatatgatggtaacaaacaataccttcacactcaaagg	2695
+LR757998      aaagtactgtgcccttgcacctaatatgatggtaacaaacaataccttcacactcaaagg	2690
+              ************************************************************
+
+LR757995      cggtgcaccaacaaaggttacttttggtgatgacactgtgatagaagtgcaaggttacaa	2760
+LR757996      cggtgcaccaacaaaggttacttttggtgatgacactgtgatagaagtgcaaggttacaa	2755
+LR757998      cggtgcaccaacaaaggttacttttggtgatgacactgtgatagaagtgcaaggttacaa	2750
+              ************************************************************
+
+LR757995      gagtgtgaatatcacttttgaacttgatgaaaggattgataaagtacttaatgagaagtg	2820
+LR757996      gagtgtgaatatcacttttgaacttgatgaaaggattgataaagtacttaatgagaagtg	2815
+LR757998      gagtgtgaatatcacttttgaacttgatgaaaggattgataaagtacttaatgagaagtg	2810
+              ************************************************************
+
+LR757995      ctctgcctatacagttgaactcggtacagaagtaaatgagttcgcctgtgttgtggcaga	2880
+LR757996      ctctgcctatacagttgaactcggtacagaagtaaatgagttcgcctgtgttgtggcaga	2875
+LR757998      ctctgcctatacagttgaactcggtacagaagtaaatgagttcgcctgtgttgtggcaga	2870
+              ************************************************************
+
+LR757995      tgctgtcataaaaactttgcaaccagtatctgaattacttacaccactgggcattgattt	2940
+LR757996      tgctgtcataaaaactttgcaaccagtatctgaattacttacaccactgggcattgattt	2935
+LR757998      tgctgtcataaaaactttgcaaccagtatctgaattacttacaccactgggcattgattt	2930
+              ************************************************************
+
+LR757995      agatgagtggagtatggctacatactacttatttgatgagtctggtgagtttaaattggc	3000
+LR757996      agatgagtggagtatggctacatactacttatttgatgagtctggtgagtttaaattggc	2995
+LR757998      agatgagtggagtatggctacatactacttatttgatgagtctggtgagtttaaattggc	2990
+              ************************************************************
+
+LR757995      ttcacatatgtattgttctttctaccctccagatgaggatgaagaagaaggtgattgtga	3060
+LR757996      ttcacatatgtattgttctttctaccctccagatgaggatgaagaagaaggtgattgtga	3055
+LR757998      ttcacatatgtattgttctttctaccctccagatgaggatgaagaagaaggtgattgtga	3050
+              ************************************************************
+
+LR757995      agaagaagagtttgagccatcaactcaatatgagtatggtactgaagatgattaccaagg	3120
+LR757996      agaagaagagtttgagccatcaactcaatatgagtatggtactgaagatgattaccaagg	3115
+LR757998      agaagaagagtttgagccatcaactcaatatgagtatggtactgaagatgattaccaagg	3110
+              ************************************************************
+
+LR757995      taaacctttggaatttggtgccacttctgctgctcttcaacctgaagaagagcaagaaga	3180
+LR757996      taaacctttggaatttggtgccacttctgctgctcttcaacctgaagaagagcaagaaga	3175
+LR757998      taaacctttggaatttggtgccacttctgctgctcttcaacctgaagaagagcaagaaga	3170
+              ************************************************************
+
+LR757995      agattggttagatgatgatagtcaacaaactgttggtcaacaagacggcagtgaggacaa	3240
+LR757996      agattggttagatgatgatagtcaacaaactgttggtcaacaagacggcagtgaggacaa	3235
+LR757998      agattggttagatgatgatagtcaacaaactgttggtcaacaagacggcagtgaggacaa	3230
+              ************************************************************
+
+LR757995      tcagacaactactattcaaacaattgttgaggttcaacctcaattagagatggaacttac	3300
+LR757996      tcagacaactactattcaaacaattgttgaggttcaacctcaattagagatggaacttac	3295
+LR757998      tcagacaactactattcaaacaattgttgaggttcaacctcaattagagatggaacttac	3290
+              ************************************************************
+
+LR757995      accagttgttcagactattgaagtgaatagttttagtggttatttaaaacttactgacaa	3360
+LR757996      accagttgttcagactattgaagtgaatagttttagtggttatttaaaacttactgacaa	3355
+LR757998      accagttgttcagactattgaagtgaatagttttagtggttatttaaaacttactgacaa	3350
+              ************************************************************
+
+LR757995      tgtatacattaaaaatgcagacattgtggaagaagctaaaaaggtaaaaccaacagtggt	3420
+LR757996      tgtatacattaaaaatgcagacattgtggaagaagctaaaaaggtaaaaccaacagtggt	3415
+LR757998      tgtatacattaaaaatgcagacattgtggaagaagctaaaaaggtaaaaccaacagtggt	3410
+              ************************************************************
+
+LR757995      tgttaatgcagccaatgtttaccttaaacatggaggaggtgttgcaggagccttaaataa	3480
+LR757996      tgttaatgcagccaatgtttaccttaaacatggaggaggtgttgcaggagccttaaataa	3475
+LR757998      tgttaatgcagccaatgtttaccttaaacatggaggaggtgttgcaggagccttaaataa	3470
+              ************************************************************
+
+LR757995      ggctactaacaatgccatgcaagttgaatctgatgattacatagctactaatggaccact	3540
+LR757996      ggctactaacaatgccatgcaagttgaatctgatgattacatagctactaatggaccact	3535
+LR757998      ggctactaacaatgccatgcaagttgaatctgatgattacatagctactaatggaccact	3530
+              ************************************************************
+
+LR757995      taaagtgggtggtagttgtgttttaagcggacacaatcttgctaaacactgtcttcatgt	3600
+LR757996      taaagtgggtggtagttgtgttttaagcggacacaatcttgctaaacactgtcttcatgt	3595
+LR757998      taaagtgggtggtagttgtgttttaagcggacacaatcttgctaaacactgtcttcatgt	3590
+              ************************************************************
+
+LR757995      tgtcggcccaaatgttaacaaaggtgaagacattcaacttcttaagagtgcttatgaaaa	3660
+LR757996      tgtcggcccaaatgttaacaaaggtgaagacattcaacttcttaagagtgcttatgaaaa	3655
+LR757998      tgtcggcccaaatgttaacaaaggtgaagacattcaacttcttaagagtgcttatgaaaa	3650
+              ************************************************************
+
+LR757995      ttttaatcagcacgaagttctacttgcaccattattatcagctggtatttttggtgctga	3720
+LR757996      ttttaatcagcacgaagttctacttgcaccattattatcagctggtatttttggtgctga	3715
+LR757998      ttttaatcagcacgaagttctacttgcaccattattatcagctggtatttttggtgctga	3710
+              ************************************************************
+
+LR757995      ccctatacattctttaagagtttgtgtagatactgttcgcacaaatgtctacttagctgt	3780
+LR757996      ccctatacattctttaagagtttgtgtagatactgttcgcacaaatgtctacttagctgt	3775
+LR757998      ccctatacattctttaagagtttgtgtagatactgttcgcacaaatgtctacttagctgt	3770
+              ************************************************************
+
+LR757995      ctttgataaaaatctctatgacaaacttgtttcaagctttttggaaatgaagagtgaaaa	3840
+LR757996      ctttgataaaaatctctatgacaaacttgtttcaagctttttggaaatgaagagtgaaaa	3835
+LR757998      ctttgataaaaatctctatgacaaacttgtttcaagctttttggaaatgaagagtgaaaa	3830
+              ************************************************************
+
+LR757995      gcaagttgaacaaaagatcgctgagattcctaaagaggaagttaagccatttataactga	3900
+LR757996      gcaagttgaacaaaagatcgctgagattcctaaagaggaagttaagccatttataactga	3895
+LR757998      gcaagttgaacaaaagatcgctgagattcctaaagaggaagttaagccatttataactga	3890
+              ************************************************************
+
+LR757995      aagtaaaccttcagttgaacagagaaaacaagatgataagaaaatcaaagcttgtgttga	3960
+LR757996      aagtaaaccttcagttgaacagagaaaacaagatgataagaaaatcaaagcttgtgttga	3955
+LR757998      aagtaaaccttcagttgaacagagaaaacaagatgataagaaaatcaaagcttgtgttga	3950
+              ************************************************************
+
+LR757995      agaagttacaacaactctggaagaaactaagttcctcacagaaaacttgttactttatat	4020
+LR757996      agaagttacaacaactctggaagaaactaagttcctcacagaaaacttgttactttatat	4015
+LR757998      agaagttacaacaactctggaagaaactaagttcctcacagaaaacttgttactttatat	4010
+              ************************************************************
+
+LR757995      tgacattaatggcaatcttcatccagattctgccactcttgttagtgacattgacatcac	4080
+LR757996      tgacattaatggcaatcttcatccagattctgccactcttgttagtgacattgacatcac	4075
+LR757998      tgacattaatggcaatcttcatccagattctgccactcttgttagtgacattgacatcac	4070
+              ************************************************************
+
+LR757995      tttcttaaagaaagatgctccatatatagtgggtgatgttgttcaagagggtgttttaac	4140
+LR757996      tttcttaaagaaagatgctccatatatagtgggtgatgttgttcaagagggtgttttaac	4135
+LR757998      tttcttaaagaaagatgctccatatatagtgggtgatgttgttcaagagggtgttttaac	4130
+              ************************************************************
+
+LR757995      tgctgtggttatacctactaaaaaggctggtggcactactgaaatgctagcgaaagcttt	4200
+LR757996      tgctgtggttatacctactaaaaaggctggtggcactactgaaatgctagcgaaagcttt	4195
+LR757998      tgctgtggttatacctactaaaaaggctggtggcactactgaaatgctagcgaaagcttt	4190
+              ************************************************************
+
+LR757995      gagaaaagtgccaacagacaattatataaccacttacccgggtcagggtttaaatggtta	4260
+LR757996      gagaaaagtgccaacagacaattatataaccacttacccgggtcagggtttaaatggtta	4255
+LR757998      gagaaaagtgccaacagacaattatataaccacttacccgggtcagggtttaaatggtta	4250
+              ************************************************************
+
+LR757995      cactgtagaggaggcaaagacagtgcttaaaaagtgtaaaagtgccttttacattctacc	4320
+LR757996      cactgtagaggaggcaaagacagtgcttaaaaagtgtaaaagtgccttttacattctacc	4315
+LR757998      cactgtagaggaggcaaagacagtgcttaaaaagtgtaaaagtgccttttacattctacc	4310
+              ************************************************************
+
+LR757995      atctattatctctaatgagaagcaagaaattcttggaactgtttcttggaatttgcgaga	4380
+LR757996      atctattatctctaatgagaagcaagaaattcttggaactgtttcttggaatttgcgaga	4375
+LR757998      atctattatctctaatgagaagcaagaaattcttggaactgtttcttggaatttgcgaga	4370
+              ************************************************************
+
+LR757995      aatgcttgcacatgcagaagaaacacgcaaattaatgcctgtctgtgtggaaactaaagc	4440
+LR757996      aatgcttgcacatgcagaagaaacacgcaaattaatgcctgtctgtgtggaaactaaagc	4435
+LR757998      aatgcttgcacatgcagaagaaacacgcaaattaatgcctgtctgtgtggaaactaaagc	4430
+              ************************************************************
+
+LR757995      catagtttcaactatacagcgtaaatataagggtattaaaatacaagagggtgtggttga	4500
+LR757996      catagtttcaactatacagcgtaaatataagggtattaaaatacaagagggtgtggttga	4495
+LR757998      catagtttcaactatacagcgtaaatataagggtattaaaatacaagagggtgtggttga	4490
+              ************************************************************
+
+LR757995      ttatggtgctagattttacttttacaccagtaaaacaactgtagcgtcacttatcaacac	4560
+LR757996      ttatggtgctagattttacttttacaccagtaaaacaactgtagcgtcacttatcaacac	4555
+LR757998      ttatggtgctagattttacttttacaccagtaaaacaactgtagcgtcacttatcaacac	4550
+              ************************************************************
+
+LR757995      acttaacgatctaaatgaaactcttgttacaatgccacttggctatgtaacacatggctt	4620
+LR757996      acttaacgatctaaatgaaactcttgttacaatgccacttggctatgtaacacatggctt	4615
+LR757998      acttaacgatctaaatgaaactcttgttacaatgccacttggctatgtaacacatggctt	4610
+              ************************************************************
+
+LR757995      aaatttggaagaagctgctcggtatatgagatctctcaaagtgccagctacagtttctgt	4680
+LR757996      aaatttggaagaagctgctcggtatatgagatctctcaaagtgccagctacagtttctgt	4675
+LR757998      aaatttggaagaagctgctcggtatatgagatctctcaaagtgccagctacagtttctgt	4670
+              ************************************************************
+
+LR757995      ttcttcacctgatgctgttacagcgtataatggttatcttacttcttcttctaaaacacc	4740
+LR757996      ttcttcacctgatgctgttacagcgtataatggttatcttacttcttcttctaaaacacc	4735
+LR757998      ttcttcacctgatgctgttacagcgtataatggttatcttacttcttcttctaaaacacc	4730
+              ************************************************************
+
+LR757995      tgaagaacattttattgaaaccatctcacttgctggttcctataaagattggtcctattc	4800
+LR757996      tgaagaacattttattgaaaccatctcacttgctggttcctataaagattggtcctattc	4795
+LR757998      tgaagaacattttattgaaaccatctcacttgctggttcctataaagattggtcctattc	4790
+              ************************************************************
+
+LR757995      tggacaatctacacaactaggtatagaatttcttaagagaggtgataaaagtgtatatta	4860
+LR757996      tggacaatctacacaactaggtatagaatttcttaagagaggtgataaaagtgtatatta	4855
+LR757998      tggacaatctacacaactaggtatagaatttcttaagagaggtgataaaagtgtatatta	4850
+              ************************************************************
+
+LR757995      cactagtaatcctaccacattccacctagatggtgaagttatcacctttgacaatcttaa	4920
+LR757996      cactagtaatcctaccacattccacctagatggtgaagttatcacctttgacaatcttaa	4915
+LR757998      cactagtaatcctaccacattccacctagatggtgaagttatcacctttgacaatcttaa	4910
+              ************************************************************
+
+LR757995      gacacttctttctttgagagaagtgaggactattaaggtgtttacaacagtagacaacat	4980
+LR757996      gacacttctttctttgagagaagtgaggactattaaggtgtttacaacagtagacaacat	4975
+LR757998      gacacttctttctttgagagaagtgaggactattaaggtgtttacaacagtagacaacat	4970
+              ************************************************************
+
+LR757995      taacctccacacgcaagttgtggacatgtcaatgacatatggacaacagtttggtccaac	5040
+LR757996      taacctccacacgcaagttgtggacatgtcaatgacatatggacaacagtttggtccaac	5035
+LR757998      taacctccacacgcaagttgtggacatgtcaatgacatatggacaacagtttggtccaac	5030
+              ************************************************************
+
+LR757995      ttatttggatggagctgatgttactaaaataaaacctcataattcacatgaaggtaaaac	5100
+LR757996      ttatttggatggagctgatgttactaaaataaaacctcataattcacatgaaggtaaaac	5095
+LR757998      ttatttggatggagctgatgttactaaaataaaacctcataattcacatgaaggtaaaac	5090
+              ************************************************************
+
+LR757995      attttatgttttacctaatgatgacactctacgtgttgaggcttttgagtactaccacac	5160
+LR757996      attttatgttttacctaatgatgacactctacgtgttgaggcttttgagtactaccacac	5155
+LR757998      attttatgttttacctaatgatgacactctacgtgttgaggcttttgagtactaccacac	5150
+              ************************************************************
+
+LR757995      aactgatcctagttttctgggtaggtacatgtcagcattaaatcacactaaaaagtggaa	5220
+LR757996      aactgatcctagttttctgggtaggtacatgtcagcattaaatcacactaaaaagtggaa	5215
+LR757998      aactgatcctagttttctgggtaggtacatgtcagcattaaatcacactaaaaagtggaa	5210
+              ************************************************************
+
+LR757995      atacccacaagttaatggtttaacttctattaaatgggcagataacaactgttatcttgc	5280
+LR757996      atacccacaagttaatggtttaacttctattaaatgggcagataacaactgttatcttgc	5275
+LR757998      atacccacaagttaatggtttaacttctattaaatgggcagataacaactgttatcttgc	5270
+              ************************************************************
+
+LR757995      cactgcattgttaacactccaacaaatagagttgaagtttaatccacctgctctacaaga	5340
+LR757996      cactgcattgttaacactccaacaaatagagttgaagtttaatccacctgctctacaaga	5335
+LR757998      cactgcattgttaacactccaacaaatagagttgaagtttaatccacctgctctacaaga	5330
+              ************************************************************
+
+LR757995      tgcttattacagagcaagggctggtgaagctgctaacttttgtgcacttatcttagccta	5400
+LR757996      tgcttattacagagcaagggctggtgaagctgctaacttttgtgcacttatcttagccta	5395
+LR757998      tgcttattacagagcaagggctggtgaagctgctaacttttgtgcacttatcttagccta	5390
+              ************************************************************
+
+LR757995      ctgtaataagacagtaggtgagttaggtgatgttagagaaacaatgagttacttgtttca	5460
+LR757996      ctgtaataagacagtaggtgagttaggtgatgttagagaaacaatgagttacttgtttca	5455
+LR757998      ctgtaataagacagtaggtgagttaggtgatgttagagaaacaatgagttacttgtttca	5450
+              ************************************************************
+
+LR757995      acatgccaatttagattcttgcaaaagagtcttgaacgtggtgtgtaaaacttgtggaca	5520
+LR757996      acatgccaatttagattcttgcaaaagagtcttgaacgtggtgtgtaaaacttgtggaca	5515
+LR757998      acatgccaatttagattcttgcaaaagagtcttgaacgtggtgtgtaaaacttgtggaca	5510
+              ************************************************************
+
+LR757995      acagcagacaacccttaagggtgtagaagctgttatgtacatgggcacactttcttatga	5580
+LR757996      acagcagacaacccttaagggtgtagaagctgttatgtacatgggcacactttcttatga	5575
+LR757998      acagcagacaacccttaagggtgtagaagctgttatgtacatgggcacactttcttatga	5570
+              ************************************************************
+
+LR757995      acaatttaagaaaggtgttcagataccttgtacgtgtggtaaacaagctacaaaatatct	5640
+LR757996      acaatttaagaaaggtgttcagataccttgtacgtgtggtaaacaagctacaaaatatct	5635
+LR757998      acaatttaagaaaggtgttcagataccttgtacgtgtggtaaacaagctacaaaatatct	5630
+              ************************************************************
+
+LR757995      agtacaacaggagtcaccttttgttatgatgtcagcaccacctgctcagtatgaacttaa	5700
+LR757996      agtacaacaggagtcaccttttgttatgatgtcagcaccacctgctcagtatgaacttaa	5695
+LR757998      agtacaacaggagtcaccttttgttatgatgtcagcaccacctgctcagtatgaacttaa	5690
+              ************************************************************
+
+LR757995      gcatggtacatttacttgtgctagtgagtacactggtaattaccagtgtggtcactataa	5760
+LR757996      gcatggtacatttacttgtgctagtgagtacactggtaattaccagtgtggtcactataa	5755
+LR757998      gcatggtacatttacttgtgctagtgagtacactggtaattaccagtgtggtcactataa	5750
+              ************************************************************
+
+LR757995      acatataacttctaaagaaactttgtattgcatagacggtgctttacttacaaagtcctc	5820
+LR757996      acatataacttctaaagaaactttgtattgcatagacggtgctttacttacaaagtcctc	5815
+LR757998      acatataacttctaaagaaactttgtattgcatagacggtgctttacttacaaagtcctc	5810
+              ************************************************************
+
+LR757995      agaatacaaaggtcctattacggatgttttctacaaagaaaacagttacacaacaaccat	5880
+LR757996      agaatacaaaggtcctattacggatgttttctacaaagaaaacagttacacaacaaccat	5875
+LR757998      agaatacaaaggtcctattacggatgttttctacaaagaaaacagttacacaacaaccat	5870
+              ************************************************************
+
+LR757995      aaaaccagttacttataaattggatggtgttgtttgtacagaaattgaccctaagttgga	5940
+LR757996      aaaaccagttacttataaattggatggtgttgtttgtacagaaattgaccctaagttgga	5935
+LR757998      aaaaccagttacttataaattggatggtgttgtttgtacagaaattgaccctaagttgga	5930
+              ************************************************************
+
+LR757995      caattattataagaaagacaattcttatttcacagagcaaccaattgatcttgtaccaaa	6000
+LR757996      caattattataagaaagacaattcttatttcacagagcaaccaattgatcttgtaccaaa	5995
+LR757998      caattattataagaaagacaattcttatttcacagagcaaccaattgatcttgtaccaaa	5990
+              ************************************************************
+
+LR757995      ccaaccatatccaaacgcaagcttcgataattttaagtttgtatgtgataatatcaaatt	6060
+LR757996      ccaaccatatccaaacgcaagcttcgataattttaagtttgtatgtgataatatcaaatt	6055
+LR757998      ccaaccatatccaaacgcaagcttcgataattttaagtttgtatgtgataatatcaaatt	6050
+              ************************************************************
+
+LR757995      tgctgatgatttaaaccagttaactggttataagaaacctgcttcaagagagcttaaagt	6120
+LR757996      tgctgatgatttaaaccagttaactggttataagaaacctgcttcaagagagcttaaagt	6115
+LR757998      tgctgatgatttaaaccagttaactggttataagaaacctgcttcaagagagcttaaagt	6110
+              ************************************************************
+
+LR757995      tacatttttccctgacttaaatggtgatgtggtggctattgattataaacactacacacc	6180
+LR757996      tacatttttccctgacttaaatggtgatgtggtggctattgattataaacactacacacc	6175
+LR757998      tacatttttccctgacttaaatggtgatgtggtggctattgattataaacactacacacc	6170
+              ************************************************************
+
+LR757995      ctcttttaagaaaggagctaaattgttacataaacctattgtttggcatgttaacaatgc	6240
+LR757996      ctcttttaagaaaggagctaaattgttacataaacctattgtttggcatgttaacaatgc	6235
+LR757998      ctcttttaagaaaggagctaaattgttacataaacctattgtttggcatgttaacaatgc	6230
+              ************************************************************
+
+LR757995      aactaataaagccacgtataaaccaaatacctggtgtatacgttgtctttggagcacaaa	6300
+LR757996      aactaataaagccacgtataaaccaaatacctggtgtatacgttgtctttggagcacaaa	6295
+LR757998      aactaataaagccacgtataaaccaaatacctggtgtatacgttgtctttggagcacaaa	6290
+              ************************************************************
+
+LR757995      accagttgaaacatcaaattcgtttgatgtactgaagtcagaggacgcgcagggaatgga	6360
+LR757996      accagttgaaacatcaaattcgtttgatgtactgaagtcagaggacgcgcagggaatgga	6355
+LR757998      accagttgaaacatcaaattcgtttgatgtactgaagtcagaggacgcgcagggaatgga	6350
+              ************************************************************
+
+LR757995      taatcttgcctgcgaagatctaaaaccagtctctgaagaagtagtggaaaatcctaccat	6420
+LR757996      taatcttgcctgcgaagatctaaaaccagtctctgaagaagtagtggaaaatcctaccat	6415
+LR757998      taatcttgcctgcgaagatctaaaaccagtctctgaagaagtagtggaaaatcctaccat	6410
+              ************************************************************
+
+LR757995      acagaaagacgttcttgagtgtaatgtgaaaactaccgaagttgtaggagacattatact	6480
+LR757996      acagaaagacgttcttgagtgtaatgtgaaaactaccgaagttgtaggagacattatact	6475
+LR757998      acagaaagacgttcttgagtgtaatgtgaaaactaccgaagttgtaggagacattatact	6470
+              ************************************************************
+
+LR757995      taaaccagcaaataatagtttaaaaattacagaagaggttggccacacagatctaatggc	6540
+LR757996      taaaccagcaaataatagtttaaaaattacagaagaggttggccacacagatctaatggc	6535
+LR757998      taaaccagcaaataatagtttaaaaattacagaagaggttggccacacagatctaatggc	6530
+              ************************************************************
+
+LR757995      tgcttatgtagacaattctagtcttactattaagaaacctaatgaattatctagagtatt	6600
+LR757996      tgcttatgtagacaattctagtcttactattaagaaacctaatgaattatctagagtatt	6595
+LR757998      tgcttatgtagacaattctagtcttactattaagaaacctaatgaattatctagagtatt	6590
+              ************************************************************
+
+LR757995      aggtttgaaaacccttgctactcatggtttagctgctgttaatagtgtcccttgggatac	6660
+LR757996      aggtttgaaaacccttgctactcatggtttagctgctgttaatagtgtcccttgggatac	6655
+LR757998      aggtttgaaaacccttgctactcatggtttagctgctgttaatagtgtcccttgggatac	6650
+              ************************************************************
+
+LR757995      tatagctaattatgctaagccttttcttaacaaagttgttagtacaactactaacatagt	6720
+LR757996      tatagctaattatgctaagccttttcttaacaaagttgttagtacaactactaacatagt	6715
+LR757998      tatagctaattatgctaagccttttcttaacaaagttgttagtacaactactaacatagt	6710
+              ************************************************************
+
+LR757995      tacacggtgtttaaaccgtgtttgtactaattatatgccttatttctttactttattgct	6780
+LR757996      tacacggtgtttaaaccgtgtttgtactaattatatgccttatttctttactttattgct	6775
+LR757998      tacacggtgtttaaaccgtgtttgtactaattatatgccttatttctttactttattgct	6770
+              ************************************************************
+
+LR757995      acaattgtgtacttttactagaagtacaaattctagaattaaagcatctatgccgactac	6840
+LR757996      acaattgtgtacttttactagaagtacaaattctagaattaaagcatctatgccgactac	6835
+LR757998      acaattgtgtacttttactagaagtacaaattctagaattaaagcatctatgccgactac	6830
+              ************************************************************
+
+LR757995      tatagcaaagaatactgttaagagtgtcggtaaattttgtctagaggcttcatttaatta	6900
+LR757996      tatagcaaagaatactgttaagagtgtcggtaaattttgtctagaggcttcatttaatta	6895
+LR757998      tatagcaaagaatactgttaagagtgtcggtaaattttgtctagaggcttcatttaatta	6890
+              ************************************************************
+
+LR757995      tttgaagtcacctaatttttctaaactgataaatattataatttggtttttactattaag	6960
+LR757996      tttgaagtcacctaatttttctaaactgataaatattataatttggtttttactattaag	6955
+LR757998      tttgaagtcacctaatttttctaaactgataaatattataatttggtttttaatattaag	6950
+              ****************************************************.*******
+
+LR757995      tgtttgcctaggttctttaatctactcaaccgctgctttaggtgttttaatgtctaattt	7020
+LR757996      tgtttgcctaggttctttaatctactcaaccgctgctttaggtgttttaatgtctaattt	7015
+LR757998      tgtttgcctaggttctttaatctactcaaccgctgctttaggtgttttaatgtctaattt	7010
+              ************************************************************
+
+LR757995      aggcatgccttcttactgtactggttacagagaaggctatttgaactctactaatgtcac	7080
+LR757996      aggcatgccttcttactgtactggttacagagaaggctatttgaactctactaatgtcac	7075
+LR757998      aggcatgcc-tcttactgtactggttacagagaaggctatttgaactctactaatgtcac	7069
+              ********* **************************************************
+
+LR757995      tattgcaacctactgtactggttctataccttgtagtgtttgtcttagtggtttagattc	7140
+LR757996      tattgcaacctactgtactggttctataccttgtagtgtttgtcttagtggtttagattc	7135
+LR757998      tattgcaacctactgtactggttctataccttgtagtgtttgtcttagtggtttagattc	7129
+              ************************************************************
+
+LR757995      tttagacacctatccttctttagaaactatacaaattaccatttcatcttttaaatggga	7200
+LR757996      tttagacacctatccttctttagaaactatacaaattaccatttcatcttttaaatggga	7195
+LR757998      tttagacacctatccttctttagaaactatacaaattaccatttcatcttttaaatggga	7189
+              ************************************************************
+
+LR757995      tttaactgcttttggcttagttgcagagtggtttttggcatatattcttttcactaggtt	7260
+LR757996      tttaactgcttttggcttagttgcagagtggtttttggcatatattcttttcactaggtt	7255
+LR757998      tttaactgcttttggcttagttgcagagtggtttttggcatatattcttttcactaggtt	7249
+              ************************************************************
+
+LR757995      tttctatgtacttggattggctgcaatcatgcaattgtttttcagctattttgcagtaca	7320
+LR757996      tttctatgtacttggattggctgcaatcatgcaattgtttttcagctattttgcagtaca	7315
+LR757998      tttctatgtacttggattggctgcaatcatgcaattgtttttcagctattttgcagtaca	7309
+              ************************************************************
+
+LR757995      ttttattagtaattcttggcttatgtggttaataattaatcttgtacaaatggccccgat	7380
+LR757996      ttttattagtaattcttggcttatgtggttaataattaatcttgtacaaatggccccgat	7375
+LR757998      ttttattagtaattcttggcttatgtggttaataattaatcttgtacaaatggccccgat	7369
+              ************************************************************
+
+LR757995      ttcagctatggttagaatgtacatcttctttgcatcattttattatgtatggaaaagtta	7440
+LR757996      ttcagctatggttagaatgtacatcttctttgcatcattttattatgtatggaaaagtta	7435
+LR757998      ttcagctatggttagaatgtacatcttctttgcatcattttattatgtatggaaaagtta	7429
+              ************************************************************
+
+LR757995      tgtgcatgttgtagacggttgtaattcatcaacttgtatgatgtgttacaaacgtaatag	7500
+LR757996      tgtgcatgttgtagacggttgtaattcatcaacttgtatgatgtgttacaaacgtaatag	7495
+LR757998      tgtgcatgttgtagacggttgtaattcatcaacttgtatgatgtgttacaaacgtaatag	7489
+              ************************************************************
+
+LR757995      agcaacaagagtcgaatgtacaactattgttaatggtgttagaaggtccttttatgtcta	7560
+LR757996      agcaacaagagtcgaatgtacaactattgttaatggtgttagaaggtccttttatgtcta	7555
+LR757998      agcaacaagagtcgaatgtacaactattgttaatggtgttagaaggtccttttatgtcta	7549
+              ************************************************************
+
+LR757995      tgctaatggaggtaaaggcttttgcaaactacacaattggaattgtgttaattgtgatac	7620
+LR757996      tgctaatggaggtaaaggcttttgcaaactacacaattggaattgtgttaattgtgatac	7615
+LR757998      tgctaatggaggtaaaggcttttgcaaactacacaattggaattgtgttaattgtgatac	7609
+              ************************************************************
+
+LR757995      attctgtgctggtagtacatttattagtgatgaagttgcgagagacttgtcactacagtt	7680
+LR757996      attctgtgctggtagtacatttattagtgatgaagttgcgagagacttgtcactacagtt	7675
+LR757998      attctgtgctggtagtacatttattagtgatgaagttgcgagagacttgtcactacagtt	7669
+              ************************************************************
+
+LR757995      taaaagaccaataaatcctactgaccagtcttcttacatcgttgatagtgttacagtgaa	7740
+LR757996      taaaagaccaataaatcctactgaccagtcttcttacatcgttgatagtgttacagtgaa	7735
+LR757998      taaaagaccaataaatcctactgaccagtcttcttacatcgttgatagtgttacagtgaa	7729
+              ************************************************************
+
+LR757995      gaatggttccatccatctttactttgataaagctggtcaaaagacttatgaaagacattc	7800
+LR757996      gaatggttccatccatctttactttgataaagctggtcaaaagacttatgaaagacattc	7795
+LR757998      gaatggttccatccatctttactttgataaagctggtcaaaagacttatgaaagacattc	7789
+              ************************************************************
+
+LR757995      tctctctcattttgttaacttagacaacctgagagctaataacactaaaggttcattgcc	7860
+LR757996      tctctctcattttgttaacttagacaacctgagagctaataacactaaaggttcattgcc	7855
+LR757998      tctctctcattttgttaacttagacaacctgagagctaataacactaaaggttcattgcc	7849
+              ************************************************************
+
+LR757995      tattaatgttatagtttttgatggtaaatcaaaatgtgaagaatcatctgcaaaatcagc	7920
+LR757996      tattaatgttatagtttttgatggtaaatcaaaatgtgaagaatcatctgcaaaatcagc	7915
+LR757998      tattaatgttatagtttttgatggtaaatcaaaatgtgaagaatcatctgcaaaatcagc	7909
+              ************************************************************
+
+LR757995      gtctgtttactacagtcagcttatgtgtcaacctatactgttactagatcaggcattagt	7980
+LR757996      gtctgtttactacagtcagcttatgtgtcaacctatactgttactagatcaggcattagt	7975
+LR757998      gtctgtttactacagtcagcttatgtgtcaacctatactgttactagatcaggcattagt	7969
+              ************************************************************
+
+LR757995      gtctgatgttggtgatagtgcggaagttgcagttaaaatgtttgatgcttacgttaatac	8040
+LR757996      gtctgatgttggtgatagtgcggaagttgcagttaaaatgtttgatgcttacgttaatac	8035
+LR757998      gtctgatgttggtgatagtgcggaagttgcagttaaaatgtttgatgcttacgttaatac	8029
+              ************************************************************
+
+LR757995      gttttcatcaacttttaacgtaccaatggaaaaactcaaaacactagttgcaactgcaga	8100
+LR757996      gttttcatcaacttttaacgtaccaatggaaaaactcaaaacactagttgcaactgcaga	8095
+LR757998      gttttcatcaacttttaacgtaccaatggaaaaactcaaaacactagttgcaactgcaga	8089
+              ************************************************************
+
+LR757995      agctgaacttgcaaagaatgtgtccttagacaatgtcttatctacttttatttcagcagc	8160
+LR757996      agctgaacttgcaaagaatgtgtccttagacaatgtcttatctacttttatttcagcagc	8155
+LR757998      agctgaacttgcaaagaatgtgtccttagacaatgtcttatctacttttatttcagcagc	8149
+              ************************************************************
+
+LR757995      tcggcaagggtttgttgattcagatgtagaaactaaagatgttgttgaatgtcttaaatt	8220
+LR757996      tcggcaagggtttgttgattcagatgtagaaactaaagatgttgttgaatgtcttaaatt	8215
+LR757998      tcggcaagggtttgttgattcagatgtagaaactaaagatgttgttgaatgtcttaaatt	8209
+              ************************************************************
+
+LR757995      gtcacatcaatctgacatagaagttactggcgatagttgtaataactatatgctcaccta	8280
+LR757996      gtcacatcaatctgacatagaagttactggcgatagttgtaataactatatgctcaccta	8275
+LR757998      gtcacatcaatctgacatagaagttactggcgatagttgtaataactatatgctcaccta	8269
+              ************************************************************
+
+LR757995      taacaaagttgaaaacatgacaccccgtgaccttggtgcttgtattgactgtagtgcgcg	8340
+LR757996      taacaaagttgaaaacatgacaccccgtgaccttggtgcttgtattgactgtagtgcgcg	8335
+LR757998      taacaaagttgaaaacatgacaccccgtgaccttggtgcttgtattgactgtagtgcgcg	8329
+              ************************************************************
+
+LR757995      tcatattaatgcgcaggtagcaaaaagtcacaacattgctttgatatggaacgttaaaga	8400
+LR757996      tcatattaatgcgcaggtagcaaaaagtcacaacattgctttgatatggaacgttaaaga	8395
+LR757998      tcatattaatgcgcaggtagcaaaaagtcacaacattgctttgatatggaacgttaaaga	8389
+              ************************************************************
+
+LR757995      tttcatgtcattgtctgaacaactacgaaaacaaatacgtagtgctgctaaaaagaataa	8460
+LR757996      tttcatgtcattgtctgaacaactacgaaaacaaatacgtagtgctgctaaaaagaataa	8455
+LR757998      tttcatgtcattgtctgaacaactacgaaaacaaatacgtagtgctgctaaaaagaataa	8449
+              ************************************************************
+
+LR757995      cttaccttttaagttgacatgtgcaactactagacaagttgttaatgttgtaacaacaaa	8520
+LR757996      cttaccttttaagttgacatgtgcaactactagacaagttgttaatgttgtaacaacaaa	8515
+LR757998      cttaccttttaagttgacatgtgcaactactagacaagttgttaatgttgtaacaacaaa	8509
+              ************************************************************
+
+LR757995      gatagcacttaagggtggtaaaattgttaataattggttgaagcagttaattaaagttac	8580
+LR757996      gatagcacttaagggtggtaaaattgttaataattggttgaagcagttaattaaagttac	8575
+LR757998      gatagcacttaagggtggtaaaattgttaataattggttgaagcagttaattaaagttac	8569
+              ************************************************************
+
+LR757995      acttgtgttcctttttgttgctgctattttctatttaataacacctgttcatgtcatgtc	8640
+LR757996      acttgtgttcctttttgttgctgctattttctatttaataacacctgttcatgtcatgtc	8635
+LR757998      acttgtgttcctttttgttgctgctattttctatttaataacacctgttcatgtcatgtc	8629
+              ************************************************************
+
+LR757995      taaacatactgacttttcaagtgaaatcataggatacaaggctattgatggtggtgtcac	8700
+LR757996      taaacatactgacttttcaagtgaaatcataggatacaaggctattgatggtggtgtcac	8695
+LR757998      taaacatactgacttttcaagtgaaatcataggatacaaggctattgatggtggtgtcac	8689
+              ************************************************************
+
+LR757995      tcgtgacatagcatctacagatacttgttttgctaacaaacatgctgattttgacacatg	8760
+LR757996      tcgtgacatagcatctacagatacttgttttgctaacaaacatgctgattttgacacatg	8755
+LR757998      tcgtgacatagcatctacagatacttgttttgctaacaaacatgctgattttgacacatg	8749
+              ************************************************************
+
+LR757995      gtttagtcagcgtggtggtagttatactaatgacaaagcttgcccattgattgctgcagt	8820
+LR757996      gtttagccagcgtggtggtagttatactaatgacaaagcttgcccattgattgctgcagt	8815
+LR757998      gtttagccagcgtggtggtagttatactaatgacaaagcttgcccattgattgctgcagt	8809
+              ****** *****************************************************
+
+LR757995      cataacaagagaagtgggttttgtcgtgcctggtttgcctggcacgatattacgcacaac	8880
+LR757996      cataacaagagaagtgggttttgtcgtgcctggtttgcctggcacgatattacgcacaac	8875
+LR757998      cataacaagagaagtgggttttgtcgtgcctggtttgcctggcacgatattacgcacaac	8869
+              ************************************************************
+
+LR757995      taatggtgactttttgcatttcttacctagagtttttagtgcagttggtaacatctgtta	8940
+LR757996      taatggtgactttttgcatttcttacctagagtttttagtgcagttggtaacatctgtta	8935
+LR757998      taatggtgactttttgcatttcttacctagagtttttagtgcagttggtaacatctgtta	8929
+              ************************************************************
+
+LR757995      cacaccatcaaaacttatagagtacactgactttgcaacatcagcttgtgttttggctgc	9000
+LR757996      cacaccatcaaaacttatagagtacactgactttgcaacatcagcttgtgttttggctgc	8995
+LR757998      cacaccatcaaaacttatagagtacactgactttgcaacatcagcttgtgttttggctgc	8989
+              ************************************************************
+
+LR757995      tgaatgtacaatttttaaagatgcttctggtaagccagtaccatattgttatgataccaa	9060
+LR757996      tgaatgtacaatttttaaagatgcttctggtaagccagtaccatattgttatgataccaa	9055
+LR757998      tgaatgtacaatttttaaagatgcttctggtaagccagtaccatattgttatgataccaa	9049
+              ************************************************************
+
+LR757995      tgtactagaaggttctgttgcttatgaaagtttacgccctgacacacgttatgtgctcat	9120
+LR757996      tgtactagaaggttctgttgcttatgaaagtttacgccctgacacacgttatgtgctcat	9115
+LR757998      tgtactagaaggttctgttgcttatgaaagtttacgccctgacacacgttatgtgctcat	9109
+              ************************************************************
+
+LR757995      ggatggctctattattcaatttcctaacacctaccttgaaggttctgttagagtggtaac	9180
+LR757996      ggatggctctattattcaatttcctaacacctaccttgaaggttctgttagagtggtaac	9175
+LR757998      ggatggctctattattcaatttcctaacacctaccttgaaggttctgttagagtggtaac	9169
+              ************************************************************
+
+LR757995      aacttttgattctgagtactgtaggcacggcacttgtgaaagatcagaagctggtgtttg	9240
+LR757996      aacttttgattctgagtactgtaggcacggcacttgtgaaagatcagaagctggtgtttg	9235
+LR757998      aacttttgattctgagtactgtaggcacggcacttgtgaaagatcagaagctggtgtttg	9229
+              ************************************************************
+
+LR757995      tgtatctactagtggtagatgggtacttaacaatgattattacagatctttaccaggagt	9300
+LR757996      tgtatctactagtggtagatgggtacttaacaatgattattacagatctttaccaggagt	9295
+LR757998      tgtatctactagtggtagatgggtacttaacaatgattattacagatctttaccaggagt	9289
+              ************************************************************
+
+LR757995      tttctgtggtgtagatgctgtaaatttacttactaatatgtttacaccactaattcaacc	9360
+LR757996      tttctgtggtgtagatgctgtaaatttacttactaatatgtttacaccactaattcaacc	9355
+LR757998      tttctgtggtgtagatgctgtaaatttacttactaatatgtttacaccactaattcaacc	9349
+              ************************************************************
+
+LR757995      tattggtgctttggacatatcagcatctatagtagctggtggtattgtagctatcgtagt	9420
+LR757996      tattggtgctttggacatatcagcatctatagtagctggtggtattgtagctatcgtagt	9415
+LR757998      tattggtgctttggacatatcagcatctatagtagctggtggtattgtagctatcgtagt	9409
+              ************************************************************
+
+LR757995      aacatgccttgcctactattttatgaggtttagaagagcttttggtgaatacagtcatgt	9480
+LR757996      aacatgccttgcctactattttatgaggtttagaagagcttttggtgaatacagtcatgt	9475
+LR757998      aacatgccttgcctactattttatgaggtttagaagagcttttggtgaatacagtcatgt	9469
+              ************************************************************
+
+LR757995      agttgcctttaatactttactattccttatgtcattcactgtactctgtttaacaccagt	9540
+LR757996      agttgcctttaatactttactattccttatgtcattcactgtactctgtttaacaccagt	9535
+LR757998      agttgcctttaatactttactattccttatgtcattcactgtactctgtttaacaccagt	9529
+              ************************************************************
+
+LR757995      ttactcattcttacctggtgtttattctgttatttacttgtacttgacattttatcttac	9600
+LR757996      ttactcattcttacctggtgtttattctgttatttacttgtacttgacattttatcttac	9595
+LR757998      ttactcattcttacctggtgtttattctgttatttacttgtacttgacattttatcttac	9589
+              ************************************************************
+
+LR757995      taatgatgtttcttttttagcacatattcagtggatggttatgttcacacctttagtacc	9660
+LR757996      taatgatgtttcttttttagcacatattcagtggatggttatgttcacacctttagtacc	9655
+LR757998      taatgatgtttcttttttagcacatattcagtggatggttatgttcacacctttagtacc	9649
+              ************************************************************
+
+LR757995      tttctggataacaattgcttatatcatttgtatttccacaaagcatttctattggttctt	9720
+LR757996      tttctggataacaattgcttatatcatttgtatttccacaaagcatttctattggttctt	9715
+LR757998      tttctggataacaattgcttatatcatttgtatttccacaaagcatttctattggttctt	9709
+              ************************************************************
+
+LR757995      tagtaattacctaaagagacgtgtagtctttaatggtgtttcctttagtacttttgaaga	9780
+LR757996      tagtaattacctaaagagacgtgtagtctttaatggtgtttcctttagtacttttgaaga	9775
+LR757998      tagtaattacctaaagagacgtgtagtctttaatggtgtttcctttagtacttttgaaga	9769
+              ************************************************************
+
+LR757995      agctgcgctgtgcacctttttgttaaataaagaaatgtatctaaagttgcgtagtgatgt	9840
+LR757996      agctgcgctgtgcacctttttgttaaataaagaaatgtatctaaagttgcgtagtgatgt	9835
+LR757998      agctgcgctgtgcacctttttgttaaataaagaaatgtatctaaagttgcgtagtgatgt	9829
+              ************************************************************
+
+LR757995      gctattacctcttacgcaatataatagatacttagctctttataataagtacaagtattt	9900
+LR757996      gctattacctcttacgcaatataatagatacttagctctttataataagtacaagtattt	9895
+LR757998      gctattacctcttacgcaatataatagatacttagctctttataataagtacaagtattt	9889
+              ************************************************************
+
+LR757995      tagtggagcaatggatacaactagctacagagaagctgcttgttgtcatctcgcaaaggc	9960
+LR757996      tagtggagcaatggatacaactagctacagagaagctgcttgttgtcatctcgcaaaggc	9955
+LR757998      tagtggagcaatggatacaactagctacagagaagctgcttgttgtcatctcgcaaaggc	9949
+              ************************************************************
+
+LR757995      tctcaatgacttcagtaactcaggttctgatgttctttaccaaccaccacaaacctctat	10020
+LR757996      tctcaatgacttcagtaactcaggttctgatgttctttaccaaccaccacaaacctctat	10015
+LR757998      tctcaatgacttcagtaactcaggttctgatgttctttaccaaccaccacaaacctctat	10009
+              ************************************************************
+
+LR757995      cacctcagctgttttgcagagtggttttagaaaaatggcattcccatctggtaaagttga	10080
+LR757996      cacctcagctgttttgcagagtggttttagaaaaatggcattcccatctggtaaagttga	10075
+LR757998      cacctcagctgttttgcagagtggttttagaaaaatggcattcccatctggtaaagttga	10069
+              ************************************************************
+
+LR757995      gggttgtatggtacaagtaacttgtggtacaactacacttaacggtctttggcttgatga	10140
+LR757996      gggttgtatggtacaagtaacttgtggtacaactacacttaacggtctttggcttgatga	10135
+LR757998      gggttgtatggtacaagtaacttgtggtacaactacacttaacggtctttggcttgatga	10129
+              ************************************************************
+
+LR757995      cgtagtttactgtccaagacatgtgatctgcacctctgaagacatgcttaaccctaatta	10200
+LR757996      cgtagtttactgtccaagacatgtgatctgcacctctgaagacatgcttaaccctaatta	10195
+LR757998      cgtagtttactgtccaagacatgtgatctgcacctctgaagacatgcttaaccctaatta	10189
+              ************************************************************
+
+LR757995      tgaagatttactcattcgtaagtctaatcataatttcttggtacaggctggtaatgttca	10260
+LR757996      tgaagatttactcattcgtaagtctaatcataatttcttggtacaggctggtaatgttca	10255
+LR757998      tgaagatttactcattcgtaagtctaatcataatttcttggtacaggctggtaatgttca	10249
+              ************************************************************
+
+LR757995      actcagggttattggacattctatgcaaaattgtgtacttaagcttaaggttgatacagc	10320
+LR757996      actcagggttattggacattctatgcaaaattgtgtacttaagcttaaggttgatacagc	10315
+LR757998      actcagggttattggacattctatgcaaaattgtgtacttaagcttaaggttgatacagc	10309
+              ************************************************************
+
+LR757995      caatcctaagacacctaagtataagtttgttcgcattcaaccaggacagactttttcagt	10380
+LR757996      caatcctaagacacctaagtataagtttgttcgcattcaaccaggacagactttttcagt	10375
+LR757998      caatcctaagacacctaagtataagtttgttcgcattcaaccaggacagactttttcagt	10369
+              ************************************************************
+
+LR757995      gttagcttgttacaatggttcaccatctggtgtttaccaatgtgctatgaggcccaattt	10440
+LR757996      gttagcttgttacaatggttcaccatctggtgtttaccaatgtgctatgaggcccaattt	10435
+LR757998      gttagcttgttacaatggttcaccatctggtgtttaccaatgtgctatgaggcccaattt	10429
+              ************************************************************
+
+LR757995      cactattaagggttcattccttaatggttcatgtggtagtgttggttttaacatagatta	10500
+LR757996      cactattaagggttcattccttaatggttcatgtggtagtgttggttttaacatagatta	10495
+LR757998      cactattaagggttcattccttaatggttcatgtggtagtgttggttttaacatagatta	10489
+              ************************************************************
+
+LR757995      tgactgtgtctctttttgttacatgcaccatatggaattaccaactggagttcatgctgg	10560
+LR757996      tgactgtgtctctttttgttacatgcaccatatggaattaccaactggagttcatgctgg	10555
+LR757998      tgactgtgtctctttttgttacatgcaccatatggaattaccaactggagttcatgctgg	10549
+              ************************************************************
+
+LR757995      cacagacttagaaggtaacttttatggaccttttgttgacaggcaaacagcacaagcagc	10620
+LR757996      cacagacttagaaggtaacttttatggaccttttgttgacaggcaaacagcacaagcagc	10615
+LR757998      cacagacttagaaggtaacttttatggaccttttgttgacaggcaaacagcacaagcagc	10609
+              ************************************************************
+
+LR757995      tggtacggacacaactattacagttaatgttttagcttggttgtacgctgctgttataaa	10680
+LR757996      tggtacggacacaactattacagttaatgttttagcttggttgtacgctgctgttataaa	10675
+LR757998      tggtacggacacaactattacagttaatgttttagcttggttgtacgctgctgttataaa	10669
+              ************************************************************
+
+LR757995      tggagacaggtggtttctcaatcgatttaccacaactcttaatgactttaaccttgtggc	10740
+LR757996      tggagacaggtggtttctcaatcgatttaccacaactcttaatgactttaaccttgtggc	10735
+LR757998      tggagacaggtggtttctcaatcgatttaccacaactcttaatgactttaaccttgtggc	10729
+              ************************************************************
+
+LR757995      tatgaagtacaattatgaacctctaacacaagaccatgttgacatactaggacctctttc	10800
+LR757996      tatgaagtacaattatgaacctctaacacaagaccatgttgacatactaggacctctttc	10795
+LR757998      tatgaagtacaattatgaacctctaacacaagaccatgttgacatactaggacctctttc	10789
+              ************************************************************
+
+LR757995      tgctcaaactggaattgccgttttagatatgtgtgcttcattaaaagaattactgcaaaa	10860
+LR757996      tgctcaaactggaattgccgttttagatatgtgtgcttcattaaaagaattactgcaaaa	10855
+LR757998      tgctcaaactggaattgccgttttagatatgtgtgcttcattaaaagaattactgcaaaa	10849
+              ************************************************************
+
+LR757995      tggtatgaatggacgtaccatattgggtagtgctttattagaagatgaatttacaccttt	10920
+LR757996      tggtatgaatggacgtaccatattgggtagtgctttattagaagatgaatttacaccttt	10915
+LR757998      tggtatgaatggacgtaccatattgggtagtgctttattagaagatgaatttacaccttt	10909
+              ************************************************************
+
+LR757995      tgatgttgttagacaatgctcaggtgttactttccaaagtgcagtgaaaagaacaatcaa	10980
+LR757996      tgatgttgttagacaatgctcaggtgttactttccaaagtgcagtgaaaagaacaatcaa	10975
+LR757998      tgatgttgttagacaatgctcaggtgttactttccaaagtgcagtgaaaagaacaatcaa	10969
+              ************************************************************
+
+LR757995      gggtacacaccactggttgttactcacaattttgacttcacttttagttttagtccagag	11040
+LR757996      gggtacacaccactggttgttactcacaattttgacttcacttttagttttagtccagag	11035
+LR757998      gggtacacaccactggttgttactcacaattttgacttcacttttagttttagtccagag	11029
+              ************************************************************
+
+LR757995      tactcaatggtctttgttcttttttttgtatgaaaatgcctttttaccttttgctatggg	11100
+LR757996      tactcaatggtctttgttcttttttttgtatgaaaatgcctttttaccttttgctatggg	11095
+LR757998      tactcaatggtctttgttcttttttttgtatgaaaatgcctttttaccttttgctatggg	11089
+              ************************************************************
+
+LR757995      tattattgctatgtctgcttttgcaatgatgtttgtcaaacataagcatgcatttctctg	11160
+LR757996      tattattgctatgtctgcttttgcaatgatgtttgtcaaacataagcatgcatttctctg	11155
+LR757998      tattattgctatgtctgcttttgcaatgatgtttgtcaaacataagcatgcatttctctg	11149
+              ************************************************************
+
+LR757995      tttgtttttgttaccttctcttgccactgtagcttattttaatatggtctatatgcctgc	11220
+LR757996      tttgtttttgttaccttctcttgccactgtagcttattttaatatggtctatatgcctgc	11215
+LR757998      tttgtttttgttaccttctcttgccactgtagcttattttaatatggtctatatgcctgc	11209
+              ************************************************************
+
+LR757995      tagttgggtgatgcgtattatgacatggttggatatggttgatactagtttgtctggttt	11280
+LR757996      tagttgggtgatgcgtattatgacatggttggatatggttgatactagtttgtctggttt	11275
+LR757998      tagttgggtgatgcgtattatgacatggttggatatggttgatactagtttgtctggttt	11269
+              ************************************************************
+
+LR757995      taagctaaaagactgtgttatgtatgcatcagctgtagtgttactaatccttatgacagc	11340
+LR757996      taagctaaaagactgtgttatgtatgcatcagctgtagtgttactaatccttatgacagc	11335
+LR757998      taagctaaaagactgtgttatgtatgcatcagctgtagtgttactaatccttatgacagc	11329
+              ************************************************************
+
+LR757995      aagaactgtgtatgatgatggtgctaggagagtgtggacacttatgaatgtcttgacact	11400
+LR757996      aagaactgtgtatgatgatggtgctaggagagtgtggacacttatgaatgtcttgacact	11395
+LR757998      aagaactgtgtatgatgatggtgctaggagagtgtggacacttatgaatgtcttgacact	11389
+              ************************************************************
+
+LR757995      cgtttataaagtttattatggtaatgctttagatcaagccatttccatgtgggctcttat	11460
+LR757996      cgtttataaagtttattatggtaatgctttagatcaagccatttccatgtgggctcttat	11455
+LR757998      cgtttataaagtttattatggtaatgctttagatcaagccatttccatgtgggctcttat	11449
+              ************************************************************
+
+LR757995      aatctctgttacttctaactactcaggtgtagttacaactgtcatgtttttggccagagg	11520
+LR757996      aatctctgttacttctaactactcaggtgtagttacaactgtcatgtttttggccagagg	11515
+LR757998      aatctctgttacttctaactactcaggtgtagttacaactgtcatgtttttggccagagg	11509
+              ************************************************************
+
+LR757995      tattgtttttatgtgtgttgagtattgccctattttcttcataactggtaatacacttca	11580
+LR757996      tattgtttttatgtgtgttgagtattgccctattttcttcataactggtaatacacttca	11575
+LR757998      tattgtttttatgtgtgttgagtattgccctattttcttcataactggtaatacacttca	11569
+              ************************************************************
+
+LR757995      gtgtataatgctagtttattgtttcttaggctatttttgtacttgttactttggcctctt	11640
+LR757996      gtgtataatgctagtttattgtttcttaggctatttttgtacttgttactttggcctctt	11635
+LR757998      gtgtataatgctagtttattgtttcttaggctatttttgtacttgttactttggcctctt	11629
+              ************************************************************
+
+LR757995      ttgtttactcaaccgctactttagactgactcttggtgtttatgattacttagtttctac	11700
+LR757996      ttgtttactcaaccgctactttagactgactcttggtgtttatgattacttagtttctac	11695
+LR757998      ttgtttactcaaccgctactttagactgactcttggtgtttatgattacttagtttctac	11689
+              ************************************************************
+
+LR757995      acaggagtttagatatatgaattcacagggactactcccacccaagaatagcatagatgc	11760
+LR757996      acaggagtttagatatatgaattcacagggactactcccacccaagaatagcatagatgc	11755
+LR757998      acaggagtttagatatatgaattcacagggactactcccacccaagaaaagcatagatgc	11749
+              ************************************************:***********
+
+LR757995      cttcaaactcaacattaaattgttgggtgttggtggcaaaccttgtatcaaagtagccac	11820
+LR757996      cttcaaactcaacattaaattgttgggtgttggtggcaaaccttgtatcaaagtagccac	11815
+LR757998      cttcaaactcaacattaaattgttgggtgttggtggcaaaccttgtatcaaagtagccac	11809
+              ************************************************************
+
+LR757995      tgtacagtctaaaatgtcagatgtaaagtgcacatcagtagtcttactctcagttttgca	11880
+LR757996      tgtacagtctaaaatgtcagatgtaaagtgcacatcagtagtcttactctcagttttgca	11875
+LR757998      tgtacagtctaaaatgtcagatgtaaagtgcacatcagtagtcttactctcagttttgca	11869
+              ************************************************************
+
+LR757995      acaactcagagtagaatcatcatctaaattgtgggctcaatgtgtccagttacacaatga	11940
+LR757996      acaactcagagtagaatcatcatctaaattgtgggctcaatgtgtccagttacacaatga	11935
+LR757998      acaactcagagtagaatcatcatctaaattgtgggctcaatgtgtccagttacacaatga	11929
+              ************************************************************
+
+LR757995      cattctcttagctaaagatactactgaagcctttgaaaaaatggtttcactactttctgt	12000
+LR757996      cattctcttagctaaagatactactgaagcctttgaaaaaatggtttcactactttctgt	11995
+LR757998      cattctcttagctaaagatactactgaagcctttgaaaaaatggtttcactactttctgt	11989
+              ************************************************************
+
+LR757995      tttgctttccatgcagggtgctgtagacataaacaagctttgtgaagaaatgctggacaa	12060
+LR757996      tttgctttccatgcagggtgctgtagacataaacaagctttgtgaagaaatgctggacaa	12055
+LR757998      tttgctttccatgcagggtgctgtagacataaacaagctttgtgaagaaatgctggacaa	12049
+              ************************************************************
+
+LR757995      cagggcaaccttacaagctatagcctcagagtttagttcccttccatcatatgcagcttt	12120
+LR757996      cagggcaaccttacaagctatagcctcagagtttagttcccttccatcatatgcagcttt	12115
+LR757998      cagggcaaccttacaagctatagcctcagagtttagttcccttccatcatatgcagcttt	12109
+              ************************************************************
+
+LR757995      tgctactgctcaagaagcttatgagcaggctgttgctaatggtgattctgaagttgttct	12180
+LR757996      tgctactgctcaagaagcttatgagcaggctgttgctaatggtgattctgaagttgttct	12175
+LR757998      tgctactgctcaagaagcttatgagcaggctgttgctaatggtgattctgaagttgttct	12169
+              ************************************************************
+
+LR757995      taaaaagttgaagaagtctttgaatgtggctaaatctgaatttgaccgtgatgcagccat	12240
+LR757996      taaaaagttgaagaagtctttgaatgtggctaaatctgaatttgaccgtgatgcagccat	12235
+LR757998      taaaaagttgaagaagtctttgaatgtggctaaatctgaatttgaccgtgatgcagccat	12229
+              ************************************************************
+
+LR757995      gcaacgtaagttggaaaagatggctgatcaagctatgacccaaatgtataaacaggctag	12300
+LR757996      gcaacgtaagttggaaaagatggctgatcaagctatgacccaaatgtataaacaggctag	12295
+LR757998      gcaacgtaagttggaaaagatggctgatcaagctatgacccaaatgtataaacaggctag	12289
+              ************************************************************
+
+LR757995      atctgaggacaagagggcaaaagttactagtgctatgcagacaatgcttttcactatgct	12360
+LR757996      atctgaggacaagagggcaaaagttactagtgctatgcagacaatgcttttcactatgct	12355
+LR757998      atctgaggacaagagggcaaaagttactagtgctatgcagacaatgcttttcactatgct	12349
+              ************************************************************
+
+LR757995      tagaaagttggataatgatgcactcaacaacattatcaacaatgcaagagatggttgtgt	12420
+LR757996      tagaaagttggataatgatgcactcaacaacattatcaacaatgcaagagatggttgtgt	12415
+LR757998      tagaaagttggataatgatgcactcaacaacattatcaacaatgcaagagatggttgtgt	12409
+              ************************************************************
+
+LR757995      tcccttgaacataatacctcttacaacagcagccaaactaatggttgtcataccagacta	12480
+LR757996      tcccttgaacataatacctcttacaacagcagccaaactaatggttgtcataccagacta	12475
+LR757998      tcccttgaacataatacctcttacaacagcagccaaactaatggttgtcataccagacta	12469
+              ************************************************************
+
+LR757995      taacacatataaaaatacgtgtgatggtacaacatttacttatgcatcagcattgtggga	12540
+LR757996      taacacatataaaaatacgtgtgatggtacaacatttacttatgcatcagcattgtggga	12535
+LR757998      taacacatataaaaatacgtgtgatggtacaacatttacttatgcatcagcattgtggga	12529
+              ************************************************************
+
+LR757995      aatccaacaggttgtagatgcagatagtaaaattgttcaacttagtgaaattagtatgga	12600
+LR757996      aatccaacaggttgtagatgcagatagtaaaattgttcaacttagtgaaattagtatgga	12595
+LR757998      aatccaacaggttgtagatgcagatagtaaaattgttcaacttagtgaaattagtatgga	12589
+              ************************************************************
+
+LR757995      caattcacctaatttagcatggcctcttattgtaacagctttaagggccaattctgctgt	12660
+LR757996      caattcacctaatttagcatggcctcttattgtaacagctttaagggccaattctgctgt	12655
+LR757998      caattcacctaatttagcatggcctcttattgtaacagctttaagggccaattctgctgt	12649
+              ************************************************************
+
+LR757995      caaattacagaataatgagcttagtcctgttgcactacgacagatgtcttgtgctgccgg	12720
+LR757996      caaattacagaataatgagcttagtcctgttgcactacgacagatgtcttgtgctgccgg	12715
+LR757998      caaattacagaataatgagcttagtcctgttgcactacgacagatgtcttgtgctgccgg	12709
+              ************************************************************
+
+LR757995      tactacacaaactgcttgcactgatgacaatgcgttagcttactacaacacaacaaaggg	12780
+LR757996      tactacacaaactgcttgcactgatgacaatgcgttagcttactacaacacaacaaaggg	12775
+LR757998      tactacacaaactgcttgcactgatgacaatgcgttagcttactacaacacaacaaaggg	12769
+              ************************************************************
+
+LR757995      aggtaggtttgtacttgcactgttatccgatttacaggatttgaaatgggctagattccc	12840
+LR757996      aggtaggtttgtacttgcactgttatccgatttacaggatttgaaatgggctagattccc	12835
+LR757998      aggtaggtttgtacttgcactgttatccgatttacaggatttgaaatgggctagattccc	12829
+              ************************************************************
+
+LR757995      taagagtgatggaactggtactatctatacagaactggaaccaccttgtaggtttgttac	12900
+LR757996      taagagtgatggaactggtactatctatacagaactggaaccaccttgtaggtttgttac	12895
+LR757998      taagagtgatggaactggtactatctatacagaactggaaccaccttgtaggtttgttac	12889
+              ************************************************************
+
+LR757995      agacacacctaaaggtcctaaagtgaagtatttatactttattaaaggattaaacaacct	12960
+LR757996      agacacacctaaaggtcctaaagtgaagtatttatactttattaaaggattaaacaacct	12955
+LR757998      agacacacctaaaggtcctaaagtgaagtatttatactttattaaaggattaaacaacct	12949
+              ************************************************************
+
+LR757995      aaatagaggtatggtacttggtagtttagctgccacagtacgtctacaagctggtaatgc	13020
+LR757996      aaatagaggtatggtacttggtagtttagctgccacagtacgtctacaagctggtaatgc	13015
+LR757998      aaatagaggtatggtacttggtagtttagctgccacagtacgtctacaagctggtaatgc	13009
+              ************************************************************
+
+LR757995      aacagaagtgcctgccaattcaactgtattatctttctgtgcttttgctgtagatgctgc	13080
+LR757996      aacagaagtgcctgccaattcaactgtattatctttctgtgcttttgctgtagatgctgc	13075
+LR757998      aacagaagtgcctgccaattcaactgtattatctttctgtgcttttgctgtagatgctgc	13069
+              ************************************************************
+
+LR757995      taaagcttacaaagattatctagctagtgggggacaaccaatcactaattgtgttaagat	13140
+LR757996      taaagcttacaaagattatctagctagtgggggacaaccaatcactaattgtgttaagat	13135
+LR757998      taaagcttacaaagattatctagctagtgggggacaaccaatcactaattgtgttaagat	13129
+              ************************************************************
+
+LR757995      gttgtgtacacacactggtactggtcaggcaataacagttacaccggaagccaatatgga	13200
+LR757996      gttgtgtacacacactggtactggtcaggcaataacagttacaccggaagccaatatgga	13195
+LR757998      gttgtgtacacacactggtactggtcaggcaataacagttacaccggaagccaatatgga	13189
+              ************************************************************
+
+LR757995      tcaagaatcctttggtggtgcatcgtgttgtctgtactgccgttgccacatagatcatcc	13260
+LR757996      tcaagaatcctttggtggtgcatcgtgttgtctgtactgccgttgccacatagatcatcc	13255
+LR757998      tcaagaatcctttggtggtgcatcgtgttgtctgtactgccgttgccacatagatcatcc	13249
+              ************************************************************
+
+LR757995      aaatcctaaaggattttgtgacttaaaaggtaagtatgtacaaatacctacaacttgtgc	13320
+LR757996      aaatcctaaaggattttgtgacttaaaaggtaagtatgtacaaatacctacaacttgtgc	13315
+LR757998      aaatcctaaaggattttgtgacttaaaaggtaagtatgtacaaatacctacaacttgtgc	13309
+              ************************************************************
+
+LR757995      taatgaccctgtgggttttacacttaaaaacacagtctgtaccgtctgcggtatgtggaa	13380
+LR757996      taatgaccctgtgggttttacacttaaaaacacagtctgtaccgtctgcggtatgtggaa	13375
+LR757998      taatgaccctgtgggttttacacttaaaaacacagtctgtaccgtctgcggtatgtggaa	13369
+              ************************************************************
+
+LR757995      aggttatggctgtagttgtgatcaactccgcgaacccatgcttcagtcagctgatgcaca	13440
+LR757996      aggttatggctgtagttgtgatcaactccgcgaacccatgcttcagtcagctgatgcaca	13435
+LR757998      aggttatggctgtagttgtgatcaactccgcgaacccatgcttcagtcagctgatgcaca	13429
+              ************************************************************
+
+LR757995      atcgtttttaaacgggtttgcggtgtaagtgcagcccgtcttacaccgtgcggcacaggc	13500
+LR757996      atcgtttttaaacgggtttgcggtgtaagtgcagcccgtcttacaccgtgcggcacaggc	13495
+LR757998      atcgtttttaaacgggtttgcggtgtaagtgcagcccgtcttacaccgtgcggcacaggc	13489
+              ************************************************************
+
+LR757995      actagtactgatgtcgtatacagggcttttgacatctacaatgataaagtagctggtttt	13560
+LR757996      actagtactgatgtcgtatacagggcttttgacatctacaatgataaagtagctggtttt	13555
+LR757998      actagtactgatgtcgtatacagggcttttgacatctacaatgataaagtagctggtttt	13549
+              ************************************************************
+
+LR757995      gctaaattcctaaaaactaattgttgtcgcttccaagaaaaggacgaagatgacaattta	13620
+LR757996      gctaaattcctaaaaactaattgttgtcgcttccaagaaaaggacgaagatgacaattta	13615
+LR757998      gctaaattcctaaaaactaattgttgtcgcttccaagaaaaggacgaagatgacaattta	13609
+              ************************************************************
+
+LR757995      attgattcttactttgtagttaagagacacactttctctaactaccaacatgaagaaaca	13680
+LR757996      attgattcttactttgtagttaagagacacactttctctaactaccaacatgaagaaaca	13675
+LR757998      attgattcttactttgtagttaagagacacactttctctaactaccaacatgaagaaaca	13669
+              ************************************************************
+
+LR757995      atttataatttacttaaggattgtccagctgttgctaaacatgacttctttaagtttaga	13740
+LR757996      atttataatttacttaaggattgtccagctgttgctaaacatgacttctttaagtttaga	13735
+LR757998      atttataatttacttaaggattgtccagctgttgctaaacatgacttctttaagtttaga	13729
+              ************************************************************
+
+LR757995      atagacggtgacatggtaccacatatatcacgtcaacgtcttactaaatacacaatggca	13800
+LR757996      atagacggtgacatggtaccacatatatcacgtcaacgtcttactaaatacacaatggca	13795
+LR757998      atagacggtgacatggtaccacatatatcacgtcaacgtcttactaaatacacaatggca	13789
+              ************************************************************
+
+LR757995      gacctcgtctatgctttaaggcattttgatgaaggtaattgtgacacattaaaagaaata	13860
+LR757996      gacctcgtctatgctttaaggcattttgatgaaggtaattgtgacacattaaaagaaata	13855
+LR757998      gacctcgtctatgctttaaggcattttgatgaaggtaattgtgacacattaaaagaaata	13849
+              ************************************************************
+
+LR757995      cttgtcacatacaattgttgtgatgatgattatttcaataaaaaggactggtatgatttt	13920
+LR757996      cttgtcacatacaattgttgtgatgatgattatttcaataaaaaggactggtatgatttt	13915
+LR757998      cttgtcacatacaattgttgtgatgatgattatttcaataaaaaggactggtatgatttt	13909
+              ************************************************************
+
+LR757995      gtagaaaacccagatatattacgcgtatacgccaacttaggtgaacgtgtacgccaagct	13980
+LR757996      gtagaaaacccagatatattacgcgtatacgccaacttaggtgaacgtgtacgccaagct	13975
+LR757998      gtagaaaacccagatatattacgcgtatacgccaacttaggtgaacgtgtacgccaagct	13969
+              ************************************************************
+
+LR757995      ttgttaaaaacagtacaattctgtgatgccatgcgaaatgctggtattgttggtgtactg	14040
+LR757996      ttgttaaaaacagtacaattctgtgatgccatgcgaaatgctggtattgttggtgtactg	14035
+LR757998      ttgttaaaaacagtacaattctgtgatgccatgcgaaatgctggtattgttggtgtactg	14029
+              ************************************************************
+
+LR757995      acattagataatcaagatctcaatggtaactggtatgatttcggtgatttcatacaaacc	14100
+LR757996      acattagataatcaagatctcaatggtaactggtatgatttcggtgatttcatacaaacc	14095
+LR757998      acattagataatcaagatctcaatggtaactggtatgatttcggtgatttcatacaaacc	14089
+              ************************************************************
+
+LR757995      acgccaggtagtggagttcctgttgtagattcttattattcattgttaatgcctatatta	14160
+LR757996      acgccaggtagtggagttcctgttgtagattcttattattcattgttaatgcctatatta	14155
+LR757998      acgccaggtagtggagttcctgttgtagattcttattattcattgttaatgcctatatta	14149
+              ************************************************************
+
+LR757995      accttgaccagggctttaactgcagagtcacatgttgacactgacttaacaaagccttac	14220
+LR757996      accttgaccagggctttaactgcagagtcacatgttgacactgacttaacaaagccttac	14215
+LR757998      accttgaccagggctttaactgcagagtcacatgttgacactgacttaacaaagccttac	14209
+              ************************************************************
+
+LR757995      attaagtgggatttgttaaaatatgacttcacggaagagaggttaaaactctttgaccgt	14280
+LR757996      attaagtgggatttgttaaaatatgacttcacggaagagaggttaaaactctttgaccgt	14275
+LR757998      attaagtgggatttgttaaaatatgacttcacggaagagaggttaaaactctttgaccgt	14269
+              ************************************************************
+
+LR757995      tattttaaatattgggatcagacataccacccaaattgtgttaactgtttggatgacaga	14340
+LR757996      tattttaaatattgggatcagacataccacccaaattgtgttaactgtttggatgacaga	14335
+LR757998      tattttaaatattgggatcagacataccacccaaattgtgttaactgtttggatgacaga	14329
+              ************************************************************
+
+LR757995      tgcattctgcattgtgcaaactttaatgttttattctctacagtgttcccacctacaagt	14400
+LR757996      tgcattctgcattgtgcaaactttaatgttttattctctacagtgttcccacctacaagt	14395
+LR757998      tgcattctgcattgtgcaaactttaatgttttattctctacagtgttcccacctacaagt	14389
+              ************************************************************
+
+LR757995      tttggaccactagtgagaaaaatatttgttgatggtgttccatttgtagtttcaactgga	14460
+LR757996      tttggaccactagtgagaaaaatatttgttgatggtgttccatttgtagtttcaactgga	14455
+LR757998      tttggaccactagtgagaaaaatatttgttgatggtgttccatttgtagtttcaactgga	14449
+              ************************************************************
+
+LR757995      taccacttcagagagctaggtgttgtacataatcaggatgtaaacttacatagctctaga	14520
+LR757996      taccacttcagagagctaggtgttgtacataatcaggatgtaaacttacatagctctaga	14515
+LR757998      taccacttcagagagctaggtgttgtacataatcaggatgtaaacttacatagctctaga	14509
+              ************************************************************
+
+LR757995      cttagttttaaggaattacttgtgtatgctgctgaccctgctatgcacgctgcttctggt	14580
+LR757996      cttagttttaaggaattacttgtgtatgctgctgaccctgctatgcacgctgcttctggt	14575
+LR757998      cttagttttaaggaattacttgtgtatgctgctgaccctgctatgcacgctgcttctggt	14569
+              ************************************************************
+
+LR757995      aatctattactagataaacgcactacgtgcttttcagtagctgcacttactaacaatgtt	14640
+LR757996      aatctattactagataaacgcactacgtgcttttcagtagctgcacttactaacaatgtt	14635
+LR757998      aatctattactagataaacgcactacgtgcttttcagtagctgcacttactaacaatgtt	14629
+              ************************************************************
+
+LR757995      gcttttcaaactgtcaaacccggtaattttaacaaagacttctatgactttgctgtgtct	14700
+LR757996      gcttttcaaactgtcaaacccggtaattttaacaaagacttctatgactttgctgtgtct	14695
+LR757998      gcttttcaaactgtcaaacccggtaattttaacaaagacttctatgactttgctgtgtct	14689
+              ************************************************************
+
+LR757995      aagggtttctttaaggaaggaagttctgttgaattaaaacacttcttctttgctcaggat	14760
+LR757996      aagggtttctttaaggaaggaagttctgttgaattaaaacacttcttctttgctcaggat	14755
+LR757998      aagggtttctttaaggaaggaagttctgttgaattaaaacacttcttctttgctcaggat	14749
+              ************************************************************
+
+LR757995      ggtaatgctgctatcagcgattatgactactatcgttataatctaccaacaatgtgtgat	14820
+LR757996      ggtaatgctgctatcagcgattatgactactatcgttataatctaccaacaatgtgtgat	14815
+LR757998      ggtaatgctgctatcagcgattatgactactatcgttataatctaccaacaatgtgtgat	14809
+              ************************************************************
+
+LR757995      atcagacaactactatttgtagttgaagttgttgataagtactttgattgttacgatggt	14880
+LR757996      atcagacaactactatttgtagttgaagttgttgataagtactttgattgttacgatggt	14875
+LR757998      atcagacaactactatttgtagttgaagttgttgataagtactttgattgttacgatggt	14869
+              ************************************************************
+
+LR757995      ggctgtattaatgctaaccaagtcatcgtcaacaacctagacaaatcagctggttttcca	14940
+LR757996      ggctgtattaatgctaaccaagtcatcgtcaacaacctagacaaatcagctggttttcca	14935
+LR757998      ggctgtattaatgctaaccaagtcatcgtcaacaacctagacaaatcagctggttttcca	14929
+              ************************************************************
+
+LR757995      tttaataaatggggtaaggctagactttattatgattcaatgagttatgaggatcaagat	15000
+LR757996      tttaataaatggggtaaggctagactttattatgattcaatgagttatgaggatcaagat	14995
+LR757998      tttaataaatggggtaaggctagactttattatgattcaatgagttatgaggatcaagat	14989
+              ************************************************************
+
+LR757995      gcacttttcgcatatacaaaacgtaatgtcatccctactataactcaaatgaatcttaag	15060
+LR757996      gcacttttcgcatatacaaaacgtaatgtcatccctactataactcaaatgaatcttaag	15055
+LR757998      gcacttttcgcatatacaaaacgtaatgtcatccctactataactcaaatgaatcttaag	15049
+              ************************************************************
+
+LR757995      tatgccattagtgcaaagaatagagctcgcaccgtagctggtgtctctatctgtagtact	15120
+LR757996      tatgccattagtgcaaagaatagagctcgcaccgtagctggtgtctctatctgtagtact	15115
+LR757998      tatgccattagtgcaaagaatagagctcgcaccgtagctggtgtctctatctgtagtact	15109
+              ************************************************************
+
+LR757995      atgaccaatagacagtttcatcaaaaattattgaaatcaatagccgccactagaggagct	15180
+LR757996      atgaccaatagacagtttcatcaaaaattattgaaatcaatagccgccactagaggagct	15175
+LR757998      atgaccaatagacagtttcatcaaaaattattgaaatcaatagccgccactagaggagct	15169
+              ************************************************************
+
+LR757995      actgtagtaattggaacaagcaaattctatggtggttggcacaacatgttaaaaactgtt	15240
+LR757996      actgtagtaattggaacaagcaaattctatggtggttggcacaacatgttaaaaactgtt	15235
+LR757998      actgtagtaattggaacaagcaaattctatggtggttggcacaacatgttaaaaactgtt	15229
+              ************************************************************
+
+LR757995      tatagtgatgtagaaaaccctcaccttatgggttgggattatcctaaatgtgatagagcc	15300
+LR757996      tatagtgatgtagaaaaccctcaccttatgggttgggattatcctaaatgtgatagagcc	15295
+LR757998      tatagtgatgtagaaaaccctcaccttatgggttgggattatcctaaatgtgatagagcc	15289
+              ************************************************************
+
+LR757995      atgcctaacatgcttagaattatggcctcacttgttcttgctcgcaaacatacaacgtgt	15360
+LR757996      atgcctaacatgcttagaattatggcctcacttgttcttgctcgcaaacatacaacgtgt	15355
+LR757998      atgcctaacatgcttagaattatggcctcacttgttcttgctcgcaaacatacaacgtgt	15349
+              ************************************************************
+
+LR757995      tgtagcttgtcacaccgtttctatagattagctaatgagtgtgctcaagtattgagtgaa	15420
+LR757996      tgtagcttgtcacaccgtttctatagattagctaatgagtgtgctcaagtattgagtgaa	15415
+LR757998      tgtagcttgtcacaccgtttctatagattagctaatgagtgtgctcaagtattgagtgaa	15409
+              ************************************************************
+
+LR757995      atggtcatgtgtggcggttcactatatgttaaaccaggtggaacctcatcaggagatgcc	15480
+LR757996      atggtcatgtgtggcggttcactatatgttaaaccaggtggaacctcatcaggagatgcc	15475
+LR757998      atggtcatgtgtggcggttcactatatgttaaaccaggtggaacctcatcaggagatgcc	15469
+              ************************************************************
+
+LR757995      acaactgcttatgctaatagtgtttttaacatttgtcaagctgtcacggccaatgttaat	15540
+LR757996      acaactgcttatgctaatagtgtttttaacatttgtcaagctgtcacggccaatgttaat	15535
+LR757998      acaactgcttatgctaatagtgtttttaacatttgtcaagctgtcacggccaatgttaat	15529
+              ************************************************************
+
+LR757995      gcacttttatctactgatggtaacaaaattgccgataagtatgtccgcaatttacaacac	15600
+LR757996      gcacttttatctactgatggtaacaaaattgccgataagtatgtccgcaatttacaacac	15595
+LR757998      gcacttttatctactgatggtaacaaaattgccgataagtatgtccgcaatttacaacac	15589
+              ************************************************************
+
+LR757995      agactttatgagtgtctctatagaaatagagatgttgacacagactttgtgaatgagttt	15660
+LR757996      agactttatgagtgtctctatagaaatagagatgttgacacagactttgtgaatgagttt	15655
+LR757998      agactttatgagtgtctctatagaaatagagatgttgacacagactttgtgaatgagttt	15649
+              ************************************************************
+
+LR757995      tacgcatatttgcgtaaacatttctcaatgatgatactctctgacgatgctgttgtgtgt	15720
+LR757996      tacgcatatttgcgtaaacatttctcaatgatgatactctctgacgatgctgttgtgtgt	15715
+LR757998      tacgcatatttgcgtaaacatttctcaatgatgatactctctgacgatgctgttgtgtgt	15709
+              ************************************************************
+
+LR757995      ttcaatagcacttatgcatctcaaggtctagtggctagcataaagaactttaagtcagtt	15780
+LR757996      ttcaatagcacttatgcatctcaaggtctagtggctagcataaagaactttaagtcagtt	15775
+LR757998      ttcaatagcacttatgcatctcaaggtctagtggctagcataaagaactttaagtcagtt	15769
+              ************************************************************
+
+LR757995      ctttattatcaaaacaatgtttttatgtctgaagcaaaatgttggactgagactgacctt	15840
+LR757996      ctttattatcaaaacaatgtttttatgtctgaagcaaaatgttggactgagactgacctt	15835
+LR757998      ctttattatcaaaacaatgtttttatgtctgaagcaaaatgttggactgagactgacctt	15829
+              ************************************************************
+
+LR757995      actaaaggacctcatgaattttgctctcaacatacaatgctagttaaacagggtgatgat	15900
+LR757996      actaaaggacctcatgaattttgctctcaacatacaatgctagttaaacagggtgatgat	15895
+LR757998      actaaaggacctcatgaattttgctctcaacatacaatgctagttaaacagggtgatgat	15889
+              ************************************************************
+
+LR757995      tatgtgtaccttccttacccagatccatcaagaatcctaggggccggctgttttgtagat	15960
+LR757996      tatgtgtaccttccttacccagatccatcaagaatcctaggggccggctgttttgtagat	15955
+LR757998      tatgtgtaccttccttacccagatccatcaagaatcctaggggccggctgttttgtagat	15949
+              ************************************************************
+
+LR757995      gatatcgtaaaaacagatggtacacttatgattgaacggttcgtgtctttagctatagat	16020
+LR757996      gatatcgtaaaaacagatggtacacttatgattgaacggttcgtgtctttagctatagat	16015
+LR757998      gatatcgtaaaaacagatggtacacttatgattgaacggttcgtgtctttagctatagat	16009
+              ************************************************************
+
+LR757995      gcttacccacttactaaacatcctaatcaggagtatgctgatgtctttcatttgtactta	16080
+LR757996      gcttacccacttactaaacatcctaatcaggagtatgctgatgtctttcatttgtactta	16075
+LR757998      gcttacccacttactaaacatcctaatcaggagtatgctgatgtctttcatttgtactta	16069
+              ************************************************************
+
+LR757995      caatacataagaaagctacatgatgagttaacaggacacatgttagacatgtattctgtt	16140
+LR757996      caatacataagaaagctacatgatgagttaacaggacacatgttagacatgtattctgtt	16135
+LR757998      caatacataagaaagctacatgatgagttaacaggacacatgttagacatgtattctgtt	16129
+              ************************************************************
+
+LR757995      atgcttactaatgataacacttcaaggtattgggaacctgagttttatgaggctatgtac	16200
+LR757996      atgcttactaatgataacacttcaaggtattgggaacctgagttttatgaggctatgtac	16195
+LR757998      atgcttactaatgataacacttcaaggtattgggaacctgagttttatgaggctatgtac	16189
+              ************************************************************
+
+LR757995      acaccgcatacagtcttacaggctgttggggcttgtgttctttgcaattcacagacttca	16260
+LR757996      acaccgcatacagtcttacaggctgttggggcttgtgttctttgcaattcacagacttca	16255
+LR757998      acaccgcatacagtcttacaggctgttggggcttgtgttctttgcaattcacagacttca	16249
+              ************************************************************
+
+LR757995      ttaagatgtggtgcttgcatacgtagaccattcttatgttgtaaatgctgttacgaccat	16320
+LR757996      ttaagatgtggtgcttgcatacgtagaccattcttatgttgtaaatgctgttacgaccat	16315
+LR757998      ttaagatgtggtgcttgcatacgtagaccattcttatgttgtaaatgctgttacgaccat	16309
+              ************************************************************
+
+LR757995      gtcatatcaacatcacataaattagtcttgtctgttaatccgtatgtttgcaatgctcca	16380
+LR757996      gtcatatcaacatcacataaattagtcttgtctgttaatccgtatgtttgcaatgctcca	16375
+LR757998      gtcatatcaacatcacataaattagtcttgtctgttaatccgtatgtttgcaatgctcca	16369
+              ************************************************************
+
+LR757995      ggttgtgatgtcacagatgtgactcaactttacttaggaggtatgagctattattgtaaa	16440
+LR757996      ggttgtgatgtcacagatgtgactcaactttacttaggaggtatgagctattattgtaaa	16435
+LR757998      ggttgtgatgtcacagatgtgactcaactttacttaggaggtatgagctattattgtaaa	16429
+              ************************************************************
+
+LR757995      tcacataaaccacccattagttttccattgtgtgctaatggacaagtttttggtttatat	16500
+LR757996      tcacataaaccacccattagttttccattgtgtgctaatggacaagtttttggtttatat	16495
+LR757998      tcacataaaccacccattagttttccattgtgtgctaatggacaagtttttggtttatat	16489
+              ************************************************************
+
+LR757995      aaaaatacatgtgttggtagcgataatgttactgactttaatgcaattgcaacatgtgac	16560
+LR757996      aaaaatacatgtgttggtagcgataatgttactgactttaatgcaattgcaacatgtgac	16555
+LR757998      aaaaatacatgtgttggtagcgataatgttactgactttaatgcaattgcaacatgtgac	16549
+              ************************************************************
+
+LR757995      tggacaaatgctggtgattacattttagctaacacctgtactgaaagactcaagcttttt	16620
+LR757996      tggacaaatgctggtgattacattttagctaacacctgtactgaaagactcaagcttttt	16615
+LR757998      tggacaaatgctggtgattacattttagctaacacctgtactgaaagactcaagcttttt	16609
+              ************************************************************
+
+LR757995      gcagcagaaacgctcaaagctactgaggagacatttaaactgtcttatggtattgctact	16680
+LR757996      gcagcagaaacgctcaaagctactgaggagacatttaaactgtcttatggtattgctact	16675
+LR757998      gcagcagaaacgctcaaagctactgaggagacatttaaactgtcttatggtattgctact	16669
+              ************************************************************
+
+LR757995      gtacgtgaagtgctgtctgacagagaattacatctttcatgggaagttggtaaacctaga	16740
+LR757996      gtacgtgaagtgctgtctgacagagaattacatctttcatgggaagttggtaaacctaga	16735
+LR757998      gtacgtgaagtgctgtctgacagagaattacatctttcatgggaagttggtaaacctaga	16729
+              ************************************************************
+
+LR757995      ccaccacttaaccgaaattatgtctttactggttatcgtgtaactaaaaacagtaaagta	16800
+LR757996      ccaccacttaaccgaaattatgtctttactggttatcgtgtaactaaaaacagtaaagta	16795
+LR757998      ccaccacttaaccgaaattatgtctttactggttatcgtgtaactaaaaacagtaaagta	16789
+              ************************************************************
+
+LR757995      caaataggagagtacacctttgaaaaaggtgactatggtgatgctgttgtttaccgaggt	16860
+LR757996      caaataggagagtacacctttgaaaaaggtgactatggtgatgctgttgtttaccgaggt	16855
+LR757998      caaataggagagtacacctttgaaaaaggtgactatggtgatgctgttgtttaccgaggt	16849
+              ************************************************************
+
+LR757995      acaacaacttacaaattaaatgttggtgattattttgtgctgacatcacatacagtaatg	16920
+LR757996      acaacaacttacaaattaaatgttggtgattattttgtgctgacatcacatacagtaatg	16915
+LR757998      acaacaacttacaaattaaatgttggtgattattttgtgctgacatcacatacagtaatg	16909
+              ************************************************************
+
+LR757995      ccattaagtgcacctacactagtgccacaagagcactatgttagaattactggcttatac	16980
+LR757996      ccattaagtgcacctacactagtgccacaagagcactatgttagaattactggcttatac	16975
+LR757998      ccattaagtgcacctacactagtgccacaagagcactatgttagaattactggcttatac	16969
+              ************************************************************
+
+LR757995      ccaacactcaatatctcagatgagttttctagcaatgttgcaaattatcaaaaggttggt	17040
+LR757996      ccaacactcaatatctcagatgagttttctagcaatgttgcaaattatcaaaaggttggt	17035
+LR757998      ccaacactcaatatctcagatgagttttctagcaatgttgcaaattatcaaaaggttggt	17029
+              ************************************************************
+
+LR757995      atgcaaaagtattctacactccagggaccacctggtactggtaagagtcattttgctatt	17100
+LR757996      atgcaaaagtattctacactccagggaccacctggtactggtaagagtcattttgctatt	17095
+LR757998      atgcaaaagtattctacactccagggaccacctggtactggtaagagtcattttgctatt	17089
+              ************************************************************
+
+LR757995      ggcctagctctctactacccttctgctcgcatagtgtatacagcttgctctcatgccgct	17160
+LR757996      ggcctagctctctactacccttctgctcgcatagtgtatacagcttgctctcatgccgct	17155
+LR757998      ggcctagctctctactacccttctgctcgcatagtgtatacagcttgctctcatgccgct	17149
+              ************************************************************
+
+LR757995      gttgatgcactatgtgagaaggcattaaaatatttgcctatagataaatgtagtagaatt	17220
+LR757996      gttgatgcactatgtgagaaggcattaaaatatttgcctatagataaatgtagtagaatt	17215
+LR757998      gttgatgcactatgtgagaaggcattaaaatatttgcctatagataaatgtagtagaatt	17209
+              ************************************************************
+
+LR757995      atacctgcacgtgctcgtgtagagtgttttgataaattcaaagtgaattcaacattagaa	17280
+LR757996      atacctgcacgtgctcgtgtagagtgttttgataaattcaaagtgaattcaacattagaa	17275
+LR757998      atacctgcacgtgctcgtgtagagtgttttgataaattcaaagtgaattcaacattagaa	17269
+              ************************************************************
+
+LR757995      cagtatgtcttttgtactgtaaatgcattgcctgagacgacagcagatatagttgtcttt	17340
+LR757996      cagtatgtcttttgtactgtaaatgcattgcctgagacgacagcagatatagttgtcttt	17335
+LR757998      cagtatgtcttttgtactgtaaatgcattgcctgagacgacagcagatatagttgtcttt	17329
+              ************************************************************
+
+LR757995      gatgaaatttcaatggccacaaattatgatttgagtgttgtcaatgccagattacgtgct	17400
+LR757996      gatgaaatttcaatggccacaaattatgatttgagtgttgtcaatgccagattacgtgct	17395
+LR757998      gatgaaatttcaatggccacaaattatgatttgagtgttgtcaatgccagattacgtgct	17389
+              ************************************************************
+
+LR757995      aagcactatgtgtacattggcgaccctgctcaattacctgcaccacgcacattgctaact	17460
+LR757996      aagcactatgtgtacattggcgaccctgctcaattacctgcaccacgcacattgctaact	17455
+LR757998      aagcactatgtgtacattggcgaccctgctcaattacctgcaccacgcacattgctaact	17449
+              ************************************************************
+
+LR757995      aagggcacactagaaccagaatatttcaattcagtgtgtagacttatgaaaactataggt	17520
+LR757996      aagggcacactagaaccagaatatttcaattcagtgtgtagacttatgaaaactataggt	17515
+LR757998      aagggcacactagaaccagaatatttcaattcagtgtgtagacttatgaaaactataggt	17509
+              ************************************************************
+
+LR757995      ccagacatgttcctcggaacttgtcggcgttgtcctgctgaaattgttgacactgtgagt	17580
+LR757996      ccagacatgttcctcggaacttgtcggcgttgtcctgctgaaattgttgacactgtgagt	17575
+LR757998      ccagacatgttcctcggaacttgtcggcgttgtcctgctgaaattgttgacactgtgagt	17569
+              ************************************************************
+
+LR757995      gctttggtttatgataataagcttaaagcacataaagacaaatcagctcaatgctttaaa	17640
+LR757996      gctttggtttatgataataagcttaaagcacataaagacaaatcagctcaatgctttaaa	17635
+LR757998      gctttggtttatgataataagcttaaagcacataaagacaaatcagctcaatgctttaaa	17629
+              ************************************************************
+
+LR757995      atgttttataagggtgttatcacgcatgatgtttcatctgcaattaacaggccacaaata	17700
+LR757996      atgttttataagggtgttatcacgcatgatgtttcatctgcaattaacaggccacaaata	17695
+LR757998      atgttttataagggtgttatcacgcatgatgtttcatctgcaattaacaggccacaaata	17689
+              ************************************************************
+
+LR757995      ggcgtggtaagagaattccttacacgtaaccctgcttggagaaaagctgtctttatttca	17760
+LR757996      ggcgtggtaagagaattccttacacgtaaccctgcttggagaaaagctgtctttatttca	17755
+LR757998      ggcgtggtaagagaattccttacacgtaaccctgcttggagaaaagctgtctttatttca	17749
+              ************************************************************
+
+LR757995      ccttataattcacagaatgctgtagcctcaaagattttgggactaccaactcaaactgtt	17820
+LR757996      ccttataattcacagaatgctgtagcctcaaagattttgggactaccaactcaaactgtt	17815
+LR757998      ccttataattcacagaatgctgtagcctcaaagattttgggactaccaactcaaactgtt	17809
+              ************************************************************
+
+LR757995      gattcatcacagggctcagaatatgactatgtcatattcactcaaaccactgaaacagct	17880
+LR757996      gattcatcacagggctcagaatatgactatgtcatattcactcaaaccactgaaacagct	17875
+LR757998      gattcatcacagggctcagaatatgactatgtcatattcactcaaaccactgaaacagct	17869
+              ************************************************************
+
+LR757995      cactcttgtaatgtaaacagatttaatgttgctattaccagagcaaaagtaggcatactt	17940
+LR757996      cactcttgtaatgtaaacagatttaatgttgctattaccagagcaaaagtaggcatactt	17935
+LR757998      cactcttgtaatgtaaacagatttaatgttgctattaccagagcaaaagtaggcatactt	17929
+              ************************************************************
+
+LR757995      tgcataatgtctgatagagacctttatgacaagttgcaatttacaagtcttgaaattcca	18000
+LR757996      tgcataatgtctgatagagacctttatgacaagttgcaatttacaagtcttgaaattcca	17995
+LR757998      tgcataatgtctgatagagacctttatgacaagttgcaatttacaagtcttgaaattcca	17989
+              ************************************************************
+
+LR757995      cgtaggaatgtggcaactttacaagctgaaaatgtaacaggactctttaaagattgtagt	18060
+LR757996      cgtaggaatgtggcaactttacaagctgaaaatgtaacaggactctttaaagattgtagt	18055
+LR757998      cgtaggaatgtggcaactttacaagctgaaaatgtaacaggactctttaaagattgtagt	18049
+              ************************************************************
+
+LR757995      aaggtaatcactgggttacatcctacacaggcacctacacacctcagtgttgacactaaa	18120
+LR757996      aaggtaatcactgggttacatcctacacaggcacctacacacctcagtgttgacactaaa	18115
+LR757998      aaggtaatcactgggttacatcctacacaggcacctacacacctcagtgttgacactaaa	18109
+              ************************************************************
+
+LR757995      ttcaaaactgaaggtttatgtgttgacatacctggcatacctaaggacatgacctataga	18180
+LR757996      ttcaaaactgaaggtttatgtgttgacatacctggcatacctaaggacatgacctataga	18175
+LR757998      ttcaaaactgaaggtttatgtgttgacatacctggcatacctaaggacatgacctataga	18169
+              ************************************************************
+
+LR757995      agactcatctctatgatgggttttaaaatgaattatcaagttaatggttaccctaacatg	18240
+LR757996      agactcatctctatgatgggttttaaaatgaattatcaagttaatggttaccctaacatg	18235
+LR757998      agactcatctctatgatgggttttaaaatgaattatcaagttaatggttaccctaacatg	18229
+              ************************************************************
+
+LR757995      tttatcacccgcgaagaagctataagacatgtacgtgcatggattggcttcgatgtcgag	18300
+LR757996      tttatcacccgcgaagaagctataagacatgtacgtgcatggattggcttcgatgtcgag	18295
+LR757998      tttatcacccgcgaagaagctataagacatgtacgtgcatggattggcttcgatgtcgag	18289
+              ************************************************************
+
+LR757995      gggtgtcatgctactagagaagctgttggtaccaatttacctttacagctaggtttttct	18360
+LR757996      gggtgtcatgctactagagaagctgttggtaccaatttacctttacagctaggtttttct	18355
+LR757998      gggtgtcatgctactagagaagctgttggtaccaatttacctttacagctaggtttttct	18349
+              ************************************************************
+
+LR757995      acaggtgttaacctagttgctgtacctacaggttatgttgatacacctaataatacagat	18420
+LR757996      acaggtgttaacctagttgctgtacctacaggttatgttgatacacctaataatacagat	18415
+LR757998      acaggtgttaacctagttgctgtacctacaggttatgttgatacacctaataatacagat	18409
+              ************************************************************
+
+LR757995      ttttccagagttagtgctaaaccaccgcctggagatcaatttaaacacctcataccactt	18480
+LR757996      ttttccagagttagtgctaaaccaccgcctggagatcaatttaaacacctcataccactt	18475
+LR757998      ttttccagagttagtgctaaaccaccgcctggagatcaatttaaacacctcataccactt	18469
+              ************************************************************
+
+LR757995      atgtacaaaggacttccttggaatgtagtgcgtataaagattgtacaaatgttaagtgac	18540
+LR757996      atgtacaaaggacttccttggaatgtagtgcgtataaagattgtacaaatgttaagtgac	18535
+LR757998      atgtacaaaggacttccttggaatgtagtgcgtataaagattgtacaaatgttaagtgac	18529
+              ************************************************************
+
+LR757995      acacttaaaaatctctctgacagagtcgtatttgtcttatgggcacatggctttgagttg	18600
+LR757996      acacttaaaaatctctctgacagagtcgtatttgtcttatgggcacatggctttgagttg	18595
+LR757998      acacttaaaaatctctctgacagagtcgtatttgtcttatgggcacatggctttgagttg	18589
+              ************************************************************
+
+LR757995      acatctatgaagtattttgtgaaaataggacctgagcgcacctgttgtctatgtgataga	18660
+LR757996      acatctatgaagtattttgtgaaaataggacctgagcgcacctgttgtctatgtgataga	18655
+LR757998      acatctatgaagtattttgtgaaaataggacctgagcgcacctgttgtctatgtgataga	18649
+              ************************************************************
+
+LR757995      cgtgccacatgcttttccactgcttcagacacttatgcctgttggcatcattctattgga	18720
+LR757996      cgtgccacatgcttttccactgcttcagacacttatgcctgttggcatcattctattgga	18715
+LR757998      cgtgccacatgcttttccactgcttcagacacttatgcctgttggcatcattctattgga	18709
+              ************************************************************
+
+LR757995      tttgattacgtctataatccgtttatgattgatgttcaacaatggggttttacaggtaac	18780
+LR757996      tttgattacgtctataatccgtttatgattgatgttcaacaatggggttttacaggtaac	18775
+LR757998      tttgattacgtctataatccgtttatgattgatgttcaacaatggggttttacaggtaac	18769
+              ************************************************************
+
+LR757995      ctacaaagcaaccatgatctgtattgtcaagtccatggtaatgcacatgtagctagttgt	18840
+LR757996      ctacaaagcaaccatgatctgtattgtcaagtccatggtaatgcacatgtagctagttgt	18835
+LR757998      ctacaaagcaaccatgatctgtattgtcaagtccatggtaatgcacatgtagctagttgt	18829
+              ************************************************************
+
+LR757995      gatgcaatcatgactaggtgtctagctgtccacgagtgctttgttaagcgtgttgactgg	18900
+LR757996      gatgcaatcatgactaggtgtctagctgtccacgagtgctttgttaagcgtgttgactgg	18895
+LR757998      gatgcaatcatgactaggtgtctagctgtccacgagtgctttgttaagcgtgttgactgg	18889
+              ************************************************************
+
+LR757995      actattgaatatcctataattggtgatgaactgaagattaatgcggcttgtagaaaggtt	18960
+LR757996      actattgaatatcctataattggtgatgaactgaagattaatgcggcttgtagaaaggtt	18955
+LR757998      actattgaatatcctataattggtgatgaactgaagattaatgcggcttgtagaaaggtt	18949
+              ************************************************************
+
+LR757995      caacacatggttgttaaagctgcattattagcagacaaattcccagttcttcacgacatt	19020
+LR757996      caacacatggttgttaaagctgcattattagcagacaaattcccagttcttcacgacatt	19015
+LR757998      caacacatggttgttaaagctgcattattagcagacaaattcccagttcttcacgacatt	19009
+              ************************************************************
+
+LR757995      ggtaaccctaaagctattaagtgtgtacctcaagctgatgtagaatggaagttctatgat	19080
+LR757996      ggtaaccctaaagctattaagtgtgtacctcaagctgatgtagaatggaagttctatgat	19075
+LR757998      ggtaaccctaaagctattaagtgtgtacctcaagctgatgtagaatggaagttctatgat	19069
+              ************************************************************
+
+LR757995      gcacagccttgtagtgacaaagcttataaaatagaagaattattctattcttatgccaca	19140
+LR757996      gcacagccttgtagtgacaaagcttataaaatagaagaattattctattcttatgccaca	19135
+LR757998      gcacagccttgtagtgacaaagcttataaaatagaagaattattctattcttatgccaca	19129
+              ************************************************************
+
+LR757995      cattctgacaaattcacagatggtgtatgcctattttggaattgcaatgtcgatagatat	19200
+LR757996      cattctgacaaattcacagatggtgtatgcctattttggaattgcaatgtcgatagatat	19195
+LR757998      cattctgacaaattcacagatggtgtatgcctattttggaattgcaatgtcgatagatat	19189
+              ************************************************************
+
+LR757995      cctgctaattccattgtttgtagatttgacactagagtgctatctaaccttaacttgcct	19260
+LR757996      cctgctaattccattgtttgtagatttgacactagagtgctatctaaccttaacttgcct	19255
+LR757998      cctgctaattccattgtttgtagatttgacactagagtgctatctaaccttaacttgcct	19249
+              ************************************************************
+
+LR757995      ggttgtgatggtggcagtttgtatgtaaataaacatgcattccacacaccagcttttgat	19320
+LR757996      ggttgtgatggtggcagtttgtatgtaaataaacatgcattccacacaccagcttttgat	19315
+LR757998      ggttgtgatggtggcagtttgtatgtaaataaacatgcattccacacaccagcttttgat	19309
+              ************************************************************
+
+LR757995      aaaagtgcttttgttaatttaaaacaattaccatttttctattactctgacagtccatgt	19380
+LR757996      aaaagtgcttttgttaatttaaaacaattaccatttttctattactctgacagtccatgt	19375
+LR757998      aaaagtgcttttgttaatttaaaacaattaccatttttctattactctgacagtccatgt	19369
+              ************************************************************
+
+LR757995      gagtctcatggaaaacaagtagtgtcagatatagattatgtaccactaaagtctgctacg	19440
+LR757996      gagtctcatggaaaacaagtagtgtcagatatagattatgtaccactaaagtctgctacg	19435
+LR757998      gagtctcatggaaaacaagtagtgtcagatatagattatgtaccactaaagtctgctacg	19429
+              ************************************************************
+
+LR757995      tgtataacacgttgcaatttaggtggtgctgtctgtagacatcatgctaatgagtacaga	19500
+LR757996      tgtataacacgttgcaatttaggtggtgctgtctgtagacatcatgctaatgagtacaga	19495
+LR757998      tgtataacacgttgcaatttaggtggtgctgtctgtagacatcatgctaatgagtacaga	19489
+              ************************************************************
+
+LR757995      ttgtatctcgatgcttataacatgatgatctcagctggctttagcttgtgggtttacaaa	19560
+LR757996      ttgtatctcgatgcttataacatgatgatctcagctggctttagcttgtgggtttacaaa	19555
+LR757998      ttgtatctcgatgcttataacatgatgatctcagctggctttagcttgtgggtttacaaa	19549
+              ************************************************************
+
+LR757995      caatttgatacttataacctctggaacacttttacaagacttcagagtttagaaaatgtg	19620
+LR757996      caatttgatacttataacctctggaacacttttacaagacttcagagtttagaaaatgtg	19615
+LR757998      caatttgatacttataacctctggaacacttttacaagacttcagagtttagaaaatgtg	19609
+              ************************************************************
+
+LR757995      gcttttaatgttgtaaataagggacactttgatggacaacagggtgaagtaccagtttct	19680
+LR757996      gcttttaatgttgtaaataagggacactttgatggacaacagggtgaagtaccagtttct	19675
+LR757998      gcttttaatgttgtaaataagggacactttgatggacaacagggtgaagtaccagtttct	19669
+              ************************************************************
+
+LR757995      atcattaataacactgtttacacaaaagttgatggtgttgatgtagaattgtttgaaaat	19740
+LR757996      atcattaataacactgtttacacaaaagttgatggtgttgatgtagaattgtttgaaaat	19735
+LR757998      atcattaataacactgtttacacaaaagttgatggtgttgatgtagaattgtttgaaaat	19729
+              ************************************************************
+
+LR757995      aaaacaacattacctgttaatgtagcatttgagctttgggctaagcgcaacattaaacca	19800
+LR757996      aaaacaacattacctgttaatgtagcatttgagctttgggctaagcgcaacattaaacca	19795
+LR757998      aaaacaacattacctgttaatgtagcatttgagctttgggctaagcgcaacattaaacca	19789
+              ************************************************************
+
+LR757995      gtaccagaggtgaaaatactcaataatttgggtgtggacattgctgctaatactgtgatc	19860
+LR757996      gtaccagaggtgaaaatactcaataatttgggtgtggacattgctgctaatactgtgatc	19855
+LR757998      gtaccagaggtgaaaatactcaataatttgggtgtggacattgctgctaatactgtgatc	19849
+              ************************************************************
+
+LR757995      tgggactacaaaagagatgctccagcacatatatctactattggtgtttgttctatgact	19920
+LR757996      tgggactacaaaagagatgctccagcacatatatctactattggtgtttgttctatgact	19915
+LR757998      tgggactacaaaagagatgctccagcacatatatctactattggtgtttgttctatgact	19909
+              ************************************************************
+
+LR757995      gacatagccaagaaaccaactgaaacgatttgtgcaccactcactgtcttttttgatggt	19980
+LR757996      gacatagccaagaaaccaactgaaacgatttgtgcaccactcactgtcttttttgatggt	19975
+LR757998      gacatagccaagaaaccaactgaaacgatttgtgcaccactcactgtcttttttgatggt	19969
+              ************************************************************
+
+LR757995      agagttgatggtcaagtagacttatttagaaatgcccgtaatggtgttcttattacagaa	20040
+LR757996      agagttgatggtcaagtagacttatttagaaatgcccgtaatggtgttcttattacagaa	20035
+LR757998      agagttgatggtcaagtagacttatttagaaatgcccgtaatggtgttcttattacagaa	20029
+              ************************************************************
+
+LR757995      ggtagtgttaaaggtttacaaccatctgtaggtcccaaacaagctagtcttaatggagtc	20100
+LR757996      ggtagtgttaaaggtttacaaccatctgtaggtcccaaacaagctagtcttaatggagtc	20095
+LR757998      ggtagtgttaa

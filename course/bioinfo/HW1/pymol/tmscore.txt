@@ -1,0 +1,18 @@
+Executive: RMSD =    0.376 (260 to 260 atoms)
+Executive: object "aln_6y2f_to_6y2g" created.
+
+Executive: RMSD =    0.433 (247 to 247 atoms)
+Executive: object "aln_6y2e_to_6y2g" created.
+ 
+Executive: RMSD =    0.560 (270 to 270 atoms)
+Executive: object "aln_6lu7_to_6y2g" created.
+Executive: Colored 2500 atoms and 1 object.
+
+Executive: RMSD =    0.265 (257 to 257 atoms)
+Executive: object "aln_6lu7_to_6y2f" created.
+ 
+Executive: RMSD =    0.352 (271 to 271 atoms)
+Executive: object "aln_6lu7_to_6y2e" created.
+ 
+Executive: RMSD =    0.256 (250 to 250 atoms)
+Executive: object "aln_6y2e_to_6y2f" created.

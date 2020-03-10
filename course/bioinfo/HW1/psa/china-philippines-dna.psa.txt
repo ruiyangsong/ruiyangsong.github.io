@@ -1,0 +1,40 @@
+#=======================================
+# Aligned_sequences: 2
+# 1: China
+# 2: Philippines
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 288
+# Identity:     171/288 (59.4%)
+# Similarity:   171/288 (59.4%)
+# Gaps:         117/288 (40.6%)
+# Score: 960.5
+#=======================================
+
+#---------------------------------------
+China              1 tgagttatgaggatcaagatgcacttttcgcatatacaaaacgtaatgtc     50
+                                                                       
+Philippines        1 --------------------------------------------------      0
+
+China             51 atccctactataactcaaatgaatcttaagtatgccattagtgcaaagaa    100
+                                                                       
+Philippines        1 --------------------------------------------------      0
+
+China            101 tagagctcgcaccgtagctggtgtctctatctgtagtactatgaccaata    150
+                           ||||||||||||||||||||||||||||||||||||||||||||
+Philippines        1 ------tcgcaccgtagctggtgtctctatctgtagtactatgaccaata     44
+
+China            151 gacagtttcatcaaaaattattgaaatcaatagccgccactagaggagct    200
+                     |||||||||||||          |||||||||||||||||||||||||||
+Philippines       45 gacagtttcatca----------aaatcaatagccgccactagaggagct     84
+
+China            201 actgtagtaattggaacaagcaaattctatggtggttggcacaacatgtt    250
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Philippines       85 actgtagtaattggaacaagcaaattctatggtggttggcacaacatgtt    134
+
+China            251 aaaaactgtttatagtgatgtagaaaaccctcacctt-    287
+                     ||||||||||||||||||||||||||||||||||||| 
+Philippines      135 aaaaactgtttatagtgatgtagaaaaccctcacctta    172
+#---------------------------------------

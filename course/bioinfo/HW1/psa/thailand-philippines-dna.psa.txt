@@ -1,0 +1,40 @@
+#=======================================
+# Aligned_sequences: 2
+# 1: Thailand
+# 2: Philippines
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 291
+# Identity:     109/291 (37.5%)
+# Similarity:   109/291 (37.5%)
+# Gaps:         120/291 (41.2%)
+# Score: 394.5
+#=======================================
+
+#---------------------------------------
+Thailand           1 taaacacctcataccacttatgtacaaaggacttccttggaatgtagtgc     50
+                        .|.|..|.||  .||..|||.      .||..|      ||||||.|
+Philippines        1 ---tcgcaccgta--gctggtgtc------tctatc------tgtagtac     33
+
+Thailand          51 gtataaagattgtacaaatgttaagtgacacacttaaaaatctctctgac    100
+                      |||.|..|.|..|||   |||         .|.|.||||||..|     
+Philippines       34 -tatgaccaatagaca---gtt---------tcatcaaaatcaat-----     65
+
+Thailand         101 agagtcgtatttgtcttatgggcacatggctttgagttgacatctatgaa    150
+                       ||.||       |       |||      |.|||..| |..|  ||.|
+Philippines       66 --agccg-------c-------cac------tagaggag-ctac--tgta     90
+
+Thailand         151 gtattttgtgaaaataggacctgagcgcacctgttgtctat-gtgataga    199
+                     |||.||          |||.|   ..|||..|    ||||| |||.|.|.
+Philippines       91 gtaatt----------ggaac---aagcaaat----tctatggtggttgg    123
+
+Thailand         200 cgtgccacatgcttttccactgcttcagacacttatgcctgttggcatca    249
+                     |  .|.||||| ||....||||.||      .|..|| .|||.|..|.|.
+Philippines      124 c--acaacatg-ttaaaaactgttt------atagtg-atgtagaaaacc    163
+
+Thailand         250 ttctattggatttgattacgtctataatccgtttatgattg    290
+                     .||...|..                                
+Philippines      164 ctcacctta--------------------------------    172
+#---------------------------------------

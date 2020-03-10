@@ -1,0 +1,48 @@
+#=======================================
+# Aligned_sequences: 2
+# 1: China
+# 2: Thailand
+# Matrix: EDNAFULL
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 375
+# Identity:     156/375 (41.6%)
+# Similarity:   156/375 (41.6%)
+# Gaps:         173/375 (46.1%)
+# Score: 241.0
+#=======================================
+
+#---------------------------------------
+China              1 tgagttatgaggatcaaga------tgcacttttcgcatatacaaa--ac     42
+                                  |.||.|      ..|||||     ||.||||||  ||
+Thailand           1 -------------taaacacctcataccactt-----atgtacaaaggac     32
+
+China             43 ------gtaatgtcatccctactataact----caaatgaatcttaagta     82
+                           |.|||||..|.|.|| ||.|..|    ||||||    |||||  
+Thailand          33 ttccttggaatgtagtgcgta-taaagattgtacaaatg----ttaag--     75
+
+China             83 tgccattagtgca---aagaat---------agagctcgcaccgtagctg    120
+                     ||.||      ||   ||.|||         |||| |||           
+Thailand          76 tgaca------cacttaaaaatctctctgacagag-tcg-----------    107
+
+China            121 gtgtctctatctgtagta-----------ctatgaccaatagacagtttc    159
+                            |||.|||..||           ||.||   |.|.||||   ||
+Thailand         108 -------tatttgtcttatgggcacatggctttg---agttgaca---tc    144
+
+China            160 -atcaaaaattat-tgaaatcaatagccgccact-agaggagctactgt-    205
+                      ||.||..|||.| ||||   |||||  |.| || ||.|.|.||..||| 
+Thailand         145 tatgaagtattttgtgaa---aatag--gac-ctgagcgcacctgttgtc    188
+
+China            206 --agtaat-----tggaacaagcaaattc----------------tatgg    232
+                       .||.||     ||..|||.|| ..|||                ||||.
+Thailand         189 tatgtgatagacgtgccacatgc-ttttccactgcttcagacacttatgc    237
+
+China            233 tggttggcacaacat------------------gt-taaaaactgtttat    263
+                     ..|||||  ||.|||                  || ||.||.|.||||||
+Thailand         238 ctgttgg--catcattctattggatttgattacgtctataatccgtttat    285
+
+China            264 -agtgatgtagaaaaccctcacctt    287
+                      |.||                    
+Thailand         286 gattg--------------------    290
+#---------------------------------------
