@@ -593,7 +593,7 @@ null
 > Refers to: [Crystal structure (orthorhombic form) of the complex resulting from the reaction between SARS-CoV-2 (2019-nCoV) main protease and tert-butyl.](https://www.rcsb.org/structure/6y2g)
 
 ### Structure Alignment
-pdb_6lu7, pdb_6y2f, pdb_6y2e are similar to Chain_A (or B) of pdb_6y2g. Their pairwised TMscore are shown below:  
+pdb_6lu7, pdb_6y2f, pdb_6y2e are similar to Chain_A (or B) of pdb_6y2g. Their pairwised RMSD are shown below:  
 <center>
 <table border="1">
   <tr>
