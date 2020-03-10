@@ -2,16 +2,16 @@
 
 **<center>宋瑞阳, 2120190069</center>**
 **<center>2020/3/6</center>**
+</br>
+**<center><font size="5" color="red">This homework is also available at [HERE.](https://ruiyangsong.github.io/course/bioinfo/HW1/hw1.html)</font></center>**
 ***
 **一、基于本次课所介绍的数据库，搜索新冠状病毒的信息。需要报告的内容有：**
 1. 核酸序列
 2. 蛋白质序列
 3. 蛋白质结构
 
-注：以上信息可能会来自不同的病人，因此若发现有多个样本（病人），请注意区分开，若可能的话，可以考察一下不同样本之间的异同。
+注：以上信息可能会来自不同的病人，因此若发现有多个样本（病人），请注意区分开，若可能的话，可以考察一下不同样本之间的异同。  
 ***
-
-
 
 <!-- TOC -->
 
