@@ -1,1 +1,1 @@
-# [bioinfo_HW1](./course/bioinfo/HW1/hw1.md)
+# [HomeWork1 of Bioinformatics](./course/bioinfo/HW1/hw1.html)
