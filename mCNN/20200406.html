@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>20200406.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="centermcnncenter"><center>mCNN</center></h1>
+<p><strong><center>sry</center></strong>
+<strong><center>2020/04/06</center></strong>
+</br></p>
+<hr>
+<h2 id="meeting-links">meeting links</h2>
+<p><a href="./20200330.html"><center>meeting 2020-03-30</center></a></p>
+<hr>
+<h2 id="1-%E6%95%B0%E6%8D%AE">1. 数据</h2>
+<p>S2648<br>
+deepddg</p>
+<h2 id="2-%E7%89%B9%E5%BE%81">2. 特征</h2>
+<p><a href="./csv/feature.txt">每个原子118维特征</a></p>
+<h2 id="3%E5%AE%9E%E9%AA%8C">3.实验</h2>
+<h3 id="31-s2648-neighbor120-blind-test">3.1 S2648 (neighbor120 blind test)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">acc</th>
+<th style="text-align:center">rec+</th>
+<th style="text-align:center">rec-</th>
+<th style="text-align:center">pre+</th>
+<th style="text-align:center">pre-</th>
+<th style="text-align:center">mcc</th>
+<th style="text-align:center">rho</th>
+<th style="text-align:center">rmse</th>
+<th style="text-align:center">TUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0.79</td>
+<td style="text-align:center">0.41</td>
+<td style="text-align:center"><strong>0.90</strong></td>
+<td style="text-align:center"><strong>0.54</strong></td>
+<td style="text-align:center">0.84</td>
+<td style="text-align:center">0.34</td>
+<td style="text-align:center">0.61</td>
+<td style="text-align:center"><strong>1.38</strong></td>
+<td style="text-align:center">ieee access</td>
+</tr>
+<tr>
+<td style="text-align:center">0.79</td>
+<td style="text-align:center"><strong>0.55</strong></td>
+<td style="text-align:center">0.86</td>
+<td style="text-align:center">0.52</td>
+<td style="text-align:center"><strong>0.87</strong></td>
+<td style="text-align:center"><strong>0.40</strong></td>
+<td style="text-align:center"><strong>0.65</strong></td>
+<td style="text-align:center">1.40</td>
+<td style="text-align:center">not found log file</td>
+</tr>
+<tr>
+<td style="text-align:center">0.81</td>
+<td style="text-align:center">0.54</td>
+<td style="text-align:center">0.89</td>
+<td style="text-align:center">0.59</td>
+<td style="text-align:center"><strong>0.87</strong></td>
+<td style="text-align:center"><strong>0.45</strong></td>
+<td style="text-align:center"><strong>0.66</strong></td>
+<td style="text-align:center">1.79</td>
+<td style="text-align:center">multi-task (<a href="./network/multi_task/run_best_model.log"><strong>log</strong></a>,<a href="./network/multi_task/run_best_model.py"><strong>py</strong></a>)</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-deepddg%E5%AF%B9%E6%AF%94%E5%AE%9E%E9%AA%8C">3.2 <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.8b00697">deepddg</a>对比实验</h3>
+<p>deepddg关于overfitting的对比
+<img src="./pics/deepddg_overfitting.png" alt="overfitting" height="400"></p>
+<ul>
+<li>根据数据集 S2648 blind test 选择的网络结构测试 deepddg (原文提供的10折交叉验证)，结果很差:</li>
+</ul>
+<pre class="hljs"><code><div>AVG results ----------
+*avg(pearson_coeff): 0.2114956762654386
+*avg(std): 2.6856843899847256
+*avg(mae): 1.2549294474814188
+*avg(acc): 0.6807272724797355
+*avg(mcc): 0.052656168440217074
+*avg(recall_p): 0.13124999983593752
+*avg(recall_n): 0.9061538456891519
+*avg(precision_p): 0.33006476781287636
+*avg(precision_n): 0.7180112125516553
+---------------------------------------
+The network structure used by cross_valid.py was Optimizer by S2648 (multi_task, blind test)
+The result of S2648 (multi_task, blind test) are
+
+pearson_coeff: 0.660638454382328, std: 1.7878190310496471
+acc: 0.8106060604525368, mcc: 0.4451319072587876, recall_p: 0.5416666662152778, recall_n: 0.889705882134876, precision_p: 0.5909090903719009, precision_n: 0.8684210524238226
+
+Optimizer S2648 codes at /dl/sry/mCNN/src/Network/OptimizeHypers/multi_task/reduceAUTO
+</div></code></pre>
+<h3 id="33-%E8%AF%84%E4%BC%B0trrosetta%E9%A2%84%E6%B5%8B%E7%9A%84%E7%AA%81%E5%8F%98%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C-topprobtxt">3.3 评估TrRosetta预测的突变结构实验 <strong>(top_prob.txt)</strong></h3>
+<p>选出500个样本测试TrRosetta, 结果表 --&gt; <a href="./csv/S2648_TR500_with_PROB.csv.txt"><strong>S2648_TR500_with_PROB.csv.txt</strong></a></p>
+<ul>
+<li>DDG 和 WILD_PROB - MUTANT_PROB 的相关性为：pearson_coeff: -0.1043027033756192, p_value: 0.01965822807789628</li>
+<li>TrRosetta测试路径为：/public/home/sry/mCNN/dataset/TR</li>
+</ul>
+<h2 id="4-%E8%A7%82%E5%AF%9Frosetta-trrosetta%E5%92%8Cmodeller%E5%BB%BA%E7%AB%8B%E7%9A%84%E7%AA%81%E5%8F%98%E7%BB%93%E6%9E%84">4. 观察Rosetta, TrRosetta和MODELLER建立的突变结构</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">key</th>
+<th style="text-align:center">PDB</th>
+<th style="text-align:center">WILD_TYPE</th>
+<th style="text-align:center">CHAIN</th>
+<th style="text-align:center">POSITION</th>
+<th style="text-align:center">MUTANT</th>
+<th style="text-align:center">PH</th>
+<th style="text-align:center">TEMPERATURE</th>
+<th style="text-align:center">DDG</th>
+<th style="text-align:center">RSA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">854</td>
+<td style="text-align:center">1RTB</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">97</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">63.3</td>
+<td style="text-align:center">-12</td>
+<td style="text-align:center">2.95</td>
+</tr>
+<tr>
+<td style="text-align:center">855</td>
+<td style="text-align:center">1RTB</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">97</td>
+<td style="text-align:center">G</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">63.3</td>
+<td style="text-align:center">-11.7</td>
+<td style="text-align:center">2.95</td>
+</tr>
+<tr>
+<td style="text-align:center">1834</td>
+<td style="text-align:center">3SSI</td>
+<td style="text-align:center">V</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">G</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">82.21</td>
+<td style="text-align:center">-10.3</td>
+<td style="text-align:center">36.56</td>
+</tr>
+<tr>
+<td style="text-align:center">263</td>
+<td style="text-align:center">1BNI</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">103</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">6.3</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">28.22</td>
+</tr>
+<tr>
+<td style="text-align:center">68</td>
+<td style="text-align:center">1AJ3</td>
+<td style="text-align:center">Q</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">86</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">63.44</td>
+</tr>
+<tr>
+<td style="text-align:center">1082</td>
+<td style="text-align:center">1FVK</td>
+<td style="text-align:center">H</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">6.8</td>
+<td style="text-align:center">43.27</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>4</strong></td>
+<td style="text-align:center"><strong>1A23</strong></td>
+<td style="text-align:center"><strong>H</strong></td>
+<td style="text-align:center"><strong>A</strong></td>
+<td style="text-align:center"><strong>32</strong></td>
+<td style="text-align:center"><strong>Y</strong></td>
+<td style="text-align:center"><strong>7</strong></td>
+<td style="text-align:center"><strong>30</strong></td>
+<td style="text-align:center"><strong>0.5</strong></td>
+<td style="text-align:center"><strong>31.56</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>5</strong></td>
+<td style="text-align:center"><strong>1A23</strong></td>
+<td style="text-align:center"><strong>H</strong></td>
+<td style="text-align:center"><strong>A</strong></td>
+<td style="text-align:center"><strong>32</strong></td>
+<td style="text-align:center"><strong>Y</strong></td>
+<td style="text-align:center"><strong>7</strong></td>
+<td style="text-align:center"><strong>30</strong></td>
+<td style="text-align:center"><strong>6.8</strong></td>
+<td style="text-align:center"><strong>31.56</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>6</strong></td>
+<td style="text-align:center"><strong>1A23</strong></td>
+<td style="text-align:center"><strong>H</strong></td>
+<td style="text-align:center"><strong>A</strong></td>
+<td style="text-align:center"><strong>32</strong></td>
+<td style="text-align:center"><strong>Y</strong></td>
+<td style="text-align:center"><strong>7</strong></td>
+<td style="text-align:center"><strong>30</strong></td>
+<td style="text-align:center"><strong>6.8</strong></td>
+<td style="text-align:center"><strong>31.56</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>key 854</li>
+</ol>
+<center>
+<table border="1">
+  <tr>
+    <th>Rosetta_ref and Rosetta_mut alignment</th>
+    <th>TrRosetta_wild and TrRosetta_mut alignment</th>
+    <th>Rosetta_ref and TrRosetta_mut alignment</th>
+    <th>MODELLER_wild and MODELLER_mut alignment</th>
+  </tr>
+  <tr>
+    <td><img src="./pics/RO_key854.png" alt="RO_key854" height="200"><center>RSA=2.59%, DDG=-12</center></td>
+    <td><img src="./pics/TR_key854.png" alt="TR_key854" height="200"><center>RSA=2.59%, DDG=-12<center></td>
+    <td><img src="./pics/ROTR_key854.png" alt="ROTR_key854" height="200"><center>RSA=2.59%, DDG=-12</center></td>
+    <td><center>RSA=2.59%, DDG=-12, </br><a href="./pymol/key854-MO_aln.pse"><b>pymol.pse</b></a></center></td>
+  </tr>
+</table>
+</center>
+<ol start="2">
+<li>key 855</li>
+</ol>
+<center>
+<table border="1">
+  <tr>
+    <th>Rosetta_ref and Rosetta_mut alignment</th>
+    <th>TrRosetta_wild and TrRosetta_mut alignment</th>
+    <th>Rosetta_ref and TrRosetta_mut alignment</th>
+    <th>MODELLER_wild and MODELLER_mut alignment</th>
+  </tr>
+  <tr>
+    <td><img src="./pics/RO_key855.png" alt="RO_key855" height="200"><center>RSA=2.95%, DDG=-11.7</center></td>
+    <td><img src="./pics/TR_key855.png" alt="TR_key855" height="200"><center>RSA=2.95%, DDG=-11.7<center></td>
+    <td><img src="./pics/ROTR_key855.png" alt="ROTR_key855" height="200"><center>RSA=2.95%, DDG=-11.7</center></td>
+    <td><center>RSA=2.95%, DDG=-11.7, </br><a href="./pymol/key855-MO_aln.pse"><b>pymol.pse</b></a></center></td>
+  </tr>
+</table>
+</center>
+<ol start="3">
+<li>key 1834</li>
+</ol>
+<center>
+<table border="1">
+  <tr>
+    <th>Rosetta_ref and Rosetta_mut alignment</th>
+    <th>TrRosetta_wild and TrRosetta_mut alignment</th>
+    <th>Rosetta_ref and TrRosetta_mut alignment</th>
+    <th>MODELLER_wild and MODELLER_mut alignment</th>
+  </tr>
+  <tr>
+    <td><img src="./pics/RO_key1834.png" alt="RO_key1834" height="200"><center>RSA=28.22%, DDG=-10.3</center></td>
+    <td><img src="./pics/TR_key1834.png" alt="TR_key1834" height="200"><center>RSA=28.22%, DDG=-10.3, 不吻合但RSA偏大<center></td>
+    <td><img src="./pics/ROTR_key1834.png" alt="ROTR_key1834" height="200"><center>RSA=28.22%, DDG=-10.3</center></td>
+    <td><center>RSA=28.22%, DDG=-10.3, </br><a href="./pymol/key1834-MO_aln.pse"><b>pymol.pse</b></a></center></td>
+  </tr>
+</table>
+</center>
+<ol start="4">
+<li>key 263</li>
+</ol>
+<center>
+<table border="1">
+  <tr>
+    <th>Rosetta_ref and Rosetta_mut alignment</th>
+    <th>TrRosetta_wild and TrRosetta_mut alignment</th>
+    <th>Rosetta_ref and TrRosetta_mut alignment</th>
+    <th>MODELLER_wild and MODELLER_mut alignment</th>
+  </tr>
+  <tr>
+    <td><img src="./pics/RO_key263.png" alt="RO_key263" height="200"><center>RSA=63.44%, DDG=0</center></td>
+    <td><img src="./pics/TR_key263.png" alt="TR_key263" height="200"><center>RSA=63.44%, DDG=0<center></td>
+    <td><img src="./pics/ROTR_key263.png" alt="ROTR_key263" height="200"><center>RSA=63.44%, DDG=0</center></td>
+    <td><center>RSA=63.44%, DDG=0, </br><a href="./pymol/key263-MO_aln.pse"><b>pymol.pse</b></a></center></td>
+  </tr>
+</table>
+</center>
+<ol start="5">
+<li>key 68</li>
+</ol>
+<center>
+<table border="1">
+  <tr>
+    <th>Rosetta_ref and Rosetta_mut alignment</th>
+    <th>TrRosetta_wild and TrRosetta_mut alignment</th>
+    <th>Rosetta_ref and TrRosetta_mut alignment</th>
+    <th>MODELLER_wild and MODELLER_mut alignment</th>
+  </tr>
+  <tr>
+    <td><img src="./pics/RO_key68.png" alt="RO_key68" height="200"><center>RSA=43.27%, DDG=0</center></td>
+    <td><img src="./pics/TR_key68.png" alt="TR_key68" height="200"><center>RSA=43.27%, DDG=0<center></td>
+    <td><img src="./pics/ROTR_key68.png" alt="ROTR_key68" height="200"><center>RSA=43.27%, DDG=0</center></td>
+    <td><center>RSA=43.27%, DDG=0, </br><a href="./pymol/key68-MO_aln.pse"><b>pymol.pse</b></a></center></td>
+  </tr>
+</table>
+</center>
+<ol start="6">
+<li>key 1082</li>
+</ol>
+<center>
+<table border="1">
+  <tr>
+    <th>Rosetta_ref and Rosetta_mut alignment</th>
+    <th>TrRosetta_wild and TrRosetta_mut alignment</th>
+    <th>Rosetta_ref and TrRosetta_mut alignment</th>
+    <th>MODELLER_wild and MODELLER_mut alignment</th>
+  </tr>
+  <tr>
+    <td><img src="./pics/RO_key1082.png" alt="RO_key1082" height="200"><center>RSA=31.56%, DDG=6.8</center></td>
+    <td><img src="./pics/TR_key1082.png" alt="TR_key1082" height="200"><center>RSA=31.56%, DDG=6.8<center></td>
+    <td><img src="./pics/ROTR_key1082.png" alt="ROTR_key1082" height="200"><center>RSA=31.56%, DDG=6.8</center></td>
+    <td><center>RSA=31.56%, DDG=6.8, </br><a href="./pymol/key1082-MO_aln.pse"><b>pymol.pse</b></a></center></td>
+  </tr>
+</table>
+</center>
+<ol start="7">
+<li>key 4</li>
+</ol>
+<center>
+<table border="1">
+  <tr>
+    <th>Rosetta_ref and Rosetta_mut alignment</th>
+    <th>TrRosetta_wild and TrRosetta_mut alignment</th>
+    <th>Rosetta_ref and TrRosetta_mut alignment</th>
+    <th>MODELLER_wild and MODELLER_mut alignment</th>
+  </tr>
+  <tr>
+    <td><img src="./pics/RO_key4.png" alt="RO_key4" height="200"><center>RSA=2.59%, DDG=[6.8|0.5]</center></td>
+    <td><img src="./pics/TR_key4.png" alt="TR_key4" height="200"><center>RSA=2.59%, DDG=[6.8|0.5]<center></td>
+    <td><img src="./pics/ROTR_key4.png" alt="ROTR_key4" height="200"><center>RSA=2.59%, DDG=[6.8|0.5], DDG values are in conflict</center></td>
+    <td><center>RSA=2.59%, DDG=[6.8|0.5], </br><a href="./pymol/key4-MO_aln.pse"><b>pymol.pse</b></a></center></td>
+  </tr>
+</table>
+</center>
+<ul>
+<li>测试了CATHER的一个例子key855，结果mut结构和ref几乎一致，如下图</li>
+</ul>
+<!-- ![alt text](./pics/ROCA_key855.png 'RO_key4') -->
+<img src="./pics/ROCA_key855.png" alt="RO_key4" height="200">
+<blockquote>
+<p>RSA=2.95%, DDG=-11.7
+</br></p>
+</blockquote>
+</br>
+<!-- ![alt text](./pics/classifier.png 'classifier')
+> 分类器
+
+![alt text](./pics/regressor.png 'regressor')
+> 回归器 -->
+
+</body>
+</html>
