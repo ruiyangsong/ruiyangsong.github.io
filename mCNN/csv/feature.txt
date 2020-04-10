@@ -21,8 +21,8 @@
 79-91                     'MT_A', 'MT_R', 'MT_N', 'MT_D', 'MT_C', 'MT_Q', 'MT_E', 'MT_G', 'MT_H', 'MT_I', 'MT_L', 'MT_K', 'MT_M',
 92-99                     'MT_F', 'MT_P', 'MT_S', 'MT_T', 'MT_W', 'MT_Y', 'MT_V', 'MT_-',
 
-100-105                     'dC', 'dH', 'dO', 'dN', 'dOther',
-106-113                     'dhydrophobic', 'dpositive', 'dnegative', 'dneutral', 'dacceptor', 'ddonor', 'daromatic', 'dsulphur',
-114-115                     'dhydrophobic_bak', 'dpolar',
-116-118                     'dEntropy', 'entWT', 'entMT']
+100-104                     'dC', 'dH', 'dO', 'dN', 'dOther',
+105-112                     'dhydrophobic', 'dpositive', 'dnegative', 'dneutral', 'dacceptor', 'ddonor', 'daromatic', 'dsulphur',
+113-114                     'dhydrophobic_bak', 'dpolar',
+115-117                     'dEntropy', 'entWT', 'entMT']
 ```
