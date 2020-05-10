@@ -1,0 +1,44 @@
+反馈
+0. deepddg中10折交叉验证的10折训练数据没有问题！！！
+1. 三组实验作比较【118+22，22，deepddg】
+2. 以后的数据集都基于deepddg，比较更方便
+3. 应该用TMscore的旋转矩阵来做结构对齐
+
+汇报
+老师我这两周测试了由TrRosetta预测的结构变化预测DDG
+用的特征是：突变位点20个近邻残基的距离，20个残基到突变位点的距离变化，RMSD，TMscore
+做了两个回归实验
+1. 线性回归
+pcc: 0.14956544551102058
+RMSE: 2.610944249037249
+
+2. 1维卷积网络回归
+pearson_coeff: -0.06929458112798598
+rmse: 8.922038897578247
+
+另外之前用二维卷积测试结果表明rosetta energy没有帮助
+但是在1维卷积下有帮助，结果如下
+
+二维卷积用rosetta energy
+AVG results ----------
+*avg(pearson_coeff): 0.4480218858285919
+*avg(std): 2.2377949360920253
+*avg(mae): 1.1416390202486988
+
+二维卷积不用rosetta energy
+AVG results ----------
+*avg(pearson_coeff): 0.47179715711250997
+*avg(std): 2.058079175747917
+*avg(mae): 1.104477821952237
+
+一维卷积用rosetta energy
+AVG results ----------
+*avg(pearson_coeff): 0.45769129192847
+*avg(std): 2.00079906661651
+*avg(mae): 1.085702097854997
+
+一维卷积不用rosetta energy
+AVG results ----------
+*avg(pearson_coeff): 0.40684614656396506
+*avg(std): 2.1412429297768485
+*avg(mae): 1.1146626458350355
