@@ -1,4 +1,6 @@
 # [HomeWork1 of Bioinformatics](./course/bioinfo/HW1/hw1.html)
 # [mCNN20200330](./mCNN/20200330.html)
 # [mCNN20200406](./mCNN/20200406.html)
-# [mCNN20200506](./mCNN/20200506.pdf)
+# [mCNN20200421](./mCNN/20200421.txt)
+# [mCNN20200430](./mCNN/20200430.txt)
+# [mCNN20200511](./mCNN/20200511.pdf)
