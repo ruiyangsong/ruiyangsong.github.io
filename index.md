@@ -1,7 +1,1 @@
-# [HomeWork1 of Bioinformatics](./course/bioinfo/HW1/hw1.html)
-# [mCNN20200330](./mCNN/meeting/20200330.html)
-# [mCNN20200406](./mCNN/meeting/20200406.html)
-# [mCNN20200421](./mCNN/meeting/20200421.txt)
-# [mCNN20200501](./mCNN/meeting/20200501.txt)
-# [mCNN20200511](./mCNN/meeting/20200511.pdf)
-# [feature158](./mCNN/HyperNote/note.html)
+# [Yao](./others/yao.md)
