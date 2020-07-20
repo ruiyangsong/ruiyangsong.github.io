@@ -1,1 +1,1 @@
-# [Yao](./others/yao.md)
+# [Yao](./for/yao.md)
