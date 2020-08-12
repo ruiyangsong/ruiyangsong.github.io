@@ -10,18 +10,21 @@
 1. SIFT 
 2. PolyPhen2
 3. SNPdryad
+
 ## HumDiv
 **比较的之前方法为**
 1. SNPdryad
 2. SNAP
 3. PolyPhen2
 其他同 HumVar
+
 ## SNPdbe
 **比较的之前方法为**
 1. SNPdryad
 2. SNAP
 3. PolyPhen2
 其他同 HumVar
+
 ## ExoVar
 **比较的之前方法为**
 1. SIFT
