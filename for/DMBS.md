@@ -57,7 +57,7 @@
 ## B.HumDiv
 **比较的之前方法为**
 1. SNPdryad
-2. SNAP
+2. SIFT
 3. PolyPhen2  
 
 **其他同 HumVar**
