@@ -5,4 +5,4 @@
 # [mCNN20200501](../mCNN/meeting/20200501.txt)
 # [mCNN20200511](../mCNN/meeting/20200511.pdf)
 # [feature158](../mCNN/HyperNote/note.html)
-# [Yao](../for/yao.md)
+# [desney](../for/desney.md)
