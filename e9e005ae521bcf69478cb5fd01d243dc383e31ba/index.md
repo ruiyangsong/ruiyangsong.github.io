@@ -5,7 +5,8 @@
 # [mCNN20200501](../mCNN/meeting/20200501.txt)
 # [mCNN20200511](../mCNN/meeting/20200511.pdf)
 # [feature158](../mCNN/HyperNote/note.html)
+```
+# [desney](../for/tsoo/desney.md)
+# [tencent](../for/tsoo/tencent.md)
+```
 # [baidu_interview](../for/job/baidu.md)
-[^_^]:
-	# [desney](../for/tsoo/desney.md)
-	# [tencent](../for/tsoo/tencent.md)
