@@ -9,4 +9,5 @@
 # [desney](../for/tsoo/desney.md)
 # [tencent](../for/tsoo/tencent.md)
 ```
+# [bytedance_data](../for/tsoo/bytedance.md)
 # [baidu_interview](../for/job/baidu.md)
