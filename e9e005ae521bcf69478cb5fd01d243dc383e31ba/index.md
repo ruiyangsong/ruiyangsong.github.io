@@ -13,6 +13,7 @@
 # [baidu_interview](../for/job/baidu.md)
 ```
 # [linux](../note/linux/hp.md)
+# [python](../note/python/PythonBasics.md)
 # [leetcode](../note/leetcode/leetcode.md)
 # [推荐算法](../note/推荐算法/推荐算法.md)
 # [机器学习和深度学习](../note/机器学习和深度学习/机器学习和深度学习.md)
