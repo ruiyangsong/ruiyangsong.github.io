@@ -255,6 +255,8 @@ set-option -g status-position top
 
 # 自定义脚本
 
+fuser -v /dev/nvidia* |awk '{for(i=1;i<=NF;i++)print "kill -9 " $i;}' | sh
+
 ## qzy
 
 ```perl
