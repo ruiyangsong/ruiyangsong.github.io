@@ -10,6 +10,124 @@
 
 # ADT
 
+## 单调栈
+
+单调栈实际上就是栈，只是利用了一些巧妙的逻辑，使得每次新元素入栈后，栈内的元素都保持有序（单调递增或单调递减）。听起来有点像堆（heap）？不是的，单调栈用途不太广泛，只处理一种典型的问题，叫做 ==Next Greater Element。==
+
+### 下一个最大元素，单数组
+
+```
+Next Greater Element：给你一个数组，返回一个等长的数组，对应索引存储着下一个更大元素，如果没有更大的元素，就存 -1。不好用语言解释清楚，直接上一个例子：
+给你一个数组 [2,1,2,4,3]，你返回数组 [4,2,4,-1,-1]。
+```
+
+抽象思考：把数组的元素想象成并列站立的人，元素大小为身高。这些人面对你站成一列，如何求元素「2」的 Next Greater Number 呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的 Next Greater Number，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
+
+<img src=".images/image-20210823095205914.png" alt="image-20210823095205914" style="zoom:30%;" />
+
+```python
+'''
+# 左边是栈顶
+总共有 n 个元素，每个元素都被 push 入栈了一次，而最多会被 pop 一次，没有任何冗余操作。所以总的计算规模是和元素规模 n 成正比的，也就是 O(n) 的复杂度。
+'''
+def nextGreaterElement(nums):
+    n = len(nums)
+    ans = []# 存放答案的数组
+    stack = []
+    for i in range(n-1, -1, -1): #倒着往栈里放,倒着入栈，其实是正着出栈
+        while (stack and nums[i] >= stack[-1]): #while 循环是把两个“高个”元素之间的元素排除
+            stack.pop() #矮个起开，反正也被挡着了。。。
+		if not stack:
+            ans[i] = -1
+        else:
+            ans[i] = stack[-1] #先读取栈顶元素再入栈
+        stack.append(nums[i])
+    return ans
+```
+
+### 下一个最大元素，循环数组
+
+<img src=".images/image-20210823105928902.png" alt="image-20210823105928902" style="zoom:33%;" />
+
+通过 % 运算符求模（余数），模拟环形数组
+
+```python
+nums=[1,2,3,4,5]
+n = len(nums)
+i = 0
+while true:
+    print(nums[i % n])
+    i+=1
+```
+
+增加了环形属性后，问题的难点在于：这个 Next 的意义不仅仅是当前元素的右边了，有可能出现在当前元素的左边（如上图）。我们可以考虑这样的思路：将原始数组“翻倍”，就是在后面再接一个原始数组，这样的话，按照之前“比身高”的流程，每个元素不仅可以比较自己右边的元素，而且也可以和左边的元素比较了。
+
+<img src=".images/image-20210824000331378.png" alt="image-20210824000331378" style="zoom:33%;" />
+
+你当然可以把这个双倍长度的数组构造出来，然后套用算法模板。但是，我们可以不用构造新数组，而是利用循环数组的技巧来模拟
+
+整体code
+
+```python
+def nextGreaterElements(nums):
+    n = len(nums)
+    ans = []# 存放答案的数组
+    stack = []
+    for i in range(2*n-1, -1, -1): #假装这个数组长度翻倍了(长度2n);倒着往栈里放,倒着入栈，其实是正着出栈
+        while stack and nums[i % n] >= stack.top():
+            stack.pop()
+        if not stack:
+            ans[i%n] = -1
+        else:
+            ans[i%n] = stack[-1] #先读取栈顶元素再入栈
+        stack.append(nums[i%n])
+    return ans
+```
+
+### 下一个最大元素，整数
+
+```python
+class Solution:
+    def nextGreaterElement(self, n: int) -> int:
+        '''借用 下一个排列 的代码'''
+
+        nums = [x for x in str(n)]
+        # 125 36 51
+        #从右向左找第一个顺序对，此时i指向3
+        i = len(nums) - 2
+        while i >= 0 and nums[i] >= nums[i + 1]:
+            i -= 1
+        #从右向左找第一个大于i位置的j，j指向5
+        if i >= 0:
+            j = len(nums) - 1
+            while j >= 0 and nums[i] >= nums[j]:
+                j -= 1
+            # 交换35 --> 1255 631
+            nums[i], nums[j] = nums[j], nums[i]
+        #利用双指针将 i+1 之后的元素重新排序（原来是降序的）
+        left, right = i + 1, len(nums) - 1
+        while left < right:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
+        
+        next_num = int(''.join(nums))
+        if 1 <= next_num <= 2**31 - 1 and next_num > n:
+            return next_num
+        else:
+            return -1
+```
+
+
+
+
+
+
+
+
+
+
+
 ## 二叉堆（Binary Heap）
 
 **优先队列**  
@@ -298,7 +416,7 @@ class Solution:
 - [ ] 字符串解码
 - [ ] 
 
-# 1. 排序
+# 排序
 
 <img src=".images/cde64bf682850738153e6c76dd3f6fb32201ce3c73c23415451da1eead9eb7cb-20190624173156.jpg" alt="20190624173156.jpg" style="zoom:60%;" />
 
@@ -1459,6 +1577,419 @@ class Solution:
 
 
 ## ==用动态规划玩游戏(未完成)==
+
+
+
+## 鸡蛋坠落
+
+k 枚鸡蛋，n 层楼，已知存在楼层 f ，满足 0 <= f <= n ，任何 > f 的楼层落下的鸡蛋都会碎，从 <= f 的楼层落下的鸡蛋都不会破。每次操作，你可以取鸡蛋并把它从任一楼层 x 扔下（满足 1 <= x <= n）。如果某枚鸡蛋扔下后没有摔碎，可以重复使用。
+
+请你计算要确定 f , 则最小操作次数是多少？
+
+注意：比如说鸡蛋在 1 层都能摔碎，那么 f  = 0。
+
+```
+如果不限制鸡蛋个数的话，二分思路显然可以得到最少尝试的次数，但问题是，现在给你了鸡蛋个数的限制K，直接使用二分思路就不行了。
+比如说只给你 1 个鸡蛋，7 层楼，你敢用二分吗？你直接去第 4 层扔一下，如果鸡蛋没碎还好，但如果碎了你就没有鸡蛋继续测试了，无法确定鸡蛋恰好摔不碎的楼层F了。这种情况下只能用线性扫描的方法，算法返回结果应该是 7。
+```
+
+
+
+```python
+class Solution:
+    def superEggDrop(self, K: int, N: int) -> int:
+        memo = dict()
+        def dp(K, N) -> int:
+            # base case
+            if K == 1: return N # 一个鸡蛋，线性扫描
+            if N == 0: return 0 # 0层楼，尝试次数为0
+            # 避免重复计算
+            if (K, N) in memo:
+                return memo[(K, N)]
+
+            res = float('INF')
+            # 穷举所有可能的选择
+            for i in range(1, N + 1):
+                res = min(res, #最少的操作次数
+                        max(   #当前实验最少的操作次数应该是 碎还是不碎中的最坏情况
+                                dp(K, N - i),    #鸡蛋没碎，向上搜索
+                                dp(K - 1, i - 1) #鸡蛋碎了，向下搜索，鸡蛋数量-1
+                            ) + 1                #操作次数+1
+                    )
+            # 记入备忘录
+            memo[(K, N)] = res
+            return res
+        return dp(K, N)
+```
+
+
+
+## 买卖股票最佳时机
+
+给定一个整数数组 prices ，它的第 i 个元素 prices[i] 是一支给定的股票在第 i 天的价格。设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。
+
+1. 状态（用dp遍历状态，遍历过程中择优）
+
+   天数（第几天），当天最大交易上界，当天是否持有股票（0，1标识）
+
+2. `dp[n-1][k][0]`: 今天是第n天，当前最多交易次数是k，当前没有持有股票 **时的收益**
+
+3. 选择：买buy，卖cell，啥也不干休息rest
+
+4. base case
+
+   <img src=".images/image-20210822230437122.png" alt="image-20210822230437122" style="zoom:30%;" />
+
+5. 状态转移（根据当前是否持有股票对状态进行切分）
+
+<img src=".images/image-20210822225852502.png" alt="image-20210822225852502" style="zoom:40%;" />
+
+如果 buy，就要从利润中减去 prices[i]，如果 sell，就要给利润增加 prices[i]。
+
+今天的最大利润就是这两种可能选择中较大的那个。而且注意 k 的限制，我们在选择 buy 的时候，把最大交易数 k 减小了 1
+
+```
+#状态转移, i-1溢出
+dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1]+prices[i])
+dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i])
+
+#Base case
+dp[-1][k][1] = -float('inf') #i=-1,还没开始，此时持有股票是不可能的
+dp[-1][k][0] = 0             #i=-1,还没开始，此时没有股票，收益为0
+dp[i][0][1]  = -float('inf') #不允许交易，不可能持有股票
+dp[i][0][0]  = 0             #不允许交易，此时没有股票，利润为0
+```
+
+### k=1
+
+```python
+'''
+###统一模板
+
+# 转移方程分析：k只能等于1 or 0
+dp[i][1][0] = max(dp[i-1][1][0], dp[i-1][1][1]+prices[i])
+dp[i][1][1] = max(dp[i-1][1][1], dp[i-1][0][0]-prices[i]) #因为k=0，dp[i-1][0][0]=0
+            = max(dp[i-1][1][1], -prices[i])
+现在的转移方程中没有k-1（0）出现，因此k这个维度可以省略
+
+#转移方程
+dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+dp[i][1] = max(dp[i-1][1], -prices[i])
+# base case (i-1有溢出)
+dp[-1][0] = 0
+dp[-1][1] = -float('inf')
+'''
+--------------------------在循环中判断base case--------------------------
+def maxProfit(prices):
+    n  = len(prices)
+    dp = [[0]*2 for _ in range(n)]
+    for i in range(n):
+        if i == 0:
+            dp[i][0] = 0
+        	dp[i][1] = -price[i]
+            continue
+        dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+		dp[i][1] = max(dp[i-1][1], -prices[i])
+    return dp[n-1][0]
+--------------------------显式定义base case------------------------------
+def maxProfit(prices):
+    n  = len(prices)
+    dp = [[0]*2 for _ in range(n)]
+    dp[-1][0] = 0
+    dp[-1][1] = -float('inf')
+    for i in range(n):
+        dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+		dp[i][1] = max(dp[i-1][1], -prices[i])
+    return dp[n-1][0]
+
+--------------------状态压缩，新状态只和相邻的状态相关-----------------------
+def maxProfit(prices):
+    n  = len(prices)
+    #dp[-1][0] = 0
+    #dp[-1][1] = -float('inf')
+    dp_i_0 = 0
+    dp_i_1 = -float('inf')
+    for i in range(n):
+        #dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+        dp_i_0 = max(dp_i_0, dp_i_1+prices[i])
+        #dp[i][1] = max(dp[i-1][1], -prices[i])
+		dp_i_1 = max(dp_i_1, -prices[i])
+    return dp_i_0
+
+----------------一次买卖：站在上帝视角在最低点买入，高点卖出--------------------
+## dp 前 i 天的最大利润
+def maxProfit(prices):
+	n = len(prices)
+	if n == 0: return 0  #边界条件
+	dp = [0] * n
+	minprice = prices[0] #最低点价格
+	for i in range(1, n):
+    	minprice = min(minprice, prices[i])
+	    dp[i] = max(dp[i - 1], prices[i] - minprice)
+    return dp[-1]
+
+##一次遍历,更优解法
+def maxProfit(prices):
+    _min = prices[0] #记录历史最低价格
+    _max = 0
+    for i in range(1, len(prices)):
+        if prices[i] < _min:
+            _min = prices[i] #更新历史最低价格
+        _max = max(_max, prices[i] - _min) #更新最佳收益
+    return _max
+```
+
+
+
+### k=无穷大
+
+```python
+'''
+###统一模板
+
+# 转移方程分析：
+dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1]+prices[i])
+dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i])
+#状态转移，k无穷大相当于没有k:
+dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+dp[i][1] = max(dp[i-1][1], dp[i-1][0]-prices[i]) ## 注意此时dp[i-1][0] = dp[i-1][k][0],k!=0,故dp[i-1][0]!=0
+
+# base case (i-1有溢出)
+dp[-1][0] = 0
+dp[-1][1] = -float('inf')
+'''
+def maxProfit(prices):
+    n  = len(prices)
+    dp_i_0 = 0
+    dp_i_1 = -float('inf')
+    for i in range(n):
+        tmp = dp_i_0
+        #dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+        dp_i_0 = max(dp_i_0, dp_i_1+prices[i])
+        #dp[i][1] = max(dp[i-1][1], dp[i-1][0]-prices[i])
+		dp_i_1 = max(dp_i_1, tmp - prices[i])
+    return dp_i_0
+
+```
+
+### k=无穷大含冷冻期
+
+```python
+'''
+sell 之后要等一天才能继续交易，更改状态转移方程
+###统一模板
+#状态转移，k无穷大相当于没有k:
+dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+dp[i][1] = max(dp[i-1][1], dp[i-2][0]-prices[i]) ## 注意此时dp[i-1][0] = dp[i-1][k][0],k!=0,故dp[i-1][0]!=0
+#此处从i-2转移
+
+# base case (i-1有溢出)
+dp[-1][0] = 0
+dp[-1][1] = -float('inf')
+'''
+def maxProfit(prices):
+    n  = len(prices)
+    dp_i_0 = 0
+    dp_i_1 = -float('inf')
+    dp_i_0_pre = 0 # 代表dp[i-2][0]
+    for i in range(n):
+        tmp = dp_i_0
+        dp_i_0 = max(dp_i_0, dp_i_1+prices[i])
+		dp_i_1 = max(dp_i_1, dp_i_0_pre - prices[i])
+        dp_i_0_pre = tmp
+    return dp_i_0
+```
+
+### k=无穷大含手续费
+
+```python
+'''
+含手续费，更改状态转移方程
+###统一模板
+#状态转移，k无穷大相当于没有k:
+dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+dp[i][1] = max(dp[i-1][1], dp[i-1][0]-prices[i]-fee) ## 注意此时dp[i-1][0] = dp[i-1][k][0],k!=0,故dp[i-1][0]!=0
+
+# base case (i-1有溢出)
+dp[-1][0] = 0
+dp[-1][1] = -float('inf')
+'''
+def maxProfit(prices):
+    n  = len(prices)
+    dp_i_0 = 0
+    dp_i_1 = -float('inf')
+    for i in range(n):
+        tmp = dp_i_0
+        dp_i_0 = max(dp_i_0, dp_i_1+prices[i]-fee)
+		dp_i_1 = max(dp_i_1, tmp - prices[i])
+
+    return dp_i_0
+```
+
+### k=2
+
+k = 2 和前面题目的情况稍微不同，因为上面的情况都和 k 的关系不太大。要么 k 是正无穷，状态转移和 k 没关系了；要么 k = 1，跟 k = 0 这个 base case 挨得近，最后也被消掉了。
+
+```python
+'''
+#状态转移, i-1溢出
+dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1]+prices[i])
+dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i])
+
+#Base case
+dp[-1][k][1] = -float('inf') #i=-1,还没开始，此时持有股票是不可能的
+dp[-1][k][0] = 0             #i=-1,还没开始，此时没有股票，收益为0
+dp[i][0][1]  = -float('inf') #不允许交易，不可能持有股票
+dp[i][0][0]  = 0             #不允许交易，此时没有股票，利润为0
+'''
+
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        n  = len(prices)
+        k_max = 2
+        dp = [[[0]*2 for _ in range(k_max+1)] for _ in range(n)]
+        for k in range(k_max+1):
+            dp[-1][k][1] = -float('inf') #i=-1,还没开始，此时持有股票是不可能的
+            dp[-1][k][0] = 0             #i=-1,还没开始，此时没有股票，收益为0
+        for i in range(n):
+            dp[i][0][1]  = -float('inf') #不允许交易，不可能持有股票
+            dp[i][0][0]  = 0             #不允许交易，此时没有股票，利润为0
+        # print(dp)
+        for i in range(n):
+            for k in range(k_max, 0, -1):
+                dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1]+prices[i])
+                dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i])
+        return dp[n-1][k_max][0]
+```
+
+### k=any
+
+一次交易由买入和卖出构成，至少需要两天。所以说有效的限制次数 k 应该不超过 n/2，如果超过，就没有约束作用了，相当于 k = +infinity。这种情况是之前解决过的。
+
+```python
+class Solution:
+    def maxProfitInf(self, prices: List[int]) -> int:
+        '''
+        ###统一模板
+
+        # 转移方程分析：
+        dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1]+prices[i])
+        dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i])
+        #状态转移，k无穷大相当于没有k:
+        dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+        dp[i][1] = max(dp[i-1][1], dp[i-1][0]-prices[i]) 
+        ## 注意和k=1的区别，此时dp[i-1][0] = dp[i-1][k][0],而k!=0,故dp[i-1][0]!=0
+
+        # base case (i-1有溢出)
+        dp[-1][0] = 0
+        dp[-1][1] = -float('inf')
+'''
+        n  = len(prices)
+        dp_i_0 = 0
+        dp_i_1 = -float('inf')
+        for i in range(n):
+            tmp = dp_i_0
+            #dp[i][0] = max(dp[i-1][0], dp[i-1][1]+prices[i])
+            dp_i_0 = max(dp_i_0, dp_i_1+prices[i])
+            #dp[i][1] = max(dp[i-1][1], dp[i-1][0]-prices[i])
+            dp_i_1 = max(dp_i_1, tmp - prices[i])
+        return dp_i_0
+
+    def maxProfit(self, k_max: int, prices: List[int]) -> int:
+        n  = len(prices)
+        if k_max > n/2:
+            return self.maxProfitInf(prices)
+        
+        dp = [[[0]*2 for _ in range(k_max+1)] for _ in range(n)]
+        
+        for k in range(k_max+1):
+            dp[-1][k][1] = -float('inf') #i=-1,还没开始，此时持有股票是不可能的
+            dp[-1][k][0] = 0             #i=-1,还没开始，此时没有股票，收益为0
+        for i in range(n):
+            dp[i][0][1]  = -float('inf') #不允许交易，不可能持有股票
+            dp[i][0][0]  = 0             #不允许交易，此时没有股票，利润为0
+        # print(dp)
+        for i in range(n):
+            for k in range(k_max, 0, -1):
+                dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1]+prices[i])
+                dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i])
+        return dp[n-1][k_max][0]
+```
+
+
+
+## 打家劫舍
+
+### 一排房子
+
+给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+
+状态：房间
+
+选择：抢，不抢
+
+`dp[i]:`抢劫前i的房间得到的总钱数
+
+状态转移：dp[i] = max(dp[i-1], dp[i-2]+nums[i-1])
+
+```python
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        dp = [0]*(len(nums)+1)
+        dp[0] = 0
+        for i in range(1,len(nums)+1):
+            dp[i] = max(dp[i-1], dp[i-2]+nums[i-1])
+        return dp[-1]
+## 状态压缩
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        dp_i = 0
+        dp_i_pre = 0
+        for i in range(1,len(nums)+1):
+            #dp[i] = max(dp[i-1], dp[i-2]+nums[i-1])
+            tmp = dp_i
+            dp_i = max(dp_i, dp_i_pre+nums[i-1])
+            dp_i_pre = tmp
+        return dp_i
+```
+
+### 一圈房子
+
+这些房子不是一排，而是围成了一个圈
+
+```python
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        dp = [0]*(len(nums)+1)
+        dp[0] = 0
+        for i in range(1,len(nums)+1):
+            dp[i] = max(dp[i-1], dp[i-2]+nums[i-1])
+        return dp[-1]
+## 状态压缩
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        dp_i = 0
+        dp_i_pre = 0
+        for i in range(1,len(nums)+1):
+            #dp[i] = max(dp[i-1], dp[i-2]+nums[i-1])
+            tmp = dp_i
+            dp_i = max(dp_i, dp_i_pre+nums[i-1])
+            dp_i_pre = tmp
+        return dp_i
+```
+
+### 二叉树房子
+
+房子在二叉树的节点上，相连的两个房子不能同时被抢劫：
 
 
 

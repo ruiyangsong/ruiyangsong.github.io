@@ -4,6 +4,14 @@
 
 # 配置文件
 
+## golang
+
+```shell
+go get -u -t ./...
+```
+
+
+
 ## .ssh/config
 
 ```
