@@ -10,124 +10,6 @@
 
 # ADT
 
-## 单调栈
-
-单调栈实际上就是栈，只是利用了一些巧妙的逻辑，使得每次新元素入栈后，栈内的元素都保持有序（单调递增或单调递减）。听起来有点像堆（heap）？不是的，单调栈用途不太广泛，只处理一种典型的问题，叫做 ==Next Greater Element。==
-
-### 下一个最大元素，单数组
-
-```
-Next Greater Element：给你一个数组，返回一个等长的数组，对应索引存储着下一个更大元素，如果没有更大的元素，就存 -1。不好用语言解释清楚，直接上一个例子：
-给你一个数组 [2,1,2,4,3]，你返回数组 [4,2,4,-1,-1]。
-```
-
-抽象思考：把数组的元素想象成并列站立的人，元素大小为身高。这些人面对你站成一列，如何求元素「2」的 Next Greater Number 呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的 Next Greater Number，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
-
-<img src=".images/image-20210823095205914.png" alt="image-20210823095205914" style="zoom:30%;" />
-
-```python
-'''
-# 左边是栈顶
-总共有 n 个元素，每个元素都被 push 入栈了一次，而最多会被 pop 一次，没有任何冗余操作。所以总的计算规模是和元素规模 n 成正比的，也就是 O(n) 的复杂度。
-'''
-def nextGreaterElement(nums):
-    n = len(nums)
-    ans = []# 存放答案的数组
-    stack = []
-    for i in range(n-1, -1, -1): #倒着往栈里放,倒着入栈，其实是正着出栈
-        while (stack and nums[i] >= stack[-1]): #while 循环是把两个“高个”元素之间的元素排除
-            stack.pop() #矮个起开，反正也被挡着了。。。
-		if not stack:
-            ans[i] = -1
-        else:
-            ans[i] = stack[-1] #先读取栈顶元素再入栈
-        stack.append(nums[i])
-    return ans
-```
-
-### 下一个最大元素，循环数组
-
-<img src=".images/image-20210823105928902.png" alt="image-20210823105928902" style="zoom:33%;" />
-
-通过 % 运算符求模（余数），模拟环形数组
-
-```python
-nums=[1,2,3,4,5]
-n = len(nums)
-i = 0
-while true:
-    print(nums[i % n])
-    i+=1
-```
-
-增加了环形属性后，问题的难点在于：这个 Next 的意义不仅仅是当前元素的右边了，有可能出现在当前元素的左边（如上图）。我们可以考虑这样的思路：将原始数组“翻倍”，就是在后面再接一个原始数组，这样的话，按照之前“比身高”的流程，每个元素不仅可以比较自己右边的元素，而且也可以和左边的元素比较了。
-
-<img src=".images/image-20210824000331378.png" alt="image-20210824000331378" style="zoom:33%;" />
-
-你当然可以把这个双倍长度的数组构造出来，然后套用算法模板。但是，我们可以不用构造新数组，而是利用循环数组的技巧来模拟
-
-整体code
-
-```python
-def nextGreaterElements(nums):
-    n = len(nums)
-    ans = []# 存放答案的数组
-    stack = []
-    for i in range(2*n-1, -1, -1): #假装这个数组长度翻倍了(长度2n);倒着往栈里放,倒着入栈，其实是正着出栈
-        while stack and nums[i % n] >= stack.top():
-            stack.pop()
-        if not stack:
-            ans[i%n] = -1
-        else:
-            ans[i%n] = stack[-1] #先读取栈顶元素再入栈
-        stack.append(nums[i%n])
-    return ans
-```
-
-### 下一个最大元素，整数
-
-```python
-class Solution:
-    def nextGreaterElement(self, n: int) -> int:
-        '''借用 下一个排列 的代码'''
-
-        nums = [x for x in str(n)]
-        # 125 36 51
-        #从右向左找第一个顺序对，此时i指向3
-        i = len(nums) - 2
-        while i >= 0 and nums[i] >= nums[i + 1]:
-            i -= 1
-        #从右向左找第一个大于i位置的j，j指向5
-        if i >= 0:
-            j = len(nums) - 1
-            while j >= 0 and nums[i] >= nums[j]:
-                j -= 1
-            # 交换35 --> 1255 631
-            nums[i], nums[j] = nums[j], nums[i]
-        #利用双指针将 i+1 之后的元素重新排序（原来是降序的）
-        left, right = i + 1, len(nums) - 1
-        while left < right:
-            nums[left], nums[right] = nums[right], nums[left]
-            left += 1
-            right -= 1
-        
-        next_num = int(''.join(nums))
-        if 1 <= next_num <= 2**31 - 1 and next_num > n:
-            return next_num
-        else:
-            return -1
-```
-
-
-
-
-
-
-
-
-
-
-
 ## 二叉堆（Binary Heap）
 
 **优先队列**  
@@ -1929,7 +1811,7 @@ class Solution:
 
 选择：抢，不抢
 
-`dp[i]:`抢劫前i的房间得到的总钱数
+**`dp[i]:`抢劫前i个房间得到的总钱数**
 
 状态转移：dp[i] = max(dp[i-1], dp[i-2]+nums[i-1])
 
@@ -1960,36 +1842,69 @@ class Solution:
 
 ### 一圈房子
 
-这些房子不是一排，而是围成了一个圈
+这些房子不是一排，而是围成了一个圈.
+
+这三种情况，哪种的结果最大，就是最终答案呗！不过，其实我们不需要比较三种情况，**只要比较情况二和情况三就行了，****因为这两种情况对于房子的选择余地比情况一大呀，房子里的钱数都是非负数**
+
+<img src=".images/image-20210828200708912.png" alt="image-20210828200708912" style="zoom:30%;" />
 
 ```python
 class Solution:
     def rob(self, nums: List[int]) -> int:
-        if not nums:
-            return 0
-        dp = [0]*(len(nums)+1)
-        dp[0] = 0
-        for i in range(1,len(nums)+1):
-            dp[i] = max(dp[i-1], dp[i-2]+nums[i-1])
-        return dp[-1]
-## 状态压缩
-class Solution:
-    def rob(self, nums: List[int]) -> int:
-        if not nums:
-            return 0
+        n = len(nums)
+        if (n == 1):
+            return nums[0]
+        return max(self.robRange(nums, 0, n - 2),#情况二
+                   self.robRange(nums, 1, n - 1) #情况三
+                  )
+
+	# 仅计算闭区间 [start,end] 的最优结果
+    def robRange(self, nums, start, end):
         dp_i = 0
         dp_i_pre = 0
-        for i in range(1,len(nums)+1):
+        for i in range(start,end+1):
             #dp[i] = max(dp[i-1], dp[i-2]+nums[i-1])
             tmp = dp_i
-            dp_i = max(dp_i, dp_i_pre+nums[i-1])
+            dp_i = max(dp_i, dp_i_pre + nums[i-1])
             dp_i_pre = tmp
         return dp_i
 ```
 
 ### 二叉树房子
 
-房子在二叉树的节点上，相连的两个房子不能同时被抢劫：
+<img src=".images/image-20210828203733752.png" alt="image-20210828203733752" style="zoom:33%;" />
+
+房子在二叉树的节点上，**相连**的两个房子不能同时被抢劫
+
+整体的思路完全没变，还是**做抢或者不抢的选择，取收益较大的选择。**甚至我们可以直接按这个套路写出代码：
+
+```python
+'''递归解法'''
+memo = {}
+def rob(root):
+    if not root:
+        return 0
+	#利用备忘录消除重叠子问题
+    if root in memo:
+        return memo[root]
+    #抢，然后去下下家
+    do_rob = root.val
+    if root.left:
+        do_rob += (
+            rob(root.left.left) + rob(root.left.right)
+        )
+    if root.right:
+        do_rob += (
+            rob(root.right.left) + rob(root.right.right)
+        )
+    #不抢，然后去下家
+    int not_rob = rob(root.left) + rob(root.right)
+
+    rst = max(do_rob, not_rob)
+    memo[root] = rst
+    return rst
+
+```
 
 
 
@@ -2285,15 +2200,13 @@ print(num1*num2)
 
 
 
-# 回溯
-
-## 概述
+# DFS
 
 **回溯算法不像动态规划存在重叠子问题可以优化，回溯算法就是纯暴力穷举，复杂度一般都很高**。
 
 1. 套路
 
-   回溯问题是一个决策树的遍历过程
+   回溯算法就是穷举一棵决策树的过程，只要在递归之前「做选择」，在递归之后「撤销选择」就行了。
 
    1. 路径：已经做出的选择
    2. 选择列表：当前可以做出的选择
@@ -2312,7 +2225,7 @@ def bashtrack(pth, choice_lst):
         backtrack(pth_new, choice_lst_new) #此处应该创建新的pth和choice_lst,否则影响下一次循环
 ```
 
-## 1. 全排列
+## 全排列
 
 给定一个不含重复数字的数组 `nums` ，返回其 **所有可能的全排列** 。你可以 **按任意顺序** 返回答案。
 
@@ -2330,7 +2243,7 @@ def permute(self, nums: List[int]) -> List[List[int]]:
 
 ## 全排列2
 
-给定一个可包含重复数字的序列 `nums` ，**按任意顺序** 返回所有不重复的全排列。
+给定一个可**包含重复数字的序列** `nums` ，**按任意顺序** 返回所有不重复的全排列。
 
 ```python
 class Solution:
@@ -2346,11 +2259,81 @@ class Solution:
         return rst
 ```
 
+## 组合（k个数的组合）
+
+给定两个整数 `n` 和 `k`，返回范围 `[1, n]` 中所有可能的 `k` 个数的组合。区别于全排列
+
+<img src=".images/image-20210829201129532.png" alt="image-20210829201129532" style="zoom:30%;" />
+
+```python
+def combine(n, k):
+    rst = []
+    if k <= 0 or n <= 0:
+        return rst
+    
+    backtrack(start=1, pth=[]);
+    return rst
+
+	def backtrack(start, pth):
+        # 到达树的底部
+        if len(pth) == k:
+            rst.append(pth)
+            return
+        # 注意 i 从 start 开始递增
+        for i in range(start, n+1):
+            backtrack(i + 1, pth+[i])
+
+```
+
+
+
+
+
+## 幂集
+
+给你一个整数数组 `nums` ，数组中的元素 **互不相同** 。返回该数组所有可能的子集（幂集）。结果**不能** 包含重复的
+
+`[1,2,3]` 的子集可以由 `[1,2]` 追加得出，`[1,2]` 的子集可以由 `[1]` 追加得出，base case 显然就是当输入集合为空集时，输出子集也就是一个空集。
+
+```python
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:        
+        rst = []
+        def backtrack(index, pth):
+            rst.append(pth)
+            for i in range(index,len(nums)):
+                backtrack(i+1, pth+[nums[i]])
+        backtrack(0, [])
+        return rst
+```
+
+## 幂集2
+
+给你一个整数数组 `nums` ，其中可能包含重复元素，请你返回该数组所有可能的子集（幂集）。结果**不能** 包含重复的
+
+```python
+class Solution:
+    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+        rst  = []  #存放符合条件结果的集合
+        path = []  #用来存放符合条件结果
+        def backtrack(nums,startIndex):
+            rst.append(path)
+            for i in range(startIndex,len(nums)):
+                if i > startIndex and nums[i] == nums[i - 1]:  #我们要对同一树层使用过的元素进行跳过
+                    continue
+                path.append(nums[i])
+                backtrack(nums,i+1)  #递归
+                path.pop()  #回溯
+        nums = sorted(nums)  #去重需要排序
+        backtrack(nums,0)
+        return res
+```
+
 
 
 ## [N皇后问题](https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484709&idx=1&sn=1c24a5c41a5a255000532e83f38f2ce4&chksm=9bd7fb2daca0723be888b30345e2c5e64649fc31a00b05c27a0843f349e2dd9363338d0dac61&scene=21#wechat_redirect)
 
-给一个 N×N 的棋盘，放置 N 个皇后，使得它们不能互相攻击。
+N×N 的棋盘，放置 N 个皇后，使得它们不能互相攻击。返回所有合法的放置
 
 PS：皇后可以攻击同一行、同一列、左上左下右上右下四个方向的任意单位。
 
@@ -2358,21 +2341,311 @@ PS：皇后可以攻击同一行、同一列、左上左下右上右下四个方
 
 <img src=".images/image-20210707225447442.png" alt="image-20210707225447442" style="zoom:33%;" />
 
-问题本质上跟全排列问题差不多，决策树的每一层表示棋盘上的每一行；每个节点可以做出的选择是在该行的任意一列放置一个皇后。
+问题本质上跟全排列问题差不多，树的每一层表示棋盘上的每一行；每个节点可以做出的选择是在该行的任意一列放置一个皇后。
 
-## 子集划分
+**函数`dfs`依然像个在决策树上游走的指针，每个节点就表示在`board[row][col]`上放置皇后，通过`isValid`函数可以将不符合条件的情况剪枝**：
+
+```python
+class Solution:
+    def solveNQueens(self, n):
+        pth = []
+        #初始化空棋盘, '.' 表示空，'Q' 表示皇后
+        board = [['.' for _ in range(n)] for _ in range(n)]
+        self.dfs(pth, board, row=0)
+        # return len(self.rst)
+        return pth
+
+    # 路径：board 中小于 row 的那些行都已经成功放置了皇后
+    # 选择列表：第 row 行的所有列都是放置皇后的选择
+    # 结束条件：row 超过 board 的最后一行
+    def dfs(self, pth, board, row):
+        # 结束条件
+        if (row == len(board)):
+            pth.append([''.join(x) for x in board])
+            # print(self.rst)
+            return
+        
+        ## 遍历选择列表
+        for col in range(len(board[row])):
+            # 排除不合法选择
+            if (not self.isValid(board, row, col)):
+                continue
+            # 做选择
+            board[row][col] = 'Q'
+            # 进入下一行决策
+            self.dfs(pth, board, row + 1)
+            # 撤销选择
+            board[row][col] = '.'
+
+    #是否可以在 board[row][col] 放置皇后？
+    def isValid(self, board, row, col):
+        col_num = len(board[0])
+        #检查上方是否有皇后互相冲突
+        for i in range(row):
+            if board[i][col] == 'Q':
+                return False
+
+        # 检查右上方是否有皇后互相冲突
+        num = min(row, col_num-col-1)
+        for i,j in zip(range(row-1, -1, -1)[:num], range(col+1, col_num)[:num]):
+            if board[i][j] == 'Q':
+                return False
+
+       # 检查左上方是否有皇后互相冲突
+        num = min(row, col)
+        for i,j in zip(range(row-1, -1, -1)[:num], range(col-1, -1, -1)[:num]):
+            if board[i][j] == 'Q':
+                return False
+        return True
+```
+
+只要一种摆放方法，只需更改dfs函数，只要找到一个答案，for 循环的后续递归穷举都会被阻断。
+
+```python
+	
+    def dfs(self, pth, board, row):
+        # 结束条件
+        if (row == len(board)):
+            pth.append([''.join(x) for x in board])
+            # print(self.rst)
+            return true ### 添加return True
+        
+        ## 遍历选择列表
+        for col in range(len(board[row])):
+            # 排除不合法选择
+            if (not self.isValid(board, row, col)):
+                continue
+            # 做选择
+            board[row][col] = 'Q'
+            # 进入下一行决策,只要找到一个答案, for 循环的后续递归穷举都会被阻断。
+            if self.dfs(pth, board, row + 1):
+                return True
+            # 撤销选择
+            board[row][col] = '.'
+```
+
+
+
+
+
+## 子集划分（k个）
 
 给你输入一个数组`nums`和一个正整数`k`，请你判断`nums`是否能够被平分为元素和相同的`k`个子集。
 
+之前 [背包问题之子集划分](http://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485103&idx=1&sn=8a9752e18ed528e5c18d973dcd134260&chksm=9bd7f8a7aca071b14c736a30ef7b23b80914c676414b01f8269808ef28da48eb13e90a432fff&scene=21#wechat_redirect) 写过一次子集划分问题，不过那道题只需要我们把集合划分成两个相等的集合，可以转化成背包问题用动态规划技巧解决。但是如果划分成多个相等的集合，解法一般只能通过暴力穷举，时间复杂度爆表，是练习回溯算法和递归思维的好机会。
+
+**思路**：关键是要知道怎么「做选择」，这样才能利用递归函数进行穷举。
+
+将`n`个数字分配到`k`个桶里，我们可以有两种视角：
+
+1. **数字视角：对于每个数字，都要遍历k个桶，然后选择是否进入到当前的桶**。
+
+   `n`个数字，每个数字有`k`个桶可供选择，所以组合出的结果个数为`k^n`，时间复杂度也就是`O(k^n)`。
+
+2. **桶视角：对于每个桶，都要遍历`nums`中的`n`个数字，然后选择是否将当前遍历到的数字装进这个桶里**。
+
+   每个桶要遍历`n`个数字，选择「装入」或「不装入」，组合的结果有`2^n`种；而我们有`k`个桶，所以总的时间复杂度为`O(k*2^n)`。
 
 
 
+```python
+"""
+### for 循环的递归实现
+def for_loop(nums, index):
+    '''递归的方法遍历数组'''
+    if index == len(nums):
+        return
+    print(nums[index])
+    for_loop(nums, index+1)
+    
+### while 循环的递归实现
+
+"""
+
+##以数字的视角
+class Solution:
+    def canPartitionKSubsets(self, nums, k):
+        n = len(nums)
+        # 排除一些基本情况
+        if k > n or sum(nums) % k != 0:
+            return False
+        target = sum(nums) / k
+        # k 个桶，记录每个桶装的数字之和
+        bucket = [0]*k
+        #穷举，看看 nums 是否能划分成 k 个和为 target 的子集
+        return self.dfs(sorted(nums,key=lambda x: -x), 0, bucket, target) # #如果将nums降序，则可以保证剪枝次数增多，减少递归次数，从而可以通过所有测试用例
+
+    #递归穷举 nums 中的每个数字
+    def dfs(self, nums, index, bucket, target):
+        if index == len(nums): #遍历完了所有数字，检查所有桶的数字之和是否都是 target
+            for x in bucket:
+                if x != target:
+                    return False
+            return True
+
+        #穷举 nums[i_num] 可能装入的桶，并做选择，撤销选择
+        #如果将nums降序，则可以保证剪枝次数增多，减少递归次数
+        for i in range(len(bucket)):
+            if bucket[i] + nums[index] > target: # 剪枝，i桶装满了，找能够装下nums[index]的第一个桶，做选择
+                continue
+            ## 做选择
+            bucket[i] += nums[index] #将 nums[index] 装入 bucket[i]
+            # 递归穷举下一个数字的选择
+            if self.dfs(nums, index + 1, bucket, target):
+                return True
+            # 撤销选择
+            bucket[i] -= nums[index]
+        # nums[index] 装入哪个桶都不行
+        return False
+    
+    
+## 以桶的视角
+class Solution:
+    def canPartitionKSubsets(self, nums, k):
+        n = len(nums)
+        # 排除一些基本情况
+        if k > n or sum(nums) % k != 0:
+            return False
+        
+        target = sum(nums) / k
+        used = [0]*n #表示数据是否已经装进去桶中，从 nums[0] 开始做选择
+	    return dfs(k, current_sum, nums, 0, used, target)
+
+    def dfs(k, current_sum, nums, start, used, target)
+    '''以桶的视角
+	    #k号桶正在思考是否应该把nums[start]这个元素装进来；（倒着遍历桶 k,k-1,...,0）
+        #目前k号桶里面已经装的数字之和为current_sum；
+        #used标志某一个元素是否已经被装到桶中；
+        #target是每个桶需要达成的目标和。
+    1、需要遍历nums中所有数字，决定哪些数字需要装到当前桶中。
+    2、如果当前桶装满了（桶内数字和达到target），则让下一个桶开始执行第 1 步。'''
+    
+    # base case, 所有桶都被装满了，而且 nums 一定全部用完了, target == sum / k
+    if k == 0:
+        return True
+    if current_sum == target:
+        #装满了当前桶，递归穷举下一个桶的选择, 让下一个桶从 nums[0] 开始选数字
+        return backtrack(k - 1, 0 ,nums, 0, used, target);
+
+    #从 start 开始向后探查有效的 nums[i] 装入当前桶
+    for i in range(start, len(nums)):
+        # 剪枝
+        if used[i]: #nums[i] 已经被装入别的桶中
+            continue
+        if nums[i] + current_sum > target: #当前桶装不下 nums[i]
+            continue
+        
+        # 做选择，将 nums[i] 装入当前桶中
+        bucket += nums[i]
+        used[i] = 1
+
+        # 递归穷举下一个数字是否装入当前桶
+        if backtrack(k, current_sum, nums, i + 1, used, target):
+            return True
+        
+        # 撤销选择
+        bucket -= nums[i]
+        used[i] = False
+    # 穷举了所有数字，都无法装满当前桶
+    return False
+```
 
 
 
+## 括号生成
+
+**有关括号问题，你只要记住两个个性质，思路就很容易想出来：**
+
+**1、一个「合法」括号组合的左括号数量一定等于右括号数量，这个显而易见**。
+
+**2、对于一个「合法」的括号字符串组合**`p`，必然对于任何`0 <= i < len(p)`都有：子串`p[0..i]`中左括号的数量都大于或等于右括号的数量。
+
+如果不跟你说这个性质，可能不太容易发现，但是稍微想一下，其实是有道理的，因为从左往右算的话，肯定是左括号多嘛，到最后左右括号数量相等，说明这个括号组合是合法的。
+
+**思路**：现在有`2n`个位置，每个位置可以放置字符`(`或者`)`，组成的所有括号组合中，有多少个是合法的？
+
+```python
+'''生成所有的括号（包括不合法的），然后剪枝'''
+rst = []
+def dfs(i, pth):
+    # 穷举到最后一个位置了，得到一个长度为 2n 组合
+    if i == 2 * n:
+        rst.append(pth)
+        return
+    # 对于每个位置可以是左括号或者右括号两种选择
+    for choice in ['(', ')']:
+        pth.append(choice) # 做选择
+        backtrack(i + 1, pth) #穷举下一个位置
+        pth.pop(choice) # 撤销选择
+
+'''对于2n个位置，必然有n个左括号，n个右括号，所以我们不是简单的记录穷举位置i，而是用left记录当前使用了多少个左括号，用right记录当前使用了多少个右括号，这样就可以通过刚才总结的合法括号规律进行筛选了：'''
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        def dfs(pth, left_cnt, right_cnt): #当前字符列表，左括号的数量，右括号的数量
+            if len(pth) == 2*n:
+                rst.append(''.join(pth))
+            if right_cnt > left_cnt:
+                return
+            if left_cnt < n:
+                dfs(pth+['('], left_cnt + 1, right_cnt)
+            if right_cnt < n:
+                dfs(pth+[')'], left_cnt, right_cnt + 1)
+        
+        rst = []
+        dfs([],0,0)
+        return rst
+```
 
 
 
+## 解数独
+
+输入是一个==9x9==的棋盘，空白格子用点号字符.表示，算法需要在原地修改棋盘，将空白格子填上数字，得到一个可行解。至于数独的要求，大家想必都很熟悉了，每行，每列以及每一个 ==3×3== 的小方格都不能有相同的数字出现。
+
+对每一个格子所有可能的数字进行穷举，基于这个思路，我们可以很容易地写出大致的代码框架：
+
+下述代码只返回一个可行解
+
+```python
+def solveSudoku(board):	
+    def isValid(r, c, ch): #判断 board[r][c] 是否可以填入 ch
+        for i in range(9): #棋盘最大为9
+            # 判断行，列是否存在重复
+            if board[i][c] == ch or if board[r][i] == ch:
+                return False
+            # 判断 3 x 3 方框是否存在重复
+            if (board[(r//3)*3 + i//3][(c//3)*3 + i%3] == n)
+                return False
+        return True
+    
+    def dfs(r, c): #row, com
+        int m = 9, n = 9;
+        if c == n: # 穷举到最后一列的话就换到下一行重新开始
+            dfs(r + 1, 0)
+        if r == m: # 找到一个可行解，触发 base case
+            return True
+        
+        #对棋盘的每个位置进行穷举
+        for i in range(r, m):
+            for j in range(c, n):
+                if board[i][j] != '.': # 当前如果有预设数字，不用我们穷举
+	               return backtrack(i, j + 1)
+                
+                # 做选择, 从 1 到 9 就是选择，全部试一遍
+                for ch in range(1,10):
+                    if not isValid(i, j, str(ch)): #如果遇到不合法的数字，就跳过
+	                    continue
+                    board[i][j] = str(ch) #做选择
+                    if dfs(board, i, j+1): #继续穷举下一个
+                        return True
+                    board[i][j] = '.' #撤销选择
+                #穷举完 1~9，依然没有找到可行解，此路不通
+	            return False
+        return False
+    
+    dfs(0, 0)
+        
+```
 
 
 
@@ -2455,6 +2728,16 @@ def findTargetSumWays(self, nums: List[int], S: int) -> int:
         	dp[j] = dp[j] + dp[j - num]
     return dp[-1]
 ```
+
+
+
+
+
+
+
+
+
+
 
 # BFS
 
@@ -2595,6 +2878,120 @@ def bfs(deadends, target):
 
 # 单调栈
 
+单调栈实际上就是栈，只是利用了一些巧妙的逻辑，使得每次新元素入栈后，栈内的元素都保持有序（单调递增或单调递减）。听起来有点像堆（heap）？不是的，单调栈用途不太广泛，只处理一种典型的问题，叫做 ==Next Greater Element。==
+
+## 下一个最大元素，单数组
+
+```
+Next Greater Element：给你一个数组，返回一个等长的数组，对应索引存储着下一个更大元素，如果没有更大的元素，就存 -1。不好用语言解释清楚，直接上一个例子：
+给你一个数组 [2,1,2,4,3]，你返回数组 [4,2,4,-1,-1]。
+```
+
+抽象思考：把数组的元素想象成并列站立的人，元素大小为身高。这些人面对你站成一列，如何求元素「2」的 Next Greater Number 呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的 Next Greater Number，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
+
+<img src=".images/image-20210823095205914.png" alt="image-20210823095205914" style="zoom:30%;" />
+
+```python
+'''
+# 左边是栈顶
+总共有 n 个元素，每个元素都被 push 入栈了一次，而最多会被 pop 一次，没有任何冗余操作。所以总的计算规模是和元素规模 n 成正比的，也就是 O(n) 的复杂度。
+'''
+def nextGreaterElement(nums):
+    n = len(nums)
+    ans = []# 存放答案的数组
+    stack = []
+    for i in range(n-1, -1, -1): #倒着往栈里放,倒着入栈，其实是正着出栈
+        while (stack and nums[i] >= stack[-1]): #while 循环是把两个“高个”元素之间的元素排除
+            stack.pop() #矮个起开，反正也被挡着了。。。
+		if not stack:
+            ans[i] = -1
+        else:
+            ans[i] = stack[-1] #先读取栈顶元素再入栈
+        stack.append(nums[i])
+    return ans
+```
+
+## 下一个最大元素，循环数组
+
+<img src=".images/image-20210823105928902.png" alt="image-20210823105928902" style="zoom:33%;" />
+
+通过 % 运算符求模（余数），模拟环形数组
+
+```python
+nums=[1,2,3,4,5]
+n = len(nums)
+i = 0
+while true:
+    print(nums[i % n])
+    i+=1
+```
+
+增加了环形属性后，问题的难点在于：这个 Next 的意义不仅仅是当前元素的右边了，有可能出现在当前元素的左边（如上图）。我们可以考虑这样的思路：将原始数组“翻倍”，就是在后面再接一个原始数组，这样的话，按照之前“比身高”的流程，每个元素不仅可以比较自己右边的元素，而且也可以和左边的元素比较了。
+
+<img src=".images/image-20210824000331378.png" alt="image-20210824000331378" style="zoom:33%;" />
+
+你当然可以把这个双倍长度的数组构造出来，然后套用算法模板。但是，我们可以不用构造新数组，而是利用循环数组的技巧来模拟
+
+整体code
+
+```python
+def nextGreaterElements(nums):
+    n = len(nums)
+    ans = []# 存放答案的数组
+    stack = []
+    for i in range(2*n-1, -1, -1): #假装这个数组长度翻倍了(长度2n);倒着往栈里放,倒着入栈，其实是正着出栈
+        while stack and nums[i % n] >= stack.top():
+            stack.pop()
+        if not stack:
+            ans[i%n] = -1
+        else:
+            ans[i%n] = stack[-1] #先读取栈顶元素再入栈
+        stack.append(nums[i%n])
+    return ans
+```
+
+## 下一个最大元素，整数
+
+```python
+class Solution:
+    def nextGreaterElement(self, n: int) -> int:
+        '''借用 下一个排列 的代码'''
+
+        nums = [x for x in str(n)]
+        # 125 36 51
+        #从右向左找第一个顺序对，此时i指向3
+        i = len(nums) - 2
+        while i >= 0 and nums[i] >= nums[i + 1]:
+            i -= 1
+        #从右向左找第一个大于i位置的j，j指向5
+        if i >= 0:
+            j = len(nums) - 1
+            while j >= 0 and nums[i] >= nums[j]:
+                j -= 1
+            # 交换35 --> 1255 631
+            nums[i], nums[j] = nums[j], nums[i]
+        #利用双指针将 i+1 之后的元素重新排序（原来是降序的）
+        left, right = i + 1, len(nums) - 1
+        while left < right:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
+        
+        next_num = int(''.join(nums))
+        if 1 <= next_num <= 2**31 - 1 and next_num > n:
+            return next_num
+        else:
+            return -1
+```
+
+
+
+
+
+
+
+
+
 ## 接雨水
 
 
@@ -2647,6 +3044,33 @@ print(int(''.join(num1)) * int(''.join(num2)))
 
 
 
+# 栈
+
+## 删除连续重复字符
+
+删除连续重复字符，要求删除之后不存在连续重复字符
+
+```python
+def fun(string):
+    stack = []
+    del_str = ''
+    for x in string:
+        if not stack:
+            stack.append(x)
+        else:
+            if x == del_str:
+                continue
+            elif x == stack[-1]:
+                del_str = stack.pop()
+            else:
+                stack.append(x)
+    return stack
+
+>>> string = '1222233314567'
+>>> fun(string)
+>>> ['4', '5', '6', '7']
+```
+
 
 
 
@@ -2654,3 +3078,74 @@ print(int(''.join(num1)) * int(''.join(num2)))
 # 滑动窗口
 
 滑动窗口算法无非就是双指针形成的窗口扫描整个数组/子串，但关键是，你得清楚地知道什么时候应该移动右侧指针来扩大窗口，什么时候移动左侧指针来减小窗口。
+
+# 图算法
+
+图一般用**邻接表**==或==**邻接矩阵**来实现
+
+<img src=".images/image-20211007211408655.png" alt="image-20211007211408655" style="zoom: 25%;" /> <img src=".images/image-20211007211524201.png" alt="image-20211007211524201" style="zoom: 25%;" />
+
+
+
+**邻接表**：把每个节点`x`的邻居都存到一个列表里，然后把`x`和这个列表关联起来，这样就可以通过一个节点`x`找到它的所有相邻节点。
+
+优点：存储空间少；缺点：无法快速判断两个节点是否相连
+
+邻接矩阵：一个二维布尔数组，我们权且成为`matrix`，如果节点`x`和`y`是相连的，那么就把`matrix[x][y]`设为`true`。如果想找节点`x`的邻居，去扫一圈`matrix[x][..]`就行了。
+
+**图的遍历**
+
+图和多叉树类似，区别是图是可能有环的，如果图包含环，遍历框架就要一个`visited`数组进行辅助。当然，**当有向图含有环的时候才需要`visited`数组辅助**，如果不含环，连`visited`数组都省了，基本就是多叉树的遍历。
+
+```python
+''' 图遍历框架'''
+visited = {}
+def traverse(graph, node):
+    if visited[node]:
+        return
+    # 经过节点 node
+    visited[node] = True
+    for neighbor in graph.neighbors(node):
+        traverse(neighbor)
+    # 离开节点 node
+    visited[node] = False
+```
+
+## 所有可能路径
+
+给你一个有 n 个节点的 有向无环图（DAG），请你找出所有从节点 0 到节点 n-1 的路径并输出（不要求按特定顺序）。
+
+二维数组的第 i 个数组中的单元都表示有向图中 i 号节点所能到达的下一些节点，空就是没有下一个结点了。
+
+译者注：有向图是有方向的，即规定了 a→b 你就不能从 b→a 。
+
+<img src=".images/image-20211007211408655.png" alt="image-20211007211408655" style="zoom: 25%;" />
+
+输入：graph = [[4,3,1],[3,2,4],[3],[4],[]]
+输出：[[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
+
+**解法很简单，以`0`为起点遍历图，同时记录遍历过的路径，当遍历到终点时将路径记录下来即可**。
+
+```python
+def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
+    res = []
+    
+    ## 图的遍历框架
+    def traverse(graph, s, path):
+        n = len(graph)
+        path.append(s)   # 添加节点 s 到路径
+        if (s == n - 1): # 到达终点
+            res.append(path)
+            path.pop()
+            return
+        # 递归每个相邻节点 v
+        for v in graph[s]:
+            traverse(graph, v, path)
+        # 从路径移出节点 s
+        path.pop()
+
+    
+    traverse(graph, 0, [])
+    return res
+```
+

@@ -719,6 +719,12 @@ git merge dev     把dev分支的工作成果合并到当前分支上
 
 ## 远程库
 
+git remote add origin git@github.com:ruiyangsong/keras-MTL.git
+git branch -M main
+git push -u origin main
+
+
+
 ssh-keygen -t rsa -C "youremail@example.com"
 
 git remote add origin git@github.com:michaelliao/learngit.git
